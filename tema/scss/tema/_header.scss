@@ -2,6 +2,14 @@ body{
 	background:url(../img/bg.jpg) repeat;
 }
 
+
+#strip{
+	background:url(../img/strip.jpg) repeat-x;
+	height:8px;
+	width:100%;
+}
+
+
 header{
 	background:$blanco;
 	position:relative;

@@ -1635,6 +1635,114 @@ h5 {
 h6 {
   font-size: 0.8em; }
 
+header .arriba {
+  margin: 40px 0; }
+header #box--login {
+  background-color: #ec2a8c;
+  overflow: hidden;
+  padding: 2em; }
+  header #box--login h1 {
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.4em;
+    margin: 0; }
+  header #box--login form#login {
+    width: 100%;
+    height: auto;
+    margin-top: 1em; }
+    header #box--login form#login label {
+      width: 100%;
+      float: left;
+      color: #fff;
+      margin: 0.4em 0;
+      font-size: 0.9em; }
+    header #box--login form#login input[type="text"], header #box--login form#login input[type="password"] {
+      width: 60%;
+      padding: 6px;
+      float: left;
+      font-size: 0.8em;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      border: 2px solid #9B1F5D; }
+    header #box--login form#login button[type="submit"] {
+      width: 60%;
+      padding: 6px;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #8b0253;
+      margin-top: 1em;
+      background-color: #b8006d;
+      color: #fff;
+      transition: all .3s; }
+      header #box--login form#login button[type="submit"]:hover {
+        background-color: #8b0253; }
+    header #box--login form#login button.recuperar {
+      text-align: right;
+      color: #fff;
+      border: none;
+      background: none;
+      padding: 0;
+      text-decoration: underline;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 0.8em;
+      margin-top: 0.8em; }
+      header #box--login form#login button.recuperar:hover {
+        background: none;
+        text-decoration: none; }
+header #box--blue {
+  height: 435px;
+  background-color: #02aeef;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative; }
+  header #box--blue #royalito {
+    width: 58%;
+    position: relative; }
+    header #box--blue #royalito img.topR {
+      margin-top: 80px; }
+  header #box--blue #linea_texto {
+    position: absolute;
+    top: 170px;
+    right: 30px;
+    width: 50%; }
+    header #box--blue #linea_texto h2 {
+      font-size: 1.2em;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.6em;
+      margin-bottom: 2px;
+      position: absolute;
+      top: -110px;
+      right: 0;
+      text-align: center; }
+header #box--naranja {
+  background-color: #f47d34;
+  padding: 0.5em 0.5em 0.5em 0.5em; }
+  header #box--naranja button[type="submit"] {
+    background-color: #a14004;
+    padding: 6px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #843403;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all .3s; }
+    header #box--naranja button[type="submit"]:hover {
+      background-color: #843403; }
+
 #content h4 {
   color: #040452;
   font-size: 1.8em;
@@ -1687,6 +1795,40 @@ h6 {
     margin-top: 1em;
     transition: all .3s; }
     #content form#perfil button[type="submit"]:hover {
+      background-color: #040452; }
+#content form#contact {
+  position: relative;
+  width: 100%; }
+  #content form#contact h2 {
+    color: #040452;
+    font-size: 1.8em;
+    position: absolute;
+    top: -22px;
+    background-color: #fff;
+    font-weight: 700; }
+  #content form#contact label {
+    width: 100%;
+    padding: 0.8em 0px;
+    color: #010673;
+    float: left; }
+  #content form#contact input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    font-size: 0.9em; }
+  #content form#contact textarea {
+    width: 100%;
+    height: 190px;
+    padding: 5px;
+    font-size: 0.9em; }
+  #content form#contact button[type="submit"] {
+    width: 15%;
+    background-color: #02599C;
+    color: #FFF;
+    padding: 5px 16px;
+    border: medium none;
+    margin-top: 1em;
+    transition: all 0.3s ease 0s; }
+    #content form#contact button[type="submit"]:hover {
       background-color: #040452; }
 
 header #menu {
@@ -1774,6 +1916,11 @@ section {
 
 body {
   background: url(../img/bg.jpg) repeat; }
+
+#strip {
+  background: url(../img/strip.jpg) repeat-x;
+  height: 8px;
+  width: 100%; }
 
 header {
   background: #fff;

@@ -1,3 +1,142 @@
+//login
+
+header{
+	.arriba{
+		margin:40px 0;
+	}
+	#box--login{
+		background-color:$magenta;
+		overflow:hidden;
+		padding: 2em;
+
+		h1{
+			color:$blanco;
+			font-weight: $normal;
+			font-style: italic;
+			font-size: 1.4em;
+			margin:0;
+		}
+		form#login{
+			width: 100%;
+			height: auto;
+			margin-top: 1em;
+			label{
+				width: 100%;
+				float: left;
+				color:$blanco;
+				margin: 0.4em 0;
+				font-size: 0.9em;
+			}
+			input[type="text"],input[type="password"]{
+				width: 60%;
+				padding:6px;
+				float: left;
+				font-size: 0.8em;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				border:2px solid #9B1F5D;
+			}
+			button[type="submit"]{
+				width: 60%;
+				padding:6px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				border-top:none;
+				border-left:none;
+				border-right:none;
+				border-bottom:2px solid #8b0253;
+				margin-top: 1em;
+				background-color:#b8006d;
+				color:$blanco;
+				transition: all .3s;
+				&:hover{
+					background-color:#8b0253;
+				}
+			}
+			button.recuperar{
+				text-align:right;
+				color:$blanco;
+				border:none;
+				background:none;
+				padding:0;
+				text-decoration: underline;
+				font-weight: $normal;
+				font-style: italic;	
+				font-size: 0.8em;
+				margin-top: 0.8em;
+				&:hover{
+					background:none;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	#box--blue{
+		height: 435px;
+		background-color: $cyan;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		position:relative;
+		#royalito{
+			width: 58%;
+			position:relative;
+
+			img.topR{
+				margin-top:80px;
+			}
+		}
+		#linea_texto{
+			position: absolute;
+			top: 170px;
+			right: 30px;
+			width: 50%;
+			h2{
+				font-size: 1.2em;
+				color:$blanco;
+				font-weight: $semi-bold;
+				padding:0.6em;
+				margin-bottom: 2px;
+				position: absolute;
+				top: -110px;
+				right: 0;
+				text-align: center;
+			}
+		}
+	}
+	#box--naranja{
+		background-color:$naranjo;
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		// h2{
+		// 	font-size: 1.2em;
+		// 	color:$blanco;
+		// 	font-weight: $semi-bold;
+		// 	padding:0.6em;
+		// 	margin-bottom: 2px;
+		// }
+		button[type="submit"]{
+			background-color:#a14004;
+			padding:6px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			border-top:none;
+			border-left:none;
+			border-right:none;
+			border-bottom:2px solid #843403;
+			width: 100%;
+			color: $blanco;
+			text-transform: uppercase;
+			text-align: center;
+			transition: all .3s;
+			&:hover{
+				background-color:#843403;
+			}
+		}
+	}
+}
+
 #content{
 	h4{
 		color:$azul_corporativo;
@@ -59,6 +198,48 @@
 			border: none;
 			margin-top: 1em;
 			transition: all .3s;
+			&:hover{
+				background-color: $azul_corporativo;
+			}
+		}
+	}
+	//contacto
+	form#contact{
+		position:relative;
+		width: 100%;
+		h2{
+			color: #040452;
+			font-size: 1.8em;
+			position: absolute;
+			top: -22px;
+			background-color: $blanco;
+			font-weight: $bold;
+		}
+		label{
+			width: 100%;
+			padding: 0.8em 0px;
+			color: #010673;
+			float: left;
+		}
+		input[type="text"]{
+			width: 100%;
+			padding:5px;
+			font-size: 0.9em;
+		}
+		textarea{
+			width: 100%;
+			height: 190px;
+			padding:5px;
+			font-size: 0.9em;
+		}
+		button[type="submit"]{
+			width: 15%;
+			background-color: #02599C;
+			color: #FFF;
+			padding: 5px 16px;
+			border: medium none;
+			margin-top: 1em;
+			transition: all 0.3s ease 0s;
 			&:hover{
 				background-color: $azul_corporativo;
 			}
