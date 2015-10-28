@@ -168,6 +168,83 @@ section#search{
 
 		}//contenido
 
+		//noticias en menu de colores conceptos
+		#titulo-menu-colores{
+			width: 100%;
+			overflow:hidden;
+			margin-bottom: 1em;
+			h1{
+				font-size: 2.2em;
+				color: $azul_corporativo;
+				margin: 0;
+				line-height: 1.8;
+				margin-left: 2em;
+			}
+		}
+		p.texto-conceptos{
+			color:$gris_claro;
+			font-size: 0.95em;
+		}
+
+		#imagen-destacada{
+			padding-bottom:1.5em;
+			h1{
+				color: $azul_corporativo;
+				margin-top: 0;
+			}
+			h2{
+				margin:0.8em 0;
+				color: $azul_corporativo;
+				font-size: 1.6em;
+				font-weight: $bold;
+			}
+			p{
+				color:$gris_claro;
+				font-size: 0.95em;
+			}
+			button[type="submit"]{
+				padding: 5px 12px;
+				background-color:$azul_corporativo;
+				transition: all .3s;
+				color: $blanco;
+				text-align: center;
+				border:none;
+				float: right;
+				margin: 1em 0;
+				font-size: 0.8em;
+				&:hover{
+					background-color:$azul_corporativo_claro;
+				}
+			}
+		}
+
+	//publicaciones anteriores
+
+		#registro_publicaciones{
+			width: 100%;
+			padding-bottom: 2em;
+			h1{
+				color: $azul_corporativo;
+				margin-top: 0;
+				font-size: 1.5em;
+			}
+			p{
+				color: $azul_corporativo;
+			}
+			ul.anteriores{
+				width: 100%;
+				margin:0;
+				padding: 0;
+				li{
+					display: block;
+					margin-bottom: 1em;
+					a{
+						color: $azul_corporativo_claro;
+					}
+				}
+			}
+		}
+
 	}//content
 
 	//que es subete
