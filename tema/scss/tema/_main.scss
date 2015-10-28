@@ -1,0 +1,217 @@
+section{
+	#slider{
+		position:relative;
+		#noticias{
+			width: 230px;
+			height: 300px;
+			position:absolute;
+			top:15px;
+			right: 15px;
+			z-index: 99;
+			border:1px solid $blanco;
+			overflow-y:scroll;
+			overflow-x:hidden;
+			background-color: $magenta;
+			h1{
+				font-size: 1em;
+				color: $magenta;
+				background-color: $blanco;
+				margin:0;
+				padding:0.5em;
+				font-weight: $normal;
+				position: absolute;
+				width: 213px;
+				z-index: 0;
+			}
+			#noticias-scroll{
+				width: 90%;
+				ul{
+					margin:30px 0 0 0;
+					padding:0;
+					list-style: none;
+					li{
+						padding:8px;
+						border-bottom: 1px solid $blanco;
+						a{
+							color:$blanco;
+							text-align:left;
+							font-size: 0.7em;
+							line-height: 0;
+							text-decoration: none;
+							&:hover{
+								text-decoration: underline;								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//caja busqueda
+
+section#search{
+	text-align: right;
+
+	form#busqueda{
+		input[type="text"]{
+			margin-bottom:1em;
+		    padding: 6px 12px;
+		    font-size: 14px;
+		    line-height: 1.428571429;
+		    color: #555;
+		    vertical-align: middle;
+		    background-color: #fff;
+		    border: 1px solid #ccc;
+		    border-radius: 4px;
+		    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+		    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+		button[type="submit"]{
+		    background: $magenta;
+		    color: $blanco;
+		    border-width: 0px;
+		    padding: 5px 5px;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			position: relative;
+			top: -5px;
+		}
+	}
+}
+
+
+//contenido
+
+#main{
+	background:$blanco;
+	padding-bottom:1em;
+	h2{
+		color: $cyan;
+		font-size: 1.15em;
+		margin: 0 0 1em 0;
+		font-weight: $normal;
+	}
+	.widgets{
+		width: 100%;
+		height: auto;
+		h3{
+			background-color:$cyan;
+			color:$blanco;
+			text-align: left;
+			padding:0.5em;
+			font-size: 1em;
+			margin: 0 0 3px 0;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+		}
+	}
+	.caja--actividades{
+		width: 100%;
+		height: auto;
+	}
+
+	#content{
+		margin-top: 45px;
+		#contenido{
+			width: 100%;
+			float: left;
+			margin-top: 2em;		
+			.item--cajas{
+				width: 48%;
+				//height: 200px;
+				border-top: 1px solid $verde2;
+				border-bottom: 1px solid $verde2;
+				position: relative;
+				padding-top:0.8em;
+				h1{
+
+				}
+			}
+				.guia{
+					width: 20%;
+					height: 0.5em;
+					background:$verde2;
+					position: absolute;
+					top: -8px;
+					left: 0;
+					display: block;
+				}
+		h1{
+			font-size: 1em;
+			margin: 0 0 1em 0;
+			font-weight: $normal;
+			color: $gris_oscuro	;
+		}
+
+		button[type="button"]{
+			border:none;
+			background-color:$verde2;
+			color: $blanco;
+			padding: 2px 8px;
+			font-size: 0.9em;
+			float: right;
+			margin-bottom: 1em;
+			transition: all .3s;
+			&:hover{
+				background-color:$verde3;	
+			}
+		}
+
+		}//contenido
+
+	}//content
+
+	//que es subete
+
+	article{
+		width: 100%;
+		overflow:hidden;
+		.box--info1, .box--info2, .box--info3, .box--info4, .box--info5, .box--info6{
+			padding:1em;
+			height: 190px;
+			min-height: auto;
+			margin-bottom: 1em;
+			h1{
+				color: $blanco;
+				margin: 0 0 0.5em 0;
+				font-size: 1.5em;
+			}
+			p {
+				color: $blanco;
+			}
+		}
+		.box--info1{
+			background-color: $verde1;
+		}
+		.box--info2{
+			background-color:$naranjo;
+		}
+		.box--info3{
+			background-color: $magenta;
+		}
+		.box--info4{
+			background-color: $cyan;
+		}
+		.box--info5{
+			background-color: $verde2;
+		}
+		.box--info6{
+			background-color: $verde3;
+		}
+	}
+	//
+	article.mini{
+		margin-top: 1em;
+	}
+
+}//main
+

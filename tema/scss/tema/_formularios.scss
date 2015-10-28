@@ -1,0 +1,67 @@
+#content{
+	h4{
+		color:$azul_corporativo;
+		font-size: 1.8em;
+		margin: 0 1em 0 0;
+		float: left;
+		line-height: 2;
+	}
+	.foo{
+		border:2px solid $verde1;
+		float: left;
+		}
+	form#perfil{
+		width: 100%;
+		height: auto;
+		margin-top:2em; 
+		float: left;
+		fieldset{
+			width: 100%;
+			position: relative;
+			padding:1.8em 0.1em;  
+			h1{
+				margin: 0;
+				top: -16px;
+				position:absolute;
+				color:$azul_corporativo;
+				background: $blanco;
+				font-size: 1.4em;
+				left: 15px;
+			}
+			label{
+				padding:0.8em 0;
+				color:$azul_oscuro;
+				float: left;
+			}
+			input[type="text"]{
+				width: 100%;
+				padding:4px;
+				font-size: 0.8em;
+			}
+			select.sel{
+				width: 100%;
+			}
+		}
+		fieldset.Cacceso{
+			margin-top: 2.5em;
+			textarea{
+				width: 100%;
+				height:170px;
+				resize: none;
+				padding:8px;
+				font-size: 0.8em;
+			}
+		}
+		button[type="submit"]{
+			background-color: $azul_corporativo_claro;
+			color:$blanco;
+			padding:5px 16px;
+			border: none;
+			margin-top: 1em;
+			transition: all .3s;
+			&:hover{
+				background-color: $azul_corporativo;
+			}
+		}
+	}
+}	

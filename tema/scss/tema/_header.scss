@@ -1,0 +1,76 @@
+body{
+	background:url(../img/bg.jpg) repeat;
+}
+
+header{
+	background:$blanco;
+	position:relative;
+	padding-bottom:2em;
+	#logo{
+		text-align:center;
+		padding:15px 0 0 0;
+	}
+	#logo_royal{
+		position:absolute;
+		width: 126px;
+		height: 71px;
+		top:30%;
+		left:0px;
+	}
+	#admin-header{
+		position:absolute;
+		right: 20px;
+		top: 42px;
+		#admin--data{
+			float: left;
+			margin-bottom: 1em;
+			img{
+				width: 60px;
+				height: 60px;
+				border: 2px solid $verde2;
+				float: left;
+				margin-right: 1em;
+			}
+			span.nombre_usuario{
+				float: left;
+				margin-top: 10%;
+				color:$gris_claro;
+			} 			
+		}
+
+		#cuenta{
+			width: 100%;
+			height: auto;
+			overflow: hidden;
+			ul{
+				margin:0;
+				padding:0;
+				list-style: none;
+				li{
+					display: block;
+					a.micuenta{
+						color:$cyan;
+						text-decoration: none;
+						font-size: 0.9em;
+						background: url(../img/icon-user.jpg) no-repeat center left;
+						padding-left: 1.2em;
+						&:hover{
+							color:$verde2;
+						}
+					}
+					a.cerrar{
+						color:$cyan;
+						text-decoration: none;
+						font-size: 0.9em;
+						background: url(../img/icon-off.jpg) no-repeat center left;
+						padding-left: 1.2em;
+						&:hover{
+							color:$verde2;
+						}
+					}
+				}
+			}
+		}
+	}//admin header
+}
+
