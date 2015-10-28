@@ -13,51 +13,75 @@
   <body>
 	<?php
 		
-			if(isset($_GET['id'])){
-				$rut_usuario = $_GET['id'];
-			}
-			
-			$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
-			$acentos = $conexion->query("SET NAMES 'utf8'");
-			
-			$registros=mysqli_query($conexion,"select * from cuenta where rut = '4548848-4'")
-			or die("Problemas en el select:".mysqli_error($conexion));
-			
-			if($reg=mysqli_fetch_array($registros)){
+		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
-				$nombre = $reg['nombre'];
-				$apellido_paterno = $reg['apellido_paterno'];
-				$apellido_materno = $reg['apellido_materno'];
-				$sexo = $reg['sexo'];
-				$fecha_nacimiento = $reg['fecha_nacimiento'];
-				$rut = $reg['rut'];
-				$telefono = $reg['telefono'];
-				$email = $reg['email'];
-				$password = $reg['password'];
-				$temas_interes = $reg['temas_interes'];
-				$foto_perfil = $reg['foto_perfil'];
+		if(isset($_POST['comentario'])){
+			$sugerencias = $_POST['comentario'];
+			
+			mysqli_query($conexion,"insert into sugerencia(rut,comentario) values ('$_REQUEST[rut_send]','$_REQUEST[comentario]')")
+			or die("Problemas con el insert de los servicios");
+			
+		}
+		
+		if(isset($_GET['id'])){
+			$rut_usuario = $_GET['id'];
+		}
+			
+		$registros=mysqli_query($conexion,"select * from cuenta where rut = '4548848-4'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+			
+		if($reg=mysqli_fetch_array($registros)){
+		
+			$nombre = $reg['nombre'];
+			$apellido_paterno = $reg['apellido_paterno'];
+			$apellido_materno = $reg['apellido_materno'];
+			$sexo = $reg['sexo'];
+			$fecha_nacimiento = $reg['fecha_nacimiento'];
+			$rut = $reg['rut'];
+			$telefono = $reg['telefono'];
+			$email = $reg['email'];
+			$password = $reg['password'];
+			$temas_interes = $reg['temas_interes'];
+			$foto_perfil = $reg['foto_perfil'];
 				
-			}
+		}
+			
+		$registros_banner_sup=mysqli_query($conexion,"select * from banner where frame = 'sup'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registros_banner_left_02=mysqli_query($conexion,"select * from banner where frame = 'left_02'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+			
+		$registros_banner_right_01=mysqli_query($conexion,"select * from banner where frame = 'right_01'")
+		or die("Problemas en el select:".mysqli_error($conexion));
 	
 		?>  
     <header class="grupo">
-      <div class="caja base-100">
-        <div id="logo"><a href="index.php"><img src="img/logo.png"></a></div>
-        <div id="logo_royal"><a href="http://www.royalrental.cl" target="_blank" alt="Royal Rental"><img src="img/logo_royal.jpg"></a></div>
-        <div id="admin-header">
-          <div id="admin--data"><img src="img/user.jpg" class="circulo"><span class="nombre_usuario">Jorge Ortiz L.</span></div>
-          <div id="cuenta">
-            <ul>
-			  <?php 
+	
+      <?php 	
+	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
+        echo "<div class=\"caja base-100\">";
+        echo "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+        echo "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+        echo "<div id=\"admin-header\">";
+          echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
+          echo "<div id=\"cuenta\">";
+            echo "<ul>";
+			  
 			  $rut = '4548848-4';			  
-              echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";
-			  //echo "<li><a href=\"detalle-cocina.php?deta=",urlencode($var)," \">".$reg['nombre']." ".$reg['modelo']."</a></li>";
-			  ?>
-              <li><a href="#" class="cerrar">Cerrar</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+              echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";			  			 		
+			  
+              echo "<li><a href=\"#\" class=\"cerrar\">Cerrar</a></li>";
+            echo "</ul>";
+          echo "</div>";
+        echo "</div>";
+      echo "</div>";
+	  ?>
+	  
       <div class="caja base-100">
         <div id="menu">
           <ul>
@@ -89,9 +113,18 @@
       <div class="caja web-100">
         <div id="slider">
           <ul id="demo1">
+			<!-- Construir un while que construya el banner, en teoria se deberian mostrar 3 max al mismo tiempo -->
+			<?php
+				while($reg=mysqli_fetch_array($registros_banner_sup)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";										
+				}
+			?>
+			<!--
             <li><a href="#slide1"><img src="img/banner.jpg" alt=""></a></li>
             <li><a href="#slide2"><img src="img/banner.jpg" alt=""></a></li>
             <li><a href="#slide3"><img src="img/banner.jpg" alt=""></a></li>
+			-->
           </ul>
           <div id="noticias">
             <h1>Noticias</h1>
@@ -125,9 +158,17 @@
           <h3>Actividades Súbete</h3>
           <div class="caja--actividades">
             <ul id="demo2">
+			  <?php
+				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>
+			  <!-- 
               <li><a href="#slide1"><img src="img/actividades.jpg" alt=""></a></li>
               <li><a href="#slide2"><img src="img/actividades.jpg" alt=""></a></li>
               <li><a href="#slide3"><img src="img/actividades.jpg" alt=""></a></li>
+			  -->
             </ul>
           </div>
         </div>
@@ -135,9 +176,17 @@
           <h3>Nuevos convenios</h3>
           <div class="caja--actividades">
             <ul id="convenios">
+			   <?php
+				while($reg=mysqli_fetch_array($registros_banner_left_02)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>			  
+			  <!--	
               <li><a href="#slide1"><img src="img/convenios.jpg" alt=""></a></li>
               <li><a href="#slide2"><img src="img/convenios.jpg" alt=""></a></li>
               <li><a href="#slide3"><img src="img/convenios.jpg" alt=""></a></li>
+			  -->
             </ul>
           </div>
         </div>
@@ -145,9 +194,17 @@
       <div id="content" class="caja web-65">
         <div id="slide-content">
           <ul id="slideprogramas">
+			<?php
+				while($reg=mysqli_fetch_array($registros_banner_right_01)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>			
+		    <!--
             <li><a href="#slide1"><img src="img/banner-programa.jpg" alt=""></a></li>
             <li><a href="#slide2"><img src="img/banner-programa.jpg" alt=""></a></li>
             <li><a href="#slide3"><img src="img/banner-programa.jpg" alt=""></a></li>
+			-->
           </ul>
         </div>
         <div id="contenido">
@@ -170,12 +227,15 @@
           <div id="logo--footer"><a href="http://www.royalrental.cl" target="_blank"><img src="img/logo--footer.png"></a></div>
         </div>
         <div class="caja web-25"></div>
-        <div class="caja web-25">			</div>
+        <div class="caja web-25"></div>
         <div class="caja web-25">
-          <form id="footer" class="right">
+          <form method="post" id="footer" class="right">
             <p>Escríbenos si tienes  dudas o sugerencias</p>
-            <textarea name="textarea" placeholder="Escríbenos si tienes  dudas o sugerencias"> </textarea>
+            <textarea name="comentario" placeholder="Escríbenos si tienes  dudas o sugerencias"></textarea>
             <button type="submit">Enviar</button>
+			<?php
+				echo "<input type=\"text\" name=\"rut_send\" value=\"$rut\" hidden=hidden>";	
+			?>
           </form>
         </div>
       </div>

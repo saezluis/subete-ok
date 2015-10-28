@@ -11,20 +11,58 @@
     <script src="js/dist/slippry.min.js"></script>
   </head>
   <body>
+    <?php
+		
+			if(isset($_GET['id'])){
+				$rut_usuario = $_GET['id'];
+			}
+			
+			$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+			$acentos = $conexion->query("SET NAMES 'utf8'");
+			
+			$registros=mysqli_query($conexion,"select * from cuenta where rut = '4548848-4'")
+			or die("Problemas en el select:".mysqli_error($conexion));
+			
+			if($reg=mysqli_fetch_array($registros)){
+		
+				$nombre = $reg['nombre'];
+				$apellido_paterno = $reg['apellido_paterno'];
+				$apellido_materno = $reg['apellido_materno'];
+				$sexo = $reg['sexo'];
+				$fecha_nacimiento = $reg['fecha_nacimiento'];
+				$rut = $reg['rut'];
+				$telefono = $reg['telefono'];
+				$email = $reg['email'];
+				$password = $reg['password'];
+				$temas_interes = $reg['temas_interes'];
+				$foto_perfil = $reg['foto_perfil'];
+				
+			}
+	
+	?>  
     <header class="grupo">
-      <div class="caja base-100">
-        <div id="logo"><a href="index.php"><img src="img/logo.png"></a></div>
-        <div id="logo_royal"><a href="http://www.royalrental.cl" target="_blank" alt="Royal Rental"><img src="img/logo_royal.jpg"></a></div>
-        <div id="admin-header">
-          <div id="admin--data"><img src="img/user.jpg" class="circulo"><span class="nombre_usuario">Jorge Ortiz L.</span></div>
-          <div id="cuenta">
-            <ul>
-              <li><a href="#" class="micuenta">Mi cuenta</a></li>
-              <li><a href="#" class="cerrar">Cerrar</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+	
+      <?php 	
+	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
+        echo "<div class=\"caja base-100\">";
+        echo "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+        echo "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+        echo "<div id=\"admin-header\">";
+          echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
+          echo "<div id=\"cuenta\">";
+            echo "<ul>";
+			  
+			  $rut = '4548848-4';			  
+              echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";
+			  //echo "<li><a href=\"detalle-cocina.php?deta=",urlencode($var)," \">".$reg['nombre']." ".$reg['modelo']."</a></li>";
+			  
+              echo "<li><a href=\"#\" class=\"cerrar\">Cerrar</a></li>";
+            echo "</ul>";
+          echo "</div>";
+        echo "</div>";
+      echo "</div>";
+	  ?>
+	  
       <div class="caja base-100">
         <div id="menu">
           <ul>
