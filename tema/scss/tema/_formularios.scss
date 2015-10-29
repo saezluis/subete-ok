@@ -105,6 +105,100 @@ header{
 			}
 		}
 	}
+	//checklogin
+	#box--check{
+		overflow:hidden;
+		padding: 2em;
+		position:relative;
+		#royalito-check{
+			position:relative;
+			width: 90%;
+			text-align: center;
+		}
+		#base--globo{
+			width: 45%;
+			position:absolute;
+			top:170px;
+			right: 0;
+		}
+		p.garabatos{
+			position: absolute;
+			color: #706F6F;
+			top: 4.5em;
+			right: 0;
+			font-size: 1.8em;
+		}
+		p.recuperar{
+			position: absolute;
+			color: #706F6F;
+			top: 7.5em;
+			right: 0px;
+			font-size: 1.2em;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		//ok encuesta
+		#check-verde{
+			position:absolute;
+			@include desde (tablet){
+				right: 40px;
+				top: 100px;
+			}
+			@include desde (web){
+				right: 60px;
+			}
+		}
+	}
+	#alerta{
+
+		@include desde (tablet){
+			margin-top: 21em;
+		}
+		@include desde (web){
+			margin-top: 28em;
+		}
+		h1{
+			color: $gris_oscuro;
+		}
+		p.alarm{
+			color: rgb(63,63,63);
+			padding:1.5em;
+			background-color:rgba(199,7,34,.4);
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			a{
+				color:rgb(161,3,3);
+			}
+		}
+		p.normal-text{
+			font-weight: $bold;
+			color: $gris_oscuro;
+			text-transform: uppercase;
+			font-size: 0.85em;
+		}
+		form#rec-contra{
+			background-color:$cyan;
+			padding:1.5em;
+			input[type="text"]{
+				padding:5px;
+				font-size: 0.9em;
+				width: 100%;
+			}
+			button[type="submit"]{
+				background-color:$azul_corporativo;
+				color: $blanco;
+				border: none;
+				padding:6px 8px;
+				transition: all .3s;
+				margin-top: 0.5em;
+				&:hover{
+					background-color:$azul_corporativo_claro;
+				}
+			}
+		}
+	}
 	#box--naranja{
 		background-color:$naranjo;
 		padding: 0.5em 0.5em 0.5em 0.5em;
@@ -242,6 +336,93 @@ header{
 			transition: all 0.3s ease 0s;
 			&:hover{
 				background-color: $azul_corporativo;
+			}
+		}
+	}
+}
+
+section{
+	#preguntas{
+		background-color:$blanco;
+		padding:0 15px 15px 15px;
+		form#encuesta{
+			article.color1,article.color2,article.color3,article.color4,article.color5{
+				padding:1em;
+				overflow:hidden;
+				margin-bottom: 1em;
+				p{
+					color:$blanco;
+					font-weight: $bold;
+					text-align: left;
+					font-size: 1.2em;
+					& span{
+						margin-right: 0.5em;
+					}
+				}
+				input[type="radio"]{
+					margin-right: 2em;	
+				}
+				a.btn--enc{
+					color:$blanco;
+					padding:8px 8px;
+					text-align:center;
+					font-weight: $bold;
+					background-color:$azul_corporativo;
+					display: block;
+					margin-bottom: 1em;
+					width: 10%;
+					font-size: 0.9em;
+					text-decoration: none;
+					position: relative;
+				}
+				#palomita{
+					position:absolute;
+					width: 25%;
+					top: 5px;
+					@include desde (movil){
+						left: 80px;
+					}
+					@include desde (tablet-h){
+						left: 110px;
+					}
+					@include desde (web){
+						left: 110px;
+					}
+				}
+
+				// .m-b{
+				// 	margin-bottom: 0.5em;
+				// }
+			}
+			article.color1{
+				background-color:$verde1;
+			}
+			article.color2{
+				background-color:$magenta;
+			}
+			article.color3{
+				background-color:$cyan;
+			}
+			article.color4{
+				background-color:$naranjo;
+			}
+			article.color5{
+				background-color:$verde2;
+			}
+			//boton envio
+			button[type="submit"]{
+				padding:5px 12px;
+				color:$blanco;
+				border:none;
+				background-color: $azul_corporativo;
+				&:hover{
+					background-color: $azul_corporativo_claro;
+				}
+				@include desde (tablet){
+					margin:1em;
+					width: 30%;
+					padding: 1em 1.3em;
+				}
 			}
 		}
 	}

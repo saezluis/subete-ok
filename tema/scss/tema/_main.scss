@@ -121,6 +121,11 @@ section#search{
 
 	#content{
 		margin-top: 45px;
+		.titulo-beneficios{
+			color: $azul_corporativo;
+			margin:0 0 35px 0;
+			text-align: left;
+		}
 		#contenido{
 			width: 100%;
 			float: left;
@@ -245,7 +250,67 @@ section#search{
 			}
 		}
 
+
+	//contenido para los cupones
+	#contenido-beneficios{
+
+			//cajas beneficios
+			.item--beneficios{
+				width: 100%;
+				//height: 200px;
+				border-top: 1px solid $verde2;
+				border-bottom: 1px solid $verde2;
+				position: relative;
+				padding-top:0.8em;
+				margin-bottom: 1em;
+			}
+			.guia-line{
+				width: 20%;
+				height: 0.5em;
+				background:$verde2;
+				position: absolute;
+				top: -8px;
+				left: 0;
+				display: block;
+			}
+			h1{
+				font-size: 1.1em;
+				margin: 0 0 12px 3px;
+				color: $azul_corporativo;
+			}
+			.titulo-ben-interior{
+				font-size: 1.5em;
+				margin: 0.8em 0;
+			}
+			p.bajada-beneficios{
+				color: $azul_corporativo;
+				text-align: left;
+				font-size: 0.9em;
+				margin: 1em;
+			}
+		a.canjear{
+			padding:0.5em 1em;
+			color: $blanco;
+			background: $naranjo;
+			text-align: center;
+			-webkit-border-radius: 3px;
+			-moz-border-radius: 3px;
+			border-radius: 3px;
+			text-decoration: none;
+			margin-top: 1em;
+			&:hover{
+				background-color:#0c9c94;
+			}
+		}
+		@include desde (web){
+			@include cuadricula(item--beneficios,2,5%);
+		}
+	}//contenido para cupones
+
+
+
 	}//content
+
 
 	//que es subete
 
