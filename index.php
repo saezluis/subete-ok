@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+{
+
+}
+else
+{
+echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
+
+exit;
+}
+$now = time(); // checking the time now when home page starts
+
+if($now > $_SESSION['expire'])
+{
+session_destroy();
+echo "<br/><br />" . "Su sesion a terminado, <a href='login.php'> Necesita Hacer Login</a>";
+exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -15,7 +38,7 @@
 		
 		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
-		
+
 		if(isset($_POST['comentario'])){
 			$sugerencias = $_POST['comentario'];
 			
@@ -27,8 +50,10 @@
 		if(isset($_GET['id'])){
 			$rut_usuario = $_GET['id'];
 		}
+		
+		$login_email = $_SESSION['username'];
 			
-		$registros=mysqli_query($conexion,"select * from cuenta where rut = '4548848-4'")
+		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 			
 		if($reg=mysqli_fetch_array($registros)){
@@ -58,6 +83,9 @@
 			
 		$registros_banner_right_01=mysqli_query($conexion,"select * from banner where frame = 'right_01'")
 		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
+		or die("Problemas en el select:".mysqli_error($conexion));
 	
 		?>  
     <header class="grupo">
@@ -71,11 +99,10 @@
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
             echo "<ul>";
-			  
-			  $rut = '4548848-4';			  
+			  			  
               echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";			  			 		
 			  
-              echo "<li><a href=\"#\" class=\"cerrar\">Cerrar</a></li>";
+              echo "<li><a href=\"logout.php\" class=\"cerrar\">Cerrar</a></li>";
             echo "</ul>";
           echo "</div>";
         echo "</div>";
@@ -129,14 +156,22 @@
           <div id="noticias">
             <h1>Noticias</h1>
             <div id="noticias-scroll" class="centrar">
-              <ul>
-                <li><a href="#">
-                    Inscríbete en el curso:<br/>
-                    Movimiento físico y almacenamiento
-                    de mercaderías en bodegas, y centros
-                    de distribución Cupos limitados.				</a></li>
-                <li><a href="#">Participa en el taller uso correcto deindumentaria en bodegas de la ACHS Cupos limitados</a></li>
+              <ul>                
+				<?php
+				while($reg=mysqli_fetch_array($registrosNoticias)){					
+					$nombre_noticia = $reg['nombre_noticia'];	
+					$id_noticia = $reg['id_noticias'];
+					
+					echo "<li><a href=\"noticias.php?id=",urlencode($id_noticia)," \">$nombre_noticia</a></li>";										
+					//Que en el link se envie la url de noticias con el codigo de la noticia para buscarla y mostrarla
+				}
+			?>
+			    <!--
+                <li><a href="#">Participa en el taller uso correcto de indumentaria en bodegas de la ACHS Cupos limitados</a></li>
                 <li><a href="#">Participa en el taller uso correcto de indumentaria en bodegas de la ACHS Cupos limitados.</a></li>
+				<li><a href="#">Participa en el taller uso correcto de indumentaria en bodegas de la ACHS Cupos limitados.</a></li>
+				<li><a href="#">Participa en el taller uso correcto de indumentaria en bodegas de la ACHS Cupos limitados.</a></li>
+				-->
               </ul>
             </div>
           </div>

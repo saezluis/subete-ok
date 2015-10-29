@@ -1,3 +1,26 @@
+<?php
+session_start();
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+{
+
+}
+else
+{
+echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
+
+exit;
+}
+$now = time(); // checking the time now when home page starts
+
+if($now > $_SESSION['expire'])
+{
+session_destroy();
+echo "<br/><br />" . "Su sesion a terminado, <a href='login.php'> Necesita Hacer Login</a>";
+exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -56,7 +79,7 @@
               echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";
 			  //echo "<li><a href=\"detalle-cocina.php?deta=",urlencode($var)," \">".$reg['nombre']." ".$reg['modelo']."</a></li>";
 			  
-              echo "<li><a href=\"#\" class=\"cerrar\">Cerrar</a></li>";
+              echo "<li><a href=\"logout.php\" class=\"cerrar\">Cerrar</a></li>";
             echo "</ul>";
           echo "</div>";
         echo "</div>";
