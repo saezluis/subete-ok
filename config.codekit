@@ -95,6 +95,138 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/banner\/actividades_01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99345,
+		"inputAbbreviatedPath": "\/img\/banner\/actividades_01.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/actividades_01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/actividades_02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6257,
+		"inputAbbreviatedPath": "\/img\/banner\/actividades_02.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/actividades_02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/actividades_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6529,
+		"inputAbbreviatedPath": "\/img\/banner\/actividades_03.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/actividades_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/banner_01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 291624,
+		"inputAbbreviatedPath": "\/img\/banner\/banner_01.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/banner_01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/banner_02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14211,
+		"inputAbbreviatedPath": "\/img\/banner\/banner_02.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/banner_02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/banner_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15393,
+		"inputAbbreviatedPath": "\/img\/banner\/banner_03.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/banner_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenios_01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39462,
+		"inputAbbreviatedPath": "\/img\/banner\/convenios_01.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenios_01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenios_02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6732,
+		"inputAbbreviatedPath": "\/img\/banner\/convenios_02.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenios_02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenios_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6584,
+		"inputAbbreviatedPath": "\/img\/banner\/convenios_03.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenios_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/programa_01.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 172037,
+		"inputAbbreviatedPath": "\/img\/banner\/programa_01.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/programa_01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/programa_02.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9558,
+		"inputAbbreviatedPath": "\/img\/banner\/programa_02.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/programa_02.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/programa_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10618,
+		"inputAbbreviatedPath": "\/img\/banner\/programa_03.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/programa_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -302,15 +434,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/index.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/js\/dist\/slippry.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -427,11 +550,11 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/mi-cuenta.php": {
+	"\/noticias.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/mi-cuenta.php",
+		"inputAbbreviatedPath": "\/noticias.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -546,15 +669,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/que-es-subete.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/que-es-subete.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
