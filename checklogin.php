@@ -44,7 +44,7 @@ session_start();
 		$_SESSION['loggedin'] = true;
 		$_SESSION['username'] = $username;
 		$_SESSION['start'] = time();
-		$_SESSION['expire'] = $_SESSION['start'] + (3 * 3 * 60) ;//ojo quitarle las 3 horas a la sesion
+		$_SESSION['expire'] = $_SESSION['start'] + (100 * 100 * 60) ;//ojo quitarle las 3 horas a la sesion
 	
 			header("Location:index.php");
 			

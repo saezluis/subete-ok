@@ -35,32 +35,45 @@ exit;
   </head>
   <body>
     <?php
+			
+		$login_email = $_SESSION['username'];
+			
+		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+		$acentos = $conexion->query("SET NAMES 'utf8'");
+			
+		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+			
+		if($reg=mysqli_fetch_array($registros)){
 		
-			if(isset($_GET['id'])){
-				$rut_usuario = $_GET['id'];
-			}
-			
-			$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
-			$acentos = $conexion->query("SET NAMES 'utf8'");
-			
-			$registros=mysqli_query($conexion,"select * from cuenta where rut = '4548848-4'")
-			or die("Problemas en el select:".mysqli_error($conexion));
-			
-			if($reg=mysqli_fetch_array($registros)){
-		
-				$nombre = $reg['nombre'];
-				$apellido_paterno = $reg['apellido_paterno'];
-				$apellido_materno = $reg['apellido_materno'];
-				$sexo = $reg['sexo'];
-				$fecha_nacimiento = $reg['fecha_nacimiento'];
-				$rut = $reg['rut'];
-				$telefono = $reg['telefono'];
-				$email = $reg['email'];
-				$password = $reg['password'];
-				$temas_interes = $reg['temas_interes'];
-				$foto_perfil = $reg['foto_perfil'];
+			$nombre = $reg['nombre'];
+			$apellido_paterno = $reg['apellido_paterno'];
+			$apellido_materno = $reg['apellido_materno'];
+			$sexo = $reg['sexo'];
+			$fecha_nacimiento = $reg['fecha_nacimiento'];
+			$rut = $reg['rut'];
+			$telefono = $reg['telefono'];
+			$email = $reg['email'];
+			$password = $reg['password'];
+			$temas_interes = $reg['temas_interes'];
+			$foto_perfil = $reg['foto_perfil'];
 				
-			}
+		}
+			
+		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registros_banner_left_02=mysqli_query($conexion,"select * from banner where frame = 'left_02'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		//Inserta comentarios del footer en la Base de Datos
+		if(isset($_POST['comentario'])){
+			$sugerencias = $_POST['comentario'];
+			
+			mysqli_query($conexion,"insert into sugerencia(rut,comentario) values ('$_REQUEST[rut_send]','$_REQUEST[comentario]')")
+			or die("Problemas con el insert de los servicios");
+			
+		}
 	
 	?>  
     <header class="grupo">
@@ -73,12 +86,8 @@ exit;
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
-            echo "<ul>";
-			  
-			  $rut = '4548848-4';			  
-              echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";
-			  //echo "<li><a href=\"detalle-cocina.php?deta=",urlencode($var)," \">".$reg['nombre']." ".$reg['modelo']."</a></li>";
-			  
+            echo "<ul>";			  
+			  echo "<li><a href=\"mi-cuenta.php\" class=\"micuenta\">Mi cuenta</a></li>";			  
               echo "<li><a href=\"logout.php\" class=\"cerrar\">Cerrar</a></li>";
             echo "</ul>";
           echo "</div>";
@@ -100,11 +109,11 @@ exit;
       <div class="caja base-100">
         <nav class="navegacion">
           <ul>
-            <li><a href="#" class="seguridad">Seguridad</a></li>
-            <li><a href="#" class="productividad">Productividad</a></li>
-            <li><a href="#" class="responsabilidad">Responsabilidad</a></li>
-            <li><a href="#" class="superacion">Superación</a></li>
-            <li><a href="#" class="optimismo">Optimismo</a></li>
+            <li><a href="seguridad.php" class="seguridad">Seguridad</a></li>
+            <li><a href="productividad.php" class="productividad">Productividad</a></li>
+            <li><a href="responsabilidad.php" class="responsabilidad">Responsabilidad</a></li>
+            <li><a href="superacion.php" class="superacion">Superación</a></li>
+            <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="#" class="profesionalismo">Profesionalismo</a></li>
             <li><a href="#" class="catalogo">Catálogo</a></li>
             <li><a href="#" class="beneficios">Beneficios</a></li>
@@ -127,9 +136,12 @@ exit;
           <h3>Actividades Súbete</h3>
           <div class="caja--actividades">
             <ul id="demo2">
-              <li><a href="#slide1"><img src="img/actividades.jpg" alt=""></a></li>
-              <li><a href="#slide2"><img src="img/actividades.jpg" alt=""></a></li>
-              <li><a href="#slide3"><img src="img/actividades.jpg" alt=""></a></li>
+              <?php
+				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>
             </ul>
           </div>
         </div>
@@ -137,43 +149,16 @@ exit;
           <h3>Nuevos convenios</h3>
           <div class="caja--actividades">
             <ul id="convenios">
-              <li><a href="#slide1"><img src="img/convenios.jpg" alt=""></a></li>
-              <li><a href="#slide2"><img src="img/convenios.jpg" alt=""></a></li>
-              <li><a href="#slide3"><img src="img/convenios.jpg" alt=""></a></li>
+              <?php
+				while($reg=mysqli_fetch_array($registros_banner_left_02)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>
             </ul>
           </div>
         </div>
-      </div>
-	  
-	  <?php
-		
-			if(isset($_GET['id'])){
-				$rut_usuario = $_GET['id'];
-			}
-			
-			$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
-			$acentos = $conexion->query("SET NAMES 'utf8'");
-			
-			$registros=mysqli_query($conexion,"select * from cuenta where rut = '$rut_usuario'")
-			or die("Problemas en el select:".mysqli_error($conexion));
-			
-			if($reg=mysqli_fetch_array($registros)){
-		
-				$nombre = $reg['nombre'];
-				$apellido_paterno = $reg['apellido_paterno'];
-				$apellido_materno = $reg['apellido_materno'];
-				$sexo = $reg['sexo'];
-				$fecha_nacimiento = $reg['fecha_nacimiento'];
-				$rut = $reg['rut'];
-				$telefono = $reg['telefono'];
-				$email = $reg['email'];
-				$password = $reg['password'];
-				$temas_interes = $reg['temas_interes'];
-				$foto_perfil = $reg['foto_perfil'];
-				
-			}
-	
-		?>
+      </div>	  	  
 	  
       <div id="content" class="caja web-65">
         <div class="caja web-100">
@@ -272,10 +257,13 @@ exit;
         <div class="caja web-25"></div>
         <div class="caja web-25">			</div>
         <div class="caja web-25">
-          <form id="footer" class="right">
+          <form method="post" id="footer" class="right">
             <p>Escríbenos si tienes  dudas o sugerencias</p>
-            <textarea name="textarea" placeholder="Escríbenos si tienes  dudas o sugerencias"> </textarea>
+            <textarea name="comentario" placeholder="Escríbenos si tienes  dudas o sugerencias"></textarea>
             <button type="submit">Enviar</button>
+			<?php
+				echo "<input type=\"text\" name=\"rut_send\" value=\"$rut\" hidden=hidden>";	
+			?>
           </form>
         </div>
       </div>

@@ -24,7 +24,7 @@ exit;
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Inicio / Súbete</title>
+    <title>Optimismo / Súbete</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
@@ -32,24 +32,38 @@ exit;
     <script src="js/scripts-min.js"></script>
     <link rel="stylesheet" href="js/dist/slippry.css">
     <script src="js/dist/slippry.min.js"></script>
-	
-	<script>
-    $(function() {
-
-		$("#catalog").hide();
-		
-	}
-	</script>
-	
   </head>
   <body>
-	<?php
+     <?php
+		if(isset($_GET['id_opti'])){
+			$id_opti = $_GET['id_opti'];
+			$get_activo = true;
+		}
 		
-		include_once 'config.php';
-		
+		$login_email = $_SESSION['username'];
+			
 		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
-
+		
+		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+			
+		if($reg=mysqli_fetch_array($registros)){
+		
+			$nombre = $reg['nombre'];
+			$apellido_paterno = $reg['apellido_paterno'];
+			$apellido_materno = $reg['apellido_materno'];			
+			$rut = $reg['rut'];			
+			$foto_perfil = $reg['foto_perfil'];
+				
+		}
+			
+		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registros_banner_left_02=mysqli_query($conexion,"select * from banner where frame = 'left_02'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
 		//Inserta comentarios del footer en la Base de Datos
 		if(isset($_POST['comentario'])){
 			$sugerencias = $_POST['comentario'];
@@ -58,61 +72,38 @@ exit;
 			or die("Problemas con el insert de los servicios");
 			
 		}
-				
-		$login_email = $_SESSION['username'];
-				
-		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
-			
-		if($reg=mysqli_fetch_array($registros)){
 		
-			$nombre = $reg['nombre'];
-			$rut = $reg['rut'];
-			$apellido_paterno = $reg['apellido_paterno'];
-			$apellido_materno = $reg['apellido_materno'];			
-			$foto_perfil = $reg['foto_perfil'];
-				
+		if(@$get_activo==true){
+			$registros_opti = mysqli_query($conexion,"SELECT * FROM optimismo WHERE id_opti = '$id_opti'")
+			or die("Problemas en el select:".mysqli_error($conexion));
+		}else{
+			$registros_opti = mysqli_query($conexion,"SELECT * FROM optimismo WHERE id_opti = (SELECT MAX(id_opti) FROM optimismo)")
+			or die("Problemas en el select:".mysqli_error($conexion));
 		}
-		
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
-		
-		if($reg=mysqli_fetch_array($registrosSistema)){
-		
-			$sistema_web = $reg['sistema_web'];
 	
+		if($reg=mysqli_fetch_array($registros_opti)){
+		
+			$id_opti = $reg['id_opti'];
+			$imagen_opti = $reg['imagen_opti'];
+			$titulo_opti = $reg['titulo_opti'];
+			$contenido_opti = $reg['contenido_opti'];			
+			
 		}
 		
-			
-		$registros_banner_sup=mysqli_query($conexion,"select * from banner where frame = 'sup'")
-		or die("Problemas en el select:".mysqli_error($conexion));
-		
-		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
-		or die("Problemas en el select:".mysqli_error($conexion));
-		
-		$registros_banner_left_02=mysqli_query($conexion,"select * from banner where frame = 'left_02'")
-		or die("Problemas en el select:".mysqli_error($conexion));
-			
-		$registros_banner_right_01=mysqli_query($conexion,"select * from banner where frame = 'right_01'")
-		or die("Problemas en el select:".mysqli_error($conexion));
-		
-		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
-		or die("Problemas en el select:".mysqli_error($conexion));
-		
-		if($sistema_web=='interno'){
+		if(@$sistema_web=='interno'){
 			$status_cata = 'display:zerocool;';			
 		}else{
 			$status_cata = 'display:none;';
 		}
 		
-		if($sistema_web=='interno'){
+		if(@$sistema_web=='interno'){
 			$status_bene = 'display:zerocool;';			
 		}else{
 			$status_bene = 'display:none;';
 		}
-				
 	
-	?>  
-		
-	  <header class="grupo">
+	?>
+    <header class="grupo">
 	
       <?php 	
 	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
@@ -122,8 +113,8 @@ exit;
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
-            echo "<ul>";
-			  echo "<li><a href=\"mi-cuenta.php\" class=\"micuenta\">Mi cuenta</a></li>";			  			 		
+            echo "<ul>";			  
+			  echo "<li><a href=\"mi-cuenta.php\" class=\"micuenta\">Mi cuenta</a></li>";			  
               echo "<li><a href=\"logout.php\" class=\"cerrar\">Cerrar</a></li>";
             echo "</ul>";
           echo "</div>";
@@ -151,42 +142,10 @@ exit;
             <li><a href="superacion.php" class="superacion">Superación</a></li>
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
-            <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
-			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>            
+			<?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
+			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>
           </ul>
         </nav>
-      </div>
-    </section>
-	
-    <section class="grupo">
-      <div class="caja web-100">
-        <div id="slider">
-          <ul id="demo1">
-			<!-- Construir un while que construya el banner, en teoria se deberian mostrar 3 max al mismo tiempo -->
-			<?php
-				while($reg=mysqli_fetch_array($registros_banner_sup)){					
-					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";										
-				}
-			?>			
-          </ul>
-          <div id="noticias">
-            <h1>Noticias</h1>
-            <div id="noticias-scroll" class="centrar">
-              <ul>                
-				<?php
-					while($reg=mysqli_fetch_array($registrosNoticias)){					
-						$nombre_noticia = $reg['nombre_noticia'];	
-						$id_noticia = $reg['id_noticias'];
-						
-						echo "<li><a href=\"noticias.php?id_noticia=",urlencode($id_noticia)," \">$nombre_noticia</a></li>";										
-						//Que en el link se envie la url de noticias con el codigo de la noticia para buscarla y mostrarla
-					}
-				?>			    
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <section id="search" class="grupo">
@@ -204,12 +163,12 @@ exit;
           <h3>Actividades Súbete</h3>
           <div class="caja--actividades">
             <ul id="demo2">
-			  <?php
+              <?php
 				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
 					$nombre_banner = $reg['nombre_banner'];
 					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
-			  ?>			  
+			  ?>
             </ul>
           </div>
         </div>
@@ -217,39 +176,33 @@ exit;
           <h3>Nuevos convenios</h3>
           <div class="caja--actividades">
             <ul id="convenios">
-			   <?php
+              <?php
 				while($reg=mysqli_fetch_array($registros_banner_left_02)){					
 					$nombre_banner = $reg['nombre_banner'];
 					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
-			  ?>			  			  
+			  ?>
             </ul>
           </div>
         </div>
       </div>
       <div id="content" class="caja web-65">
-        <div id="slide-content">
-          <ul id="slideprogramas">
-			<?php
-				while($reg=mysqli_fetch_array($registros_banner_right_01)){					
-					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
-				}
-			  ?>					   
-          </ul>
+        <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
+          <h1>Optimismo</h1>
         </div>
-        <div id="contenido">
-          <div class="caja web-50 item--cajas">
-            <div class="guia"></div><img src="img/caluga_1.jpg">
-            <h1>Conóce los signos de seguridad de tu empresa,con este mini juego</h1>
-            <button type="button">ver más</button>
-          </div>
-          <div class="caja web-50 item--cajas">
-            <div class="guia"></div><img src="img/caluga_2.jpg">
-            <h1>Inscribete en nuestro workshop de productividad</h1>
-            <button type="button">ver más</button>
-          </div>
-        </div>
+        <p class="texto-conceptos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit error quod fugiat qui magni quia odio consectetur amet praesentium temporibus nemo mollitia reiciendis laboriosam, quasi ut ab! Commodi, amet, quaerat!</p>
+		
+        <?php
+			echo "<div id=\"imagen-destacada\"><img src=\"img/optimismo/$imagen_opti\">";
+			  echo "<h2>$titulo_opti</h2>";
+			  echo "<p>$contenido_opti</p>";			  			  
+			  echo "<form method=\"post\">";
+			  echo "<button type=\"submit\" formaction=\"optimismo-anteriores.php\" >Publicaciones anteriores </button>";				
+				echo "<input type=\"text\" name=\"opti_send\" value=\"$id_opti\" hidden=hidden>";									  
+			  echo "</form>";
+			echo "</div>";					
+		?>
+		
       </div>
     </div>
     <footer class="total">
@@ -259,7 +212,7 @@ exit;
         </div>
         <div class="caja web-25"></div>
         <div class="caja web-25"></div>
-        <div class="caja web-25">
+        <div class="caja web-25">		
           <form method="post" id="footer" class="right">
             <p>Escríbenos si tienes  dudas o sugerencias</p>
             <textarea name="comentario" placeholder="Escríbenos si tienes  dudas o sugerencias"></textarea>
