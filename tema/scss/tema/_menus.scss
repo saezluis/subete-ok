@@ -3,6 +3,9 @@ header{
 	#menu{
 		width: 100%;
 		height: auto;
+		@include desde (tablet){
+			margin-top:1.2em;
+		}
 		ul{
 			margin: 0;
 			padding:0;
@@ -95,6 +98,12 @@ section{
 				a.catalogo{
 					background: #010673;
 					padding:1.5em 3.6em;
+					@include desde (tablet){
+						margin-top: 1em;
+					}
+					@include desde (web){
+						margin-top: 0;
+					}
 					&:hover{
 						background:#303494;
 					}
@@ -102,6 +111,12 @@ section{
 				a.beneficios{
 					background: #0f1491;
 					padding:1.5em 3.6em;
+					@include desde (tablet){
+						margin-top: 1em;
+					}
+					@include desde (web){
+						margin-top: 0;
+					}
 					&:hover{
 						background:#010673;
 					}

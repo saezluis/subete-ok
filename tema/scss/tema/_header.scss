@@ -29,20 +29,60 @@ header{
 		position:absolute;
 		right: 20px;
 		top: 42px;
+		//background:red;
+		@include desde (tablet){
+			width: 25%;
+			text-align: center;
+			//right: 0;
+			//right: -50px;
+		}
+		@include desde (web){
+			right: 20px;
+		}
 		#admin--data{
 			float: left;
 			margin-bottom: 1em;
+			@include desde (tablet){
+				float: none;
+			}
+			@include desde (web){
+				float: left;
+			}
 			img{
 				width: 60px;
 				height: 60px;
 				border: 2px solid $verde2;
 				float: left;
 				margin-right: 1em;
+				@include desde (tablet){
+					float: none;
+					margin-right: 0em;
+				}
+				@include desde (web){
+					float: left;
+					margin-right: 1em;
+				}
 			}
 			span.nombre_usuario{
 				float: left;
 				margin-top: 10%;
 				color:$gris_claro;
+				@include desde (tablet){
+					width: 100%;
+					text-align: center;
+					font-size: 0.9em;
+					margin-top: 0;
+					margin-bottom: 1em;
+					//margin-top: 5%;
+					//margin: 0 auto;
+
+				}
+				@include desde (web){
+					float: left;
+					margin-top: 10%;
+					color:$gris_claro;	
+					width: auto;
+				}
 			} 			
 		}
 
@@ -50,12 +90,25 @@ header{
 			width: 100%;
 			height: auto;
 			overflow: hidden;
+			@include desde (tablet){
+				text-align: center;
+			}
+			@include desde (web){
+				text-align:none;
+			}
 			ul{
 				margin:0;
 				padding:0;
 				list-style: none;
 				li{
 					display: block;
+					@include desde (tablet){
+						display: inline;
+						margin-right:1em; 
+					}
+					@include desde (web){
+						display: inline-block;
+					}
 					a.micuenta{
 						color:$cyan;
 						text-decoration: none;

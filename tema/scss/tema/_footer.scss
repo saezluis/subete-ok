@@ -3,6 +3,12 @@ footer{
 	padding:1em;
 	#logo--footer{
 		margin-top: 16%;
+		@include desde(tablet) {
+			margin-top: 0;
+		}
+		@include desde (web) {
+			margin-top: 16%;
+		}
 	}
 	p{
 		color:$blanco;

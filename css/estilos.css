@@ -2144,6 +2144,9 @@ section #preguntas {
 header #menu {
   width: 100%;
   height: auto; }
+  @media screen and (min-width: 768px) {
+    header #menu {
+      margin-top: 1.2em; } }
   header #menu ul {
     margin: 0;
     padding: 0;
@@ -2216,11 +2219,23 @@ section {
         section nav.navegacion ul li a.catalogo {
           background: #010673;
           padding: 1.5em 3.6em; }
+          @media screen and (min-width: 768px) {
+            section nav.navegacion ul li a.catalogo {
+              margin-top: 1em; } }
+          @media screen and (min-width: 1025px) {
+            section nav.navegacion ul li a.catalogo {
+              margin-top: 0; } }
           section nav.navegacion ul li a.catalogo:hover {
             background: #303494; }
         section nav.navegacion ul li a.beneficios {
           background: #0f1491;
           padding: 1.5em 3.6em; }
+          @media screen and (min-width: 768px) {
+            section nav.navegacion ul li a.beneficios {
+              margin-top: 1em; } }
+          @media screen and (min-width: 1025px) {
+            section nav.navegacion ul li a.beneficios {
+              margin-top: 0; } }
           section nav.navegacion ul li a.beneficios:hover {
             background: #010673; }
 
@@ -2271,29 +2286,76 @@ header {
     position: absolute;
     right: 20px;
     top: 42px; }
+    @media screen and (min-width: 768px) {
+      header #admin-header {
+        width: 25%;
+        text-align: center; } }
+    @media screen and (min-width: 1025px) {
+      header #admin-header {
+        right: 20px; } }
     header #admin-header #admin--data {
       float: left;
       margin-bottom: 1em; }
+      @media screen and (min-width: 768px) {
+        header #admin-header #admin--data {
+          float: none; } }
+      @media screen and (min-width: 1025px) {
+        header #admin-header #admin--data {
+          float: left; } }
       header #admin-header #admin--data img {
         width: 60px;
         height: 60px;
         border: 2px solid #40ad48;
         float: left;
         margin-right: 1em; }
+        @media screen and (min-width: 768px) {
+          header #admin-header #admin--data img {
+            float: none;
+            margin-right: 0em; } }
+        @media screen and (min-width: 1025px) {
+          header #admin-header #admin--data img {
+            float: left;
+            margin-right: 1em; } }
       header #admin-header #admin--data span.nombre_usuario {
         float: left;
         margin-top: 10%;
         color: #808080; }
+        @media screen and (min-width: 768px) {
+          header #admin-header #admin--data span.nombre_usuario {
+            width: 100%;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 0;
+            margin-bottom: 1em; } }
+        @media screen and (min-width: 1025px) {
+          header #admin-header #admin--data span.nombre_usuario {
+            float: left;
+            margin-top: 10%;
+            color: #808080;
+            width: auto; } }
     header #admin-header #cuenta {
       width: 100%;
       height: auto;
       overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        header #admin-header #cuenta {
+          text-align: center; } }
+      @media screen and (min-width: 1025px) {
+        header #admin-header #cuenta {
+          text-align: none; } }
       header #admin-header #cuenta ul {
         margin: 0;
         padding: 0;
         list-style: none; }
         header #admin-header #cuenta ul li {
           display: block; }
+          @media screen and (min-width: 768px) {
+            header #admin-header #cuenta ul li {
+              display: inline;
+              margin-right: 1em; } }
+          @media screen and (min-width: 1025px) {
+            header #admin-header #cuenta ul li {
+              display: inline-block; } }
           header #admin-header #cuenta ul li a.micuenta {
             color: #02aeef;
             text-decoration: none;
@@ -2316,6 +2378,12 @@ footer {
   padding: 1em; }
   footer #logo--footer {
     margin-top: 16%; }
+    @media screen and (min-width: 768px) {
+      footer #logo--footer {
+        margin-top: 0; } }
+    @media screen and (min-width: 1025px) {
+      footer #logo--footer {
+        margin-top: 16%; } }
   footer p {
     color: #fff;
     font-size: 0.8em;
