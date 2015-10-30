@@ -73,15 +73,7 @@ exit;
 				
 		}
 		
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
-		
-		if($reg=mysqli_fetch_array($registrosSistema)){
-		
-			$sistema_web = $reg['sistema_web'];
-	
-		}
-		
-			
+
 		$registros_banner_sup=mysqli_query($conexion,"select * from banner where frame = 'sup'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
@@ -96,6 +88,14 @@ exit;
 		
 		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
 		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		
+		if($reg=mysqli_fetch_array($registrosSistema)){
+		
+			$sistema_web = $reg['sistema_web'];
+	
+		}
 		
 		if($sistema_web=='interno'){
 			$status_cata = 'display:zerocool;';			

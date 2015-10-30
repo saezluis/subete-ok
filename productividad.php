@@ -91,6 +91,14 @@ exit;
 			
 		}
 		
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		
+		if($reg=mysqli_fetch_array($registrosSistema)){
+		
+			$sistema_web = $reg['sistema_web'];
+	
+		}
+		
 		if(@$sistema_web=='interno'){
 			$status_cata = 'display:zerocool;';			
 		}else{
