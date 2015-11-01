@@ -31,16 +31,7 @@ exit;
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/scripts-min.js"></script>
     <link rel="stylesheet" href="js/dist/slippry.css">
-    <script src="js/dist/slippry.min.js"></script>
-	
-	<script>
-    $(function() {
-
-		$("#catalog").hide();
-		
-	}
-	</script>
-	
+    <script src="js/dist/slippry.min.js"></script>			
   </head>
   <body>
 	<?php
