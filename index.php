@@ -47,7 +47,7 @@ exit;
 		
 		include_once 'config.php';
 		
-		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 
 		//Inserta comentarios del footer en la Base de Datos

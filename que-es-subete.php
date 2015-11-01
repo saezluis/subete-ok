@@ -38,26 +38,44 @@ exit;
 				$rut_usuario = $_GET['id'];
 			}
 			
-			$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+			$login_email = $_SESSION['username'];
+			
+			include_once 'config.php';
+		
+			$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 			$acentos = $conexion->query("SET NAMES 'utf8'");
 			
-			$registros=mysqli_query($conexion,"select * from cuenta where rut = '4548848-4'")
+			$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")
 			or die("Problemas en el select:".mysqli_error($conexion));
 			
 			if($reg=mysqli_fetch_array($registros)){
 		
 				$nombre = $reg['nombre'];
 				$apellido_paterno = $reg['apellido_paterno'];
-				$apellido_materno = $reg['apellido_materno'];
-				$sexo = $reg['sexo'];
-				$fecha_nacimiento = $reg['fecha_nacimiento'];
-				$rut = $reg['rut'];
-				$telefono = $reg['telefono'];
-				$email = $reg['email'];
-				$password = $reg['password'];
-				$temas_interes = $reg['temas_interes'];
+				$apellido_materno = $reg['apellido_materno'];			
+				$rut = $reg['rut'];			
 				$foto_perfil = $reg['foto_perfil'];
 				
+			}
+			
+			$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		
+			if($reg=mysqli_fetch_array($registrosSistema)){
+			
+				$sistema_web = $reg['sistema_web'];
+		
+			}
+			
+			if(@$sistema_web=='interno'){
+				$status_cata = 'display:zerocool;';			
+			}else{
+				$status_cata = 'display:none;';
+			}
+			
+			if(@$sistema_web=='interno'){
+				$status_bene = 'display:zerocool;';			
+			}else{
+				$status_bene = 'display:none;';
 			}
 	
 	?>  
@@ -72,12 +90,8 @@ exit;
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
-            echo "<ul>";
-			  
-			  $rut = '4548848-4';			  
-              echo "<li><a href=\"mi-cuenta.php?id=",urlencode($rut)," \" class=\"micuenta\">Mi cuenta</a></li>";
-			  //echo "<li><a href=\"detalle-cocina.php?deta=",urlencode($var)," \">".$reg['nombre']." ".$reg['modelo']."</a></li>";
-			  
+            echo "<ul>";			  
+			  echo "<li><a href=\"mi-cuenta.php\" class=\"micuenta\">Mi cuenta</a></li>";			  
               echo "<li><a href=\"logout.php\" class=\"cerrar\">Cerrar</a></li>";
             echo "</ul>";
           echo "</div>";
@@ -100,14 +114,14 @@ exit;
       <div class="caja base-100">
         <nav class="navegacion">
           <ul>
-            <li><a href="#" class="seguridad">Seguridad</a></li>
-            <li><a href="#" class="productividad">Productividad</a></li>
-            <li><a href="#" class="responsabilidad">Responsabilidad</a></li>
-            <li><a href="#" class="superacion">Superación</a></li>
-            <li><a href="#" class="optimismo">Optimismo</a></li>
-            <li><a href="#" class="profesionalismo">Profesionalismo</a></li>
-            <li><a href="#" class="catalogo">Catálogo</a></li>
-            <li><a href="#" class="beneficios">Beneficios</a></li>
+            <li><a href="seguridad.php" class="seguridad">Seguridad</a></li>
+            <li><a href="productividad.php" class="productividad">Productividad</a></li>
+            <li><a href="responsabilidad.php" class="responsabilidad">Responsabilidad</a></li>
+            <li><a href="superacion.php" class="superacion">Superación</a></li>
+            <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
+            <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
+            <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
+			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>  
           </ul>
         </nav>
       </div>

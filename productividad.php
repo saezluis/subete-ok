@@ -43,7 +43,9 @@ exit;
 	
 		$login_email = $_SESSION['username'];
 		
-		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+		include_once 'config.php';
+		
+		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
 		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")

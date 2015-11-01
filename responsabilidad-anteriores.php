@@ -42,7 +42,9 @@ exit;
 		*/
 		//$id_noticia = 3;
 		
-		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+		include_once 'config.php';
+		
+		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
 		$respo_send = $_REQUEST['respo_send'];
@@ -79,6 +81,14 @@ exit;
 		
 		$registros_banner_left_02=mysqli_query($conexion,"select * from banner where frame = 'left_02'")
 		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		
+		if($reg=mysqli_fetch_array($registrosSistema)){
+		
+			$sistema_web = $reg['sistema_web'];
+	
+		}
 		
 		if(@$sistema_web=='interno'){
 			$status_cata = 'display:zerocool;';			

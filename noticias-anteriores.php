@@ -41,8 +41,9 @@ exit;
 		}
 		*/
 		//$id_noticia = 3;
+		include_once 'config.php';
 		
-		$conexion=mysqli_connect("localhost","root","123","subete") or die("Problemas con la conexión");
+		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
 		$noticia_send = $_REQUEST['noticia_send'];
@@ -105,6 +106,26 @@ exit;
 		or die("Problemas en el select:".mysqli_error($conexion));
 		*/
 		
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		
+			if($reg=mysqli_fetch_array($registrosSistema)){
+			
+				$sistema_web = $reg['sistema_web'];
+		
+			}
+			
+			if(@$sistema_web=='interno'){
+				$status_cata = 'display:zerocool;';			
+			}else{
+				$status_cata = 'display:none;';
+			}
+			
+			if(@$sistema_web=='interno'){
+				$status_bene = 'display:zerocool;';			
+			}else{
+				$status_bene = 'display:none;';
+			}
+		
 	?>	
     <header class="grupo">
 	
@@ -141,12 +162,12 @@ exit;
           <ul>
             <li><a href="seguridad.php" class="seguridad">Seguridad</a></li>
             <li><a href="productividad.php" class="productividad">Productividad</a></li>
-            <li><a href="#" class="responsabilidad">Responsabilidad</a></li>
-            <li><a href="#" class="superacion">Superación</a></li>
-            <li><a href="#" class="optimismo">Optimismo</a></li>
-            <li><a href="#" class="profesionalismo">Profesionalismo</a></li>
-            <li><a href="#" class="catalogo">Catálogo</a></li>
-            <li><a href="#" class="beneficios">Beneficios</a></li>
+            <li><a href="responsabilidad.php" class="responsabilidad">Responsabilidad</a></li>
+            <li><a href="superacion.php" class="superacion">Superación</a></li>
+            <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
+            <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
+            <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
+			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>
           </ul>
         </nav>
       </div>
