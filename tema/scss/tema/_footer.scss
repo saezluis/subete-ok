@@ -5,6 +5,7 @@ footer{
 		margin-top: 16%;
 		@include desde(tablet) {
 			margin-top: 0;
+			text-align: right;
 		}
 		@include desde (web) {
 			margin-top: 16%;
@@ -24,6 +25,12 @@ footer{
 			margin-bottom: 0.5em;
 			padding:4px;
 			font-size: 0.8em;
+			@include desde (tablet){
+				height: 5em;
+			}
+			@include desde (web){
+				height: 4em;
+			}
 		}
 		button[type="submit"]{
 			background-color:$azul_corporativo_claro;
@@ -31,6 +38,9 @@ footer{
 			text-align: center;
 			border:none;
 			transition: all .3s;
+			@include desde (tablet){
+				padding: 5px 12px;
+			}
 			&:hover{
 				background-color:$cyan;
 			}

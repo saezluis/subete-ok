@@ -4,6 +4,15 @@ section{
 		#noticias{
 			width: 230px;
 			height: 300px;
+			@include desde (base){
+				height: 200px;
+			}
+			@include desde (tablet){
+				height: 200px;
+			}
+			@include desde (web){
+				height: 300px;
+			}			
 			position:absolute;
 			top:15px;
 			right: 15px;
@@ -22,6 +31,15 @@ section{
 				position: absolute;
 				width: 213px;
 				z-index: 0;
+				@include desde (base){
+					width: 230px;
+				}
+				@include desde (tablet){
+					width: 230px;
+				}
+				@include desde (web){
+					width: 213px;
+				}
 			}
 			#noticias-scroll{
 				width: 90%;
@@ -353,6 +371,16 @@ section#search{
 	//
 	article.mini{
 		margin-top: 1em;
+	}
+
+	//ocultar sidebar en tablet y mobil
+	#sidebar.TB{
+		@include desde (base){
+			display: none;
+		}
+		@include desde (web){
+			display: block;
+		}
 	}
 
 }//main

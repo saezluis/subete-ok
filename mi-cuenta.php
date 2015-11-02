@@ -152,7 +152,7 @@ exit;
       </div>
     </section>
     <div id="main" class="grupo">
-      <div id="sidebar" class="caja web-35">
+      <div id="sidebar" class="caja web-35 TB">
         <h2>Estas son las noticias y beneficios para ti</h2>
         <div class="widgets">
           <h3>Actividades Súbete</h3>

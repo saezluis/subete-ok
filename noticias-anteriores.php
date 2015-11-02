@@ -181,7 +181,7 @@ exit;
       </div>
     </section>
     <div id="main" class="grupo">
-      <div id="sidebar" class="caja web-35">
+      <div id="sidebar" class="caja tablet-35 web-35">
         <h2>Estas son las noticias y beneficios para ti</h2>
         <div class="widgets">
           <h3>Actividades Súbete</h3>
@@ -210,7 +210,7 @@ exit;
           </div>
         </div>
       </div>
-      <div id="content" class="caja web-65">
+      <div id="content" class="caja tablet-65 web-65">
         <div id="registro_publicaciones">
           <h1>Noticias anteriores</h1>
           <ul class="anteriores">

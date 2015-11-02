@@ -28,7 +28,6 @@ header{
 				font-size: 0.9em;
 			}
 			input[type="text"],input[type="password"]{
-				width: 60%;
 				padding:6px;
 				float: left;
 				font-size: 0.8em;
@@ -36,6 +35,14 @@ header{
 				-moz-border-radius: 3px;
 				border-radius: 3px;
 				border:2px solid #9B1F5D;
+				@include desde (base){
+					width: 100%;
+					padding:8px;
+					font-size: 0.9em;
+				}
+				@include desde (web){
+					width: 60%;
+				}
 			}
 			button[type="submit"]{
 				width: 60%;
@@ -51,6 +58,16 @@ header{
 				background-color:#b8006d;
 				color:$blanco;
 				transition: all .3s;
+					@include desde (base){
+						width: 100%;
+						padding:10px;
+						font-size: 1em;
+						text-transform: uppercase;
+					}
+					@include desde (web){
+						width: 60%;
+						padding:6px;
+					}
 				&:hover{
 					background-color:#8b0253;
 				}
@@ -124,9 +141,17 @@ header{
 		p.garabatos{
 			position: absolute;
 			color: #706F6F;
-			top: 4.5em;
-			right: 0;
-			font-size: 1.8em;
+
+			@include desde (tablet){
+				top: 7.5em;
+				right: -11px;
+				font-size: 1.2em;
+			}
+			@include desde (web){
+				top: 4.5em;
+				right: 0;
+				font-size: 1.8em;	
+			}
 		}
 		p.recuperar{
 			position: absolute;
@@ -178,6 +203,7 @@ header{
 			text-transform: uppercase;
 			font-size: 0.85em;
 		}
+
 		form#rec-contra{
 			background-color:$cyan;
 			padding:1.5em;
@@ -199,33 +225,64 @@ header{
 			}
 		}
 	}
-	#box--naranja{
-		background-color:$naranjo;
-		padding: 0.5em 0.5em 0.5em 0.5em;
-		// h2{
-		// 	font-size: 1.2em;
-		// 	color:$blanco;
-		// 	font-weight: $semi-bold;
-		// 	padding:0.6em;
-		// 	margin-bottom: 2px;
-		// }
-		button[type="submit"]{
-			background-color:#a14004;
-			padding:6px;
+	//boton volver
+		a{
+			padding: 8px 12px;
+			background-color:$cyan;
+			text-align: center;
+			color:$blanco;
+			text-transform: uppercase;
+			text-decoration: none;
 			-webkit-border-radius: 3px;
 			-moz-border-radius: 3px;
 			border-radius: 3px;
-			border-top:none;
-			border-left:none;
-			border-right:none;
-			border-bottom:2px solid #843403;
-			width: 100%;
-			color: $blanco;
-			text-transform: uppercase;
-			text-align: center;
-			transition: all .3s;
-			&:hover{
-				background-color:#843403;
+			margin-top: 1.5em;
+			float: left;
+		}
+	#box--naranja{
+		form#registrate{
+			text-align: right;
+			//background-color:$naranjo;
+			padding: 0.5em 0.5em 0.5em 0.5em;
+			@include desde (base){
+				background-color:none;
+			}
+			@include desde (web){
+				background-color:$naranjo;
+			}
+			// h2{
+			// 	font-size: 1.2em;
+			// 	color:$blanco;
+			// 	font-weight: $semi-bold;
+			// 	padding:0.6em;
+			// 	margin-bottom: 2px;
+			// }
+			button[type="submit"]{
+				background-color:#a14004;
+				padding:6px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+				border-top:none;
+				border-left:none;
+				border-right:none;
+				border-bottom:2px solid #843403;
+				//width: 100%;
+				color: $blanco;
+				text-transform: uppercase;
+				text-align: center;
+				transition: all .3s;
+				&:hover{
+					background-color:#843403;
+				}
+
+				@include desde (tablet){
+					width: 30%;
+					padding:1em;
+				}
+				@include desde (web){
+					width: 100%;
+				}
 			}
 		}
 	}

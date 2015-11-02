@@ -1830,7 +1830,6 @@ header #box--login {
       margin: 0.4em 0;
       font-size: 0.9em; }
     header #box--login form#login input[type="text"], header #box--login form#login input[type="password"] {
-      width: 60%;
       padding: 6px;
       float: left;
       font-size: 0.8em;
@@ -1838,6 +1837,14 @@ header #box--login {
       -moz-border-radius: 3px;
       border-radius: 3px;
       border: 2px solid #9B1F5D; }
+      @media screen and (min-width: 320px) {
+        header #box--login form#login input[type="text"], header #box--login form#login input[type="password"] {
+          width: 100%;
+          padding: 8px;
+          font-size: 0.9em; } }
+      @media screen and (min-width: 1025px) {
+        header #box--login form#login input[type="text"], header #box--login form#login input[type="password"] {
+          width: 60%; } }
     header #box--login form#login button[type="submit"] {
       width: 60%;
       padding: 6px;
@@ -1852,6 +1859,16 @@ header #box--login {
       background-color: #b8006d;
       color: #fff;
       transition: all .3s; }
+      @media screen and (min-width: 320px) {
+        header #box--login form#login button[type="submit"] {
+          width: 100%;
+          padding: 10px;
+          font-size: 1em;
+          text-transform: uppercase; } }
+      @media screen and (min-width: 1025px) {
+        header #box--login form#login button[type="submit"] {
+          width: 60%;
+          padding: 6px; } }
       header #box--login form#login button[type="submit"]:hover {
         background-color: #8b0253; }
     header #box--login form#login button.recuperar {
@@ -1909,10 +1926,17 @@ header #box--check {
     right: 0; }
   header #box--check p.garabatos {
     position: absolute;
-    color: #706F6F;
-    top: 4.5em;
-    right: 0;
-    font-size: 1.8em; }
+    color: #706F6F; }
+    @media screen and (min-width: 768px) {
+      header #box--check p.garabatos {
+        top: 7.5em;
+        right: -11px;
+        font-size: 1.2em; } }
+    @media screen and (min-width: 1025px) {
+      header #box--check p.garabatos {
+        top: 4.5em;
+        right: 0;
+        font-size: 1.8em; } }
   header #box--check p.recuperar {
     position: absolute;
     color: #706F6F;
@@ -1968,10 +1992,28 @@ header #alerta form#rec-contra {
     margin-top: 0.5em; }
     header #alerta form#rec-contra button[type="submit"]:hover {
       background-color: #02599c; }
-header #box--naranja {
-  background-color: #f47d34;
+header a {
+  padding: 8px 12px;
+  background-color: #02aeef;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 1.5em;
+  float: left; }
+header #box--naranja form#registrate {
+  text-align: right;
   padding: 0.5em 0.5em 0.5em 0.5em; }
-  header #box--naranja button[type="submit"] {
+  @media screen and (min-width: 320px) {
+    header #box--naranja form#registrate {
+      background-color: none; } }
+  @media screen and (min-width: 1025px) {
+    header #box--naranja form#registrate {
+      background-color: #f47d34; } }
+  header #box--naranja form#registrate button[type="submit"] {
     background-color: #a14004;
     padding: 6px;
     -webkit-border-radius: 3px;
@@ -1981,13 +2023,19 @@ header #box--naranja {
     border-left: none;
     border-right: none;
     border-bottom: 2px solid #843403;
-    width: 100%;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
     transition: all .3s; }
-    header #box--naranja button[type="submit"]:hover {
+    header #box--naranja form#registrate button[type="submit"]:hover {
       background-color: #843403; }
+    @media screen and (min-width: 768px) {
+      header #box--naranja form#registrate button[type="submit"] {
+        width: 30%;
+        padding: 1em; } }
+    @media screen and (min-width: 1025px) {
+      header #box--naranja form#registrate button[type="submit"] {
+        width: 100%; } }
 
 #content h4 {
   color: #040452;
@@ -2380,7 +2428,8 @@ footer {
     margin-top: 16%; }
     @media screen and (min-width: 768px) {
       footer #logo--footer {
-        margin-top: 0; } }
+        margin-top: 0;
+        text-align: right; } }
     @media screen and (min-width: 1025px) {
       footer #logo--footer {
         margin-top: 16%; } }
@@ -2397,12 +2446,21 @@ footer {
       margin-bottom: 0.5em;
       padding: 4px;
       font-size: 0.8em; }
+      @media screen and (min-width: 768px) {
+        footer form#footer textarea {
+          height: 5em; } }
+      @media screen and (min-width: 1025px) {
+        footer form#footer textarea {
+          height: 4em; } }
     footer form#footer button[type="submit"] {
       background-color: #02599c;
       color: #fff;
       text-align: center;
       border: none;
       transition: all .3s; }
+      @media screen and (min-width: 768px) {
+        footer form#footer button[type="submit"] {
+          padding: 5px 12px; } }
       footer form#footer button[type="submit"]:hover {
         background-color: #02aeef; }
 
@@ -2419,6 +2477,15 @@ section #slider {
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #ec2a8c; }
+    @media screen and (min-width: 320px) {
+      section #slider #noticias {
+        height: 200px; } }
+    @media screen and (min-width: 768px) {
+      section #slider #noticias {
+        height: 200px; } }
+    @media screen and (min-width: 1025px) {
+      section #slider #noticias {
+        height: 300px; } }
     section #slider #noticias h1 {
       font-size: 1em;
       color: #ec2a8c;
@@ -2429,6 +2496,15 @@ section #slider {
       position: absolute;
       width: 213px;
       z-index: 0; }
+      @media screen and (min-width: 320px) {
+        section #slider #noticias h1 {
+          width: 230px; } }
+      @media screen and (min-width: 768px) {
+        section #slider #noticias h1 {
+          width: 230px; } }
+      @media screen and (min-width: 1025px) {
+        section #slider #noticias h1 {
+          width: 213px; } }
     section #slider #noticias #noticias-scroll {
       width: 90%; }
       section #slider #noticias #noticias-scroll ul {
@@ -2680,3 +2756,9 @@ section#search {
       background-color: #97c93e; }
   #main article.mini {
     margin-top: 1em; }
+  @media screen and (min-width: 320px) {
+    #main #sidebar.TB {
+      display: none; } }
+  @media screen and (min-width: 1025px) {
+    #main #sidebar.TB {
+      display: block; } }
