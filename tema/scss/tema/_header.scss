@@ -133,5 +133,25 @@ header{
 			}
 		}
 	}//admin header
+	//botn contacto lateral
+	.btnLateral{
+		background-color:$azul-corporativo;
+		color:$blanco;
+		padding:1em 1.8em;
+		position:fixed;
+		right: -40px;
+		top: 5em;
+		-moz-transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		transform: rotate(-90deg);
+		text-decoration: none;
+		transition: all .3s;
+		//border-top:1px solid black;
+		&:hover{
+			background-color:$azul_corporativo_claro;
+		}
+	}
 }
 

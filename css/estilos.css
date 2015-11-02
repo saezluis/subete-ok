@@ -2420,6 +2420,22 @@ header {
             padding-left: 1.2em; }
             header #admin-header #cuenta ul li a.cerrar:hover {
               color: #40ad48; }
+  header .btnLateral {
+    background-color: #040452;
+    color: #fff;
+    padding: 1em 1.8em;
+    position: fixed;
+    right: -40px;
+    top: 5em;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-decoration: none;
+    transition: all .3s; }
+    header .btnLateral:hover {
+      background-color: #02599c; }
 
 footer {
   background-color: #040452;
@@ -2432,11 +2448,29 @@ footer {
         text-align: right; } }
     @media screen and (min-width: 1025px) {
       footer #logo--footer {
-        margin-top: 16%; } }
+        margin-top: 16%;
+        text-align: left; } }
   footer p {
     color: #fff;
     font-size: 0.8em;
     text-align: left; }
+  footer #menuComple {
+    text-align: center;
+    margin-top: 3em; }
+    footer #menuComple ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      footer #menuComple ul li {
+        display: inline-block;
+        padding-right: 1em; }
+        footer #menuComple ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 0.8em;
+          text-decoration: none; }
+          footer #menuComple ul li a:hover {
+            text-decoration: underline; }
   footer form#footer {
     width: 100%; }
     footer form#footer textarea {

@@ -160,8 +160,8 @@ exit;
     <div id="strip"></div>
     <header class="grupo">
       <div class="caja base-100">
-        <div id="logo"><a href="index.html"><img src="img/logo.png"></a></div>
-        <div id="logo_royal"><a href="http://www.royalrental.cl" target="_blank" alt="Royal Rental"><img src="img/logo_royal.jpg"></a></div>
+        <div id="logo"><a href="#"><img src="img/logo.png"></a></div>
+        <div id="logo_royal"><a href="#" alt="Royal Rental"><img src="img/logo_royal.jpg"></a></div>
       </div>
     </header>
     <section class="grupo">

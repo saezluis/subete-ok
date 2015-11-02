@@ -145,7 +145,7 @@ exit;
         echo "</div>";
       echo "</div>";
 	  ?>		
-	  
+	  <a href="contacto.php" class="btnLateral">Contacto</a>
       <div class="caja base-100">
         <div id="menu">
           <ul>

@@ -146,15 +146,15 @@ exit;
 	  ?>	
 	  
 	 
-	  
+	  <a href="contacto.php" class="btnLateral">Contacto</a>
       <div class="caja base-100">
-        <div id="menu">
+<!--         <div id="menu">
           <ul>
             <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
             <li><a href="videos.html">Videos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </header>
     <section class="grupo">
@@ -229,12 +229,12 @@ exit;
           echo "<h2>$nombre_noticia</h2>";
           echo "<p>$contenido</p>";          
 		  ?>
-		  <form method="post">
+<!-- 		  <form method="post">
           <button type="submit" formaction="noticias-anteriores.php" >Noticias anteriores </button>
 			<?php
-				echo "<input type=\"text\" name=\"noticia_send\" value=\"$id_noticia\" hidden=hidden>";					
+				//echo "<input type=\"text\" name=\"noticia_send\" value=\"$id_noticia\" hidden=hidden>";					
 			?>		  
-		  </form>
+		  </form> -->
         </div>
       </div>
     </div>

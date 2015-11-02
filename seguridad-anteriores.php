@@ -124,15 +124,15 @@ exit;
         echo "</div>";
       echo "</div>";
 	  ?>
-	  
+     <a href="contacto.php" class="btnLateral">Contacto</a>
       <div class="caja base-100">
-        <div id="menu">
+        <!-- <div id="menu">
           <ul>
             <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
             <li><a href="videos.html">Videos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </header>
     <section class="grupo">
@@ -222,8 +222,16 @@ exit;
         <div class="caja web-25">
           <div id="logo--footer"><a href="http://www.royalrental.cl" target="_blank"><img src="img/logo--footer.png"></a></div>
         </div>
-        <div class="caja web-25"></div>
-        <div class="caja web-25">			</div>
+        <div class="caja web-50">
+          <div id="menuComple" class="centrar">
+            <ul>
+              <li><a href="que-es-subete.php">¿Que es Súbete?</a></li>
+              <li><a href="videos.php">Videos</a></li>
+              <li><a href="contacto.php">Contacto</a></li>
+              <li><a href="encuesta.php">Encuesta</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="caja web-25">
           <form method="post" id="footer" class="right">
             <p>Escríbenos si tienes  dudas o sugerencias</p>

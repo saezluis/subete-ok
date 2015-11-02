@@ -125,8 +125,9 @@ exit;
         echo "</div>";
       echo "</div>";
 	  ?>
-	  
-      <div class="caja base-100">
+
+      <a href="contacto.php" class="btnLateral">Contacto</a>
+<!--       <div class="caja base-100">
         <div id="menu">
           <ul>
             <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
@@ -134,7 +135,7 @@ exit;
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
-      </div>
+      </div> -->
     </header>
     <section class="grupo">
       <div class="caja base-100">
