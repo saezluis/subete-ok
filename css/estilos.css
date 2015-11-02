@@ -1992,7 +1992,7 @@ header #alerta form#rec-contra {
     margin-top: 0.5em; }
     header #alerta form#rec-contra button[type="submit"]:hover {
       background-color: #02599c; }
-header a {
+header a.ir-encuesta {
   padding: 8px 12px;
   background-color: #02aeef;
   text-align: center;
