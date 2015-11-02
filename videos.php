@@ -128,21 +128,31 @@
     </section>
 	
 	<?php
+	//echo $recurso;
+	
+	if(@$_REQUEST['video1'] != ''){
+		$recurso = @$_REQUEST['video1'];	
+	}else{
+		$recurso = "https://www.youtube.com/embed/dq5TWOYS2G8";
+	}
+	
+	echo "<form method=\"post\">";
 		echo "<div id=\"main\" class=\"grupo\">";
 		  echo "<article>";
 			echo "<div class=\"caja web-100\">";
 			  echo "<div class=\"ed-video\">";
-				echo "<iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/dq5TWOYS2G8\" frameborder=\"0\" allowfullscreen=\"\"></iframe>";
-			  </div>
-			</div>
-		  </article>
-		  <article class="mini">	  
-			<div class="caja web-25"><img src="img/poster.jpg"></div>		
-			<div class="caja web-25"><img src="img/poster.jpg"></div>
-			<div class="caja web-25"><img src="img/poster.jpg"></div>
-			<div class="caja web-25"><img src="img/poster.jpg"></div>
-		  </article>
-		</div>	
+				echo "<iframe width=\"420\" height=\"315\" src=\"$recurso\" frameborder=\"0\" allowfullscreen=\"\"></iframe>";
+			  echo "</div>";
+			echo "</div>";
+		  echo "</article>";
+		  echo "<article class=\"mini\">";
+			echo "<div class=\"caja web-25\"><button name=\"video1\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
+			echo "<div class=\"caja web-25\"><button name=\"video1\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";
+			echo "<div class=\"caja web-25\"><img src=\"img/poster.jpg\"></div>";
+			echo "<div class=\"caja web-25\"><img src=\"img/poster.jpg\"></div>";
+		  echo "</article>";
+		echo "</div>";
+	echo "</form>";
 	?>
 	
 	<footer class="total">
