@@ -19,9 +19,10 @@
 }
 
 .lg-actions .lg-next, .lg-actions .lg-prev {
-  background-color: rgba(0, 0, 0, 0.45);
+  /*background-color: rgba(0, 0, 0, 0.45);*/
+  background-color: #02aeef;
   border-radius: 2px;
-  color: #999;
+  color: #fff;
   cursor: pointer;
   display: block;
   font-size: 22px;
@@ -158,10 +159,11 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.45);
+ /* background-color: rgba(0, 0, 0, 0.45);*/
+  background-color: #02aeef;
 }
 .lg-toolbar .lg-icon {
-  color: #999;
+  color: #fff;
   cursor: pointer;
   float: right;
   font-size: 24px;
@@ -206,7 +208,7 @@
 }
 
 #lg-counter {
-  color: #999;
+  color: #fff;
   display: inline-block;
   font-size: 16px;
   padding-left: 20px;
@@ -258,7 +260,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .lg-outer .lg-thumb-outer {
-  background-color: #0D0A0A;
+  /*background-color: #0D0A0A;*/
+  background-color: #02aeef;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -338,9 +341,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   bottom: 100px;
 }
 .lg-outer .lg-toogle-thumb {
-  background-color: #0D0A0A;
+  /*background-color: #0D0A0A;*/
+  background-color: #02aeef;
   border-radius: 2px 2px 0 0;
-  color: #999;
+  color: #fff;
   cursor: pointer;
   font-size: 24px;
   height: 39px;
@@ -737,7 +741,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   right: 0;
   bottom: 0;
   z-index: 1040;
-  background-color: #000;
+  /*background-color: #000;*/
+  background-color: #f9f9f9;
   opacity: 0;
   -webkit-transition: opacity 0.15s ease 0s;
   -o-transition: opacity 0.15s ease 0s;
