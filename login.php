@@ -16,7 +16,7 @@
         <div id="box--login">
           <h1>Te invitamos a ser parte del programa de beneficios de Royal Rental.</h1>
           <form method="post" action="checklogin.php" id="login">
-            <label>Correo electrónico</label>
+            <label>Rut</label>
             <input name="username" type="text">
             <label>Contraseña</label>
             <input name="password" type="password">

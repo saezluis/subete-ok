@@ -55,7 +55,8 @@ exit;
 			$nombre = $reg['nombre'];
 			$apellido_paterno = $reg['apellido_paterno'];
 			$apellido_materno = $reg['apellido_materno'];			
-			$rut = $reg['rut'];			
+			$rut = $reg['rut'];	
+			$hash = $reg['hash'];	
 			$foto_perfil = $reg['foto_perfil'];
 				
 		}
@@ -202,12 +203,11 @@ exit;
 	  
 	  
       <div id="content" class="caja tablet-80 web-80">
-	  
-        <iframe frameborder="0" width="100%" height="600" src="http://royal.peoplecare.cl/autologin/7773858/11c8febbe8db9d178eefe73589ae9da3">
-			<p>Your browser does not support iframes.</p>
-		</iframe>
-
-		
+		<?php
+        echo "<iframe frameborder=\"0\" width=\"100%\" height=\"600\" src=\"http://royal.peoplecare.cl/autologin/7773858/11c8febbe8db9d178eefe73589ae9da3\">";
+			echo "<p>Your browser does not support iframes.</p>";
+		echo "</iframe>";
+		?>
       </div>
 	  
 	  

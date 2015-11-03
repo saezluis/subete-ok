@@ -31,7 +31,7 @@ session_start();
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		$sql= "SELECT * FROM $tbl_name WHERE correo = '$username' and password ='$password'";
+		$sql= "SELECT * FROM $tbl_name WHERE rut = '$username' and password ='$password'";
 
 		$result=mysqli_query($con,$sql);
 
@@ -52,7 +52,7 @@ session_start();
 			
 		}
 	 else {
-	 echo "Correo o Contraseña están incorrectos.";
+	 echo "Rut o Contraseña están incorrectos.";
 	 echo "<br>";
 	 echo "<br>";
 	 echo "<a href='login.php'>Volver a Intentarlo</a>";

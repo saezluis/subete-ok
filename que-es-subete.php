@@ -45,7 +45,7 @@ exit;
 			$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 			$acentos = $conexion->query("SET NAMES 'utf8'");
 			
-			$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")
+			$registros=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'")
 			or die("Problemas en el select:".mysqli_error($conexion));
 			
 			if($reg=mysqli_fetch_array($registros)){
@@ -58,7 +58,7 @@ exit;
 				
 			}
 			
-			$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+			$registrosSistema=mysqli_query($conexion,"select * from usuarios where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 			if($reg=mysqli_fetch_array($registrosSistema)){
 			

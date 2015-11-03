@@ -52,7 +52,7 @@ exit;
 				
 		$login_email = $_SESSION['username'];
 				
-		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registros=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 			
 		if($reg=mysqli_fetch_array($registros)){
 		
@@ -64,7 +64,7 @@ exit;
 				
 		}
 		
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 		if($reg=mysqli_fetch_array($registrosSistema)){
 		

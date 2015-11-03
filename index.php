@@ -52,12 +52,13 @@ exit;
 				
 		$login_email = $_SESSION['username'];
 				
-		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registros=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 			
 		if($reg=mysqli_fetch_array($registros)){
 		
 			$nombre = $reg['nombre'];
 			$rut = $reg['rut'];
+			$hash = $reg['hash'];
 			$apellido_paterno = $reg['apellido_paterno'];
 			$apellido_materno = $reg['apellido_materno'];			
 			$foto_perfil = $reg['foto_perfil'];
@@ -80,7 +81,7 @@ exit;
 		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 		if($reg=mysqli_fetch_array($registrosSistema)){
 		
@@ -149,7 +150,7 @@ contacto.html">Contacto</a></li>
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
             <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
-			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>            
+			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios-test.php\" class=\"beneficios\">Beneficios</a></li>"; ?>            
           </ul>
         </nav>
       </div>
