@@ -45,6 +45,19 @@ section{
 			li{
 				display:inline-block;
 				line-height: 0;
+				@include desde (base){
+					width: 50%;
+					float: left;
+					border-right: 1px solid $blanco;
+					&:last-child{
+						border-right:0;
+					}
+					border-bottom: 1px solid $blanco;
+				}
+				@include desde (tablet){
+					width: auto;
+					float: none;
+				}
 				a{
 					color: $blanco;
 					text-decoration:none;
@@ -52,6 +65,12 @@ section{
 					margin:0;
 					display: block;
 					transition: all .3s;
+					@include desde (base){
+						text-align: center;
+					}
+					@include desde (tablet){
+						text-align: none;
+					}
 				}
 				a.seguridad{
 					background: #90c03d;
@@ -97,7 +116,7 @@ section{
 				}
 				a.catalogo{
 					background: #010673;
-					padding:1.5em 3.6em;
+					padding:1.5em 3.42em;
 					@include desde (tablet){
 						margin-top: 1em;
 					}
@@ -110,7 +129,7 @@ section{
 				}
 				a.beneficios{
 					background: #0f1491;
-					padding:1.5em 3.6em;
+					padding:1.5em 3.42em;
 					@include desde (tablet){
 						margin-top: 1em;
 					}

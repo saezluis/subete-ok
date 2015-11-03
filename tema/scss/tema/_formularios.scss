@@ -91,34 +91,63 @@ header{
 		}
 	}
 	#box--blue{
-		height: 435px;
+		//height: 435px;
+		height: 235px;
 		background-color: $cyan;
 		margin-top: 30px;
 		margin-bottom: 30px;
 		position:relative;
+		@include desde (movil){
+			//height: 175px;
+		}
+		@include desde (movil-h){
+			height: 315px;
+		}
+		@include desde (tablet){
+			height: 435px;
+		}
+		//@include desde (web){}		
 		#royalito{
 			width: 58%;
 			position:relative;
 
 			img.topR{
-				margin-top:80px;
+				margin-top:20px;
+				@include desde (tablet){
+					margin-top:80px;
+				}
 			}
 		}
 		#linea_texto{
 			position: absolute;
-			top: 170px;
-			right: 30px;
+			top: 110px;
+			right: 0px;
 			width: 50%;
+			@include desde (movil){}
+			@include desde (tablet){
+				top: 170px;
+				right: 30px;
+			}
 			h2{
-				font-size: 1.2em;
+				font-size: 0.8em;
 				color:$blanco;
 				font-weight: $semi-bold;
 				padding:0.6em;
 				margin-bottom: 2px;
 				position: absolute;
-				top: -110px;
+				top: -90px;
 				right: 0;
 				text-align: center;
+				@include desde (movil){
+					top: -70px;
+				}
+				@include desde (movil-h){
+					font-size: 1.1em;
+				}
+				@include desde (tablet){
+					font-size: 1.2em;
+					top: -110px;
+				}
 			}
 		}
 	}
@@ -427,10 +456,16 @@ section{
 					background-color:$azul_corporativo;
 					display: block;
 					margin-bottom: 1em;
-					width: 10%;
+					//width: 10%;
 					font-size: 0.9em;
 					text-decoration: none;
 					position: relative;
+					@include desde (base){
+						width: 30%;
+					}
+					@include desde (tablet){
+						width: 10%;
+					}
 				}
 				#palomita{
 					position:absolute;
@@ -438,6 +473,10 @@ section{
 					top: 5px;
 					@include desde (movil){
 						left: 80px;
+					}
+					@include desde (movil-h){
+						left: 170px;
+						width: 15%;
 					}
 					@include desde (tablet-h){
 						left: 110px;

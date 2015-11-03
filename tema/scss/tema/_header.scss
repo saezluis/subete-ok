@@ -24,20 +24,34 @@ header{
 		height: 71px;
 		top:30%;
 		left:0px;
+		@include desde (base){
+			display: none;
+		}
+		@include desde (tablet){
+			display: block;
+		}
 	}
 	#admin-header{
 		position:absolute;
-		right: 20px;
-		top: 42px;
+
 		//background:red;
+		@include desde (base){
+			top: 10px;
+			right: 20px;
+		}
 		@include desde (tablet){
 			width: 25%;
 			text-align: center;
+			margin-top: 1em;
 			//right: 0;
 			//right: -50px;
+			right: 20px;
+			//top: 42px;	
+
 		}
 		@include desde (web){
 			right: 20px;
+			margin-top: 1em;
 		}
 		#admin--data{
 			float: left;
@@ -54,9 +68,14 @@ header{
 				border: 2px solid $verde2;
 				float: left;
 				margin-right: 1em;
+				@include desde (base){
+					display: none;
+				}
 				@include desde (tablet){
+					display: block;
 					float: none;
-					margin-right: 0em;
+					margin: 0 auto;
+					//text-align: center;
 				}
 				@include desde (web){
 					float: left;
@@ -67,14 +86,17 @@ header{
 				float: left;
 				margin-top: 10%;
 				color:$gris_claro;
+				display: none;
 				@include desde (tablet){
 					width: 100%;
 					text-align: center;
 					font-size: 0.9em;
 					margin-top: 0;
 					margin-bottom: 1em;
+					margin-top: 1em;
 					//margin-top: 5%;
 					//margin: 0 auto;
+					display: block;
 
 				}
 				@include desde (web){
@@ -151,6 +173,12 @@ header{
 		//border-top:1px solid black;
 		&:hover{
 			background-color:$azul_corporativo_claro;
+		}
+		@include desde (base){
+			display: none;
+		}
+		@include desde (web){
+			display: block;
 		}
 	}
 }

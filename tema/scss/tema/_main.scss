@@ -5,10 +5,11 @@ section{
 			width: 230px;
 			height: 300px;
 			@include desde (base){
-				height: 200px;
+				display: none;
 			}
 			@include desde (tablet){
 				height: 200px;
+				display: block;
 			}
 			@include desde (web){
 				height: 300px;
@@ -73,6 +74,13 @@ section#search{
 	text-align: right;
 
 	form#busqueda{
+		@include desde (base){
+			margin-bottom: 1.5em;
+			margin-top: 1em;
+		}
+		@include desde (tablet){
+			margin-bottom: 0;
+		}
 		input[type="text"]{
 			margin-bottom:1em;
 		    padding: 6px 12px;
@@ -90,6 +98,12 @@ section#search{
 			-webkit-border-radius: 3px;
 			-moz-border-radius: 3px;
 			border-radius: 3px;
+			@include desde (base){
+				width: 80%;
+			}
+			@include desde (tablet){
+				width: 30%;
+			}
 		}
 		button[type="submit"]{
 		    background: $magenta;
@@ -149,12 +163,19 @@ section#search{
 			float: left;
 			margin-top: 2em;		
 			.item--cajas{
-				width: 48%;
+				//width: 48%;
 				//height: 200px;
 				border-top: 1px solid $verde2;
 				border-bottom: 1px solid $verde2;
 				position: relative;
 				padding-top:0.8em;
+				@include desde (base){
+					width: 100%;
+					margin-bottom: 2em;
+				}
+				@include desde (tablet){
+					width: 48%;
+				}
 				h1{
 
 				}
@@ -371,6 +392,20 @@ section#search{
 	//
 	article.mini{
 		margin-top: 1em;
+		button{
+			//width: 50%;
+			height: 50%;
+			border:none;
+			-webkit-appearance:none;
+			float: left;
+			background-color:transparent;
+			@include desde (base){
+				width: 25%;
+			}
+			@include desde (tablet){
+				width: 100%;
+			}
+		}
 	}
 
 	//ocultar sidebar en tablet y mobil
