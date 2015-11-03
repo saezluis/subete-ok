@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Inicio / Súbete</title>
+    <title>Inicio / Subete</title>
   </head>
  <body>
 	<form method="post" action="">
@@ -32,6 +32,8 @@
 		<br>
 		<button type="submit">Enviar</submit>			
 	</form>
+	
+		
  </body>
  </html>
  

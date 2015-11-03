@@ -65,7 +65,7 @@
 		}else{
 			$pregunta5 = @$_REQUEST['radioJazzNo'];
 		}
-		
+		/*
 		echo "respuesta 1: ".$pregunta1;
 		echo "<br>";
 		echo "respuesta 2: ".$pregunta2;
@@ -75,6 +75,17 @@
 		echo "respuesta 4: ".$pregunta4;
 		echo "<br>";
 		echo "respuesta 5: ".$pregunta5;
+		*/
+		
+		mysqli_query($conexion,"insert into encuesta_lanzamiento(respuesta1,respuesta2,respuesta3,respuesta4,respuesta5) values 
+																		('$pregunta1',
+																		'$pregunta2',
+																		'$pregunta3',
+																		'$pregunta4',
+																		'$pregunta5')")
+			or die("Problemas con el insert de los servicios");
+			
+			
 		
 	?>
   </body>
