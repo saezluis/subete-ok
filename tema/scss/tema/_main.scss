@@ -358,7 +358,7 @@ section#search{
 		overflow:hidden;
 		.box--info1, .box--info2, .box--info3, .box--info4, .box--info5, .box--info6{
 			padding:1em;
-			height: 190px;
+			height: auto;
 			min-height: auto;
 			margin-bottom: 1em;
 			h1{
@@ -400,7 +400,7 @@ section#search{
 			float: left;
 			background-color:transparent;
 			@include desde (base){
-				width: 25%;
+				width: 100%;
 			}
 			@include desde (tablet){
 				width: 100%;

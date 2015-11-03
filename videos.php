@@ -160,10 +160,10 @@ exit;
 			echo "</div>";
 		  echo "</article>";
 		  echo "<article class=\"mini\">";
-			echo "<div class=\"caja web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
-			echo "<div class=\"caja web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";
-			echo "<div class=\"caja web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/z7lPSkCWOcM\" type=\"submit\"><img src=\"img/video2.jpg\"></button></div>";
-			echo "<div class=\"caja web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/lbzUKOfy0OE\" type=\"submit\"><img src=\"img/video3.jpg\"></button></div>";
+			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
+			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";
+			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/z7lPSkCWOcM\" type=\"submit\"><img src=\"img/video2.jpg\"></button></div>";
+			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/lbzUKOfy0OE\" type=\"submit\"><img src=\"img/video3.jpg\"></button></div>";
 			
 			
 		  echo "</article>";

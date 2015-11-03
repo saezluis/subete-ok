@@ -469,14 +469,19 @@ section{
 				}
 				#palomita{
 					position:absolute;
-					width: 25%;
+					
 					top: 5px;
 					@include desde (movil){
 						left: 80px;
+						width: 25%;
 					}
 					@include desde (movil-h){
-						left: 170px;
-						width: 15%;
+						left: 90px;
+						width: 35%;
+					}
+					@includem desde (tablet){
+						left: 80px;
+						width: 35%;
 					}
 					@include desde (tablet-h){
 						left: 110px;

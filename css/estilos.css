@@ -2355,15 +2355,19 @@ section #preguntas {
           width: 10%; } }
     section #preguntas form#encuesta article.color1 #palomita, section #preguntas form#encuesta article.color2 #palomita, section #preguntas form#encuesta article.color3 #palomita, section #preguntas form#encuesta article.color4 #palomita, section #preguntas form#encuesta article.color5 #palomita {
       position: absolute;
-      width: 25%;
       top: 5px; }
       @media screen and (min-width: 480px) {
         section #preguntas form#encuesta article.color1 #palomita, section #preguntas form#encuesta article.color2 #palomita, section #preguntas form#encuesta article.color3 #palomita, section #preguntas form#encuesta article.color4 #palomita, section #preguntas form#encuesta article.color5 #palomita {
-          left: 80px; } }
+          left: 80px;
+          width: 25%; } }
       @media screen and (min-width: 640px) {
         section #preguntas form#encuesta article.color1 #palomita, section #preguntas form#encuesta article.color2 #palomita, section #preguntas form#encuesta article.color3 #palomita, section #preguntas form#encuesta article.color4 #palomita, section #preguntas form#encuesta article.color5 #palomita {
-          left: 170px;
-          width: 15%; } }
+          left: 90px;
+          width: 35%; } }
+@includem desde (tablet) {
+  section #preguntas form#encuesta article.color1 #palomita, section #preguntas form#encuesta article.color2 #palomita, section #preguntas form#encuesta article.color3 #palomita, section #preguntas form#encuesta article.color4 #palomita, section #preguntas form#encuesta article.color5 #palomita {
+    left: 80px;
+    width: 35%; } }
       @media screen and (min-width: 1024px) {
         section #preguntas form#encuesta article.color1 #palomita, section #preguntas form#encuesta article.color2 #palomita, section #preguntas form#encuesta article.color3 #palomita, section #preguntas form#encuesta article.color4 #palomita, section #preguntas form#encuesta article.color5 #palomita {
           left: 110px; } }
@@ -3105,7 +3109,7 @@ section#search {
     overflow: hidden; }
     #main article .box--info1, #main article .box--info2, #main article .box--info3, #main article .box--info4, #main article .box--info5, #main article .box--info6 {
       padding: 1em;
-      height: 190px;
+      height: auto;
       min-height: auto;
       margin-bottom: 1em; }
       #main article .box--info1 h1, #main article .box--info2 h1, #main article .box--info3 h1, #main article .box--info4 h1, #main article .box--info5 h1, #main article .box--info6 h1 {
@@ -3136,7 +3140,7 @@ section#search {
       background-color: transparent; }
       @media screen and (min-width: 320px) {
         #main article.mini button {
-          width: 25%; } }
+          width: 100%; } }
       @media screen and (min-width: 768px) {
         #main article.mini button {
           width: 100%; } }
