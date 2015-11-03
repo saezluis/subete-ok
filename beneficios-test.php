@@ -170,14 +170,49 @@ exit;
     </section>
     <div id="main" class="grupo">
       
-      <div id="content" class="caja tablet-100 web-100">
+	  <div id="sidebar" class="caja tablet-20 web-20">
+        <h2>Estas son las noticias y beneficios para ti</h2>
+        <div class="widgets">
+          <h3>Actividades Súbete</h3>
+          <div class="caja--actividades">
+            <ul id="demo2">
+              <?php
+				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>
+            </ul>
+          </div>
+        </div>
+        <div class="widgets">
+          <h3>Nuevos convenios</h3>
+          <div class="caja--actividades">
+            <ul id="convenios">
+              <?php
+				while($reg=mysqli_fetch_array($registros_banner_left_02)){					
+					$nombre_banner = $reg['nombre_banner'];
+					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+				}
+			  ?>
+            </ul>
+          </div>
+        </div>
+      </div>
 	  
-        <iframe frameborder="0" width="1000" height="600" src="http://royal.peoplecare.cl/autologin/7773858/11c8febbe8db9d178eefe73589ae9da3">
+	  
+      <div id="content" class="caja tablet-80 web-80">
+	  
+        <iframe frameborder="0" width="100%" height="600" src="http://royal.peoplecare.cl/autologin/7773858/11c8febbe8db9d178eefe73589ae9da3">
 			<p>Your browser does not support iframes.</p>
 		</iframe>
 
 		
       </div>
+	  
+	  
+	  
+	  
     </div>
     <footer class="total">
       <div class="grupo">

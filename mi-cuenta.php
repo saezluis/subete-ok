@@ -145,8 +145,8 @@ exit;
     </section>
     <section id="search" class="grupo">
       <div class="caja web-100">
-        <form id="busqueda">
-          <input type="text" placeholder="buscar dentro del sitio">
+        <form id="busqueda" method="post" action="resultados-busqueda.php">
+          <input name="palabraClave" type="text" placeholder="buscar dentro del sitio">
           <button type="submit">Buscar</button>
         </form>
       </div>
