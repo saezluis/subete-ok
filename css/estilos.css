@@ -3031,6 +3031,8 @@ section#search {
         font-size: 0.8em; }
         #main #content #imagen-destacada button[type="submit"]:hover {
           background-color: #02599c; }
+    #main #content iframe {
+      background: url(../img/loading.gif) center center no-repeat; }
     #main #content #registro_publicaciones {
       width: 100%;
       padding-bottom: 2em; }
