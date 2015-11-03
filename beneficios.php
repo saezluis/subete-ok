@@ -47,7 +47,7 @@ exit;
 		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
-		$registros=mysqli_query($conexion,"select * from cuenta where email = '$login_email'")
+		$registros=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 			
 		if($reg=mysqli_fetch_array($registros)){
@@ -96,7 +96,7 @@ exit;
 			
 		}
 		
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where correo = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registrosSistema=mysqli_query($conexion,"select * from usuarios where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 		if($reg=mysqli_fetch_array($registrosSistema)){
 		
@@ -158,7 +158,7 @@ exit;
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
             <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
-			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>  
+			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Beneficios</a></li>"; ?>  
           </ul>
         </nav>
       </div>
@@ -204,7 +204,7 @@ exit;
 	  
       <div id="content" class="caja tablet-80 web-80">
 		<?php
-        echo "<iframe frameborder=\"0\" width=\"100%\" height=\"600\" src=\"http://royal.peoplecare.cl/autologin/7773858/11c8febbe8db9d178eefe73589ae9da3\">";
+        echo "<iframe frameborder=\"0\" width=\"100%\" height=\"600\" src=\"http://royal.peoplecare.cl/autologin/$rut/$hash\">";
 			echo "<p>Your browser does not support iframes.</p>";
 		echo "</iframe>";
 		?>
