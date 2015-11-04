@@ -231,7 +231,7 @@ contacto.html">Contacto</a></li>
 			<?php
 				while($reg=mysqli_fetch_array($registros_banner_right_01)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+					echo "<li><a href=\"seguridad.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
 			  ?>					   
           </ul>

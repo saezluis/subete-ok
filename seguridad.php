@@ -208,7 +208,21 @@ exit;
 		<?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/seguridad/$imagen_seguridad\">";
 			  echo "<h2>$titulo_seguridad</h2>";
-			  echo "<p>$contenido_seguridad</p>";			  			  
+			  ?>
+			  <p>Te invitamos a conocer esta interesante guía que te servirá para desenvolverte de manera segura en tu lugar de trabajo.</p>
+			  <ol>
+				<li>Debe tener licencia clase d vigente.</li>
+				<li>Debe realizar check list del equipos cada vez inicie su periodo de trabajo.</li>
+				<li>Debe respetar velocidad de traslado establecidos en las instalaciones.</li>
+				<li>Debe respetar cruces, estacionamientos y lugares de transito habilitados.</li>
+				<li>No debe intervenir ni deshabilitar dispositivos de seguridad de los equipos.</li>
+				<li>No debe reparar los equipos, llame al servicio técnico contratado.</li>
+				<li>Debe cumplir las normas de seguridad establecidas, tocar bocina, bajar velocidad en los cruces y no transportar personas.</li>
+				<li>Debe cumplir los ciclos de carga de las baterías, entender este proceso asegura continuidad operacional de sus procesos.</li>
+				<li>Debe cumplir el cambio de baterías en % de descarga (20% a 30%).</li>
+				<li>Jamás moverse con la carga en altura. Recomendable no más de 30 cm de altura.</li>
+			  </ol>			  
+			  <?php
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"seguridad-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"seguridad_send\" value=\"$id_seguridad\" hidden=hidden>";									  
