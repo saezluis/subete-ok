@@ -2242,7 +2242,8 @@ header #box--naranja form#registrate {
   border: 2px solid #90c03d;
   float: left; }
 #content .limit {
-  width: 10%; }
+  width: 60px;
+  height: 60px; }
 #content form#perfil {
   width: 100%;
   height: auto;
