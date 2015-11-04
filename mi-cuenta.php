@@ -186,7 +186,7 @@ exit;
         <div class="caja web-100">
           <h4>Mi Cuenta</h4>
 		  <?php
-			echo "<img src=\"img/img-perfil/$foto_perfil\" class=\"circulo foo\">";
+			echo "<img src=\"img/img-perfil/$foto_perfil\" class=\"circulo foo limit\">";
 		  ?>
         </div>
         <div class="limpiar"> </div>

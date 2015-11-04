@@ -210,8 +210,8 @@ exit;
 			  echo "<h2>$titulo_seguridad</h2>";
 			  ?>
 			  <p>Te invitamos a conocer esta interesante guía que te servirá para desenvolverte de manera segura en tu lugar de trabajo.</p>
-			  <ol>
-				<li>Debe tener licencia clase d vigente.</li>
+			  <ol class="lista-ordenada">
+				<li>Debe tener licencia clase "D" vigente.</li>
 				<li>Debe realizar check list del equipos cada vez inicie su periodo de trabajo.</li>
 				<li>Debe respetar velocidad de traslado establecidos en las instalaciones.</li>
 				<li>Debe respetar cruces, estacionamientos y lugares de transito habilitados.</li>

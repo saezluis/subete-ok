@@ -2241,6 +2241,8 @@ header #box--naranja form#registrate {
 #content .foo {
   border: 2px solid #90c03d;
   float: left; }
+#content .limit {
+  width: 10%; }
 #content form#perfil {
   width: 100%;
   height: auto;
@@ -2953,6 +2955,13 @@ section#search {
       color: #040452;
       margin: 0 0 35px 0;
       text-align: left; }
+    #main #content ol.lista-ordenada {
+      margin: 0px 0px 0px 20px;
+      padding: 0; }
+      #main #content ol.lista-ordenada li {
+        color: #706f6f;
+        font-size: 0.9em;
+        margin-bottom: 0.8em; }
     #main #content #contenido {
       width: 100%;
       float: left;

@@ -158,6 +158,16 @@ section#search{
 			margin:0 0 35px 0;
 			text-align: left;
 		}
+	//lista ordenada 
+		ol.lista-ordenada{
+			margin: 0px 0px 0px 20px;
+			padding:0;
+			li{
+				color: $gris_oscuro;
+				font-size: 0.9em;
+				margin-bottom: 0.8em;
+			}
+		}
 		#contenido{
 			width: 100%;
 			float: left;
@@ -209,6 +219,7 @@ section#search{
 				background-color:$verde3;	
 			}
 		}
+
 
 		}//contenido
 
