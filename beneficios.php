@@ -113,7 +113,7 @@ exit;
 		if(@$sistema_web=='interno'){
 			$status_bene = 'display:zerocool;';			
 		}else{
-			$status_bene = 'display:none;';
+			$status_bene = 'display:zerocool;';
 		}
 	
 	?>
