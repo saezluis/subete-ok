@@ -42,6 +42,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/beneficios.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/beneficios.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/busqueda.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -62,15 +71,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/checklog.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/checklog.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/checklog.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -81,15 +81,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
-		},
-	"\/checklogin.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/checklogin.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/config.php": {
 		"fileType": 8192,
@@ -120,11 +111,11 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
-	"\/css\/estilos.css": {
-		"fileType": 16,
-		"ignore": 1,
+	"\/contacto.php": {
+		"fileType": 8192,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/estilos.css",
+		"inputAbbreviatedPath": "\/contacto.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -442,6 +433,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/banner\/banner10mandamienros.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49831,
+		"inputAbbreviatedPath": "\/img\/banner\/banner10mandamienros.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/banner10mandamienros.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/banner\/banner_01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -471,6 +473,39 @@
 		"initialSize": 15393,
 		"inputAbbreviatedPath": "\/img\/banner\/banner_03.jpg",
 		"outputAbbreviatedPath": "\/img\/banner\/banner_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenio04.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17015,
+		"inputAbbreviatedPath": "\/img\/banner\/convenio04.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenio04.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenio05.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21561,
+		"inputAbbreviatedPath": "\/img\/banner\/convenio05.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenio05.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenio06.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13888,
+		"inputAbbreviatedPath": "\/img\/banner\/convenio06.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenio06.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -508,6 +543,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/banner\/optimismo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66740,
+		"inputAbbreviatedPath": "\/img\/banner\/optimismo.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/optimismo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/productividad.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 291624,
+		"inputAbbreviatedPath": "\/img\/banner\/productividad.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/productividad.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/profesionalismo.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 201233,
+		"inputAbbreviatedPath": "\/img\/banner\/profesionalismo.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/profesionalismo.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/banner\/programa_01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -537,6 +605,39 @@
 		"initialSize": 10618,
 		"inputAbbreviatedPath": "\/img\/banner\/programa_03.jpg",
 		"outputAbbreviatedPath": "\/img\/banner\/programa_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/responsabilidad.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110282,
+		"inputAbbreviatedPath": "\/img\/banner\/responsabilidad.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/responsabilidad.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/seguridad.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96615,
+		"inputAbbreviatedPath": "\/img\/banner\/seguridad.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/seguridad.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/superacion.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 99513,
+		"inputAbbreviatedPath": "\/img\/banner\/superacion.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/superacion.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -662,6 +763,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/img-perfil\/foto-luis.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5968,
+		"inputAbbreviatedPath": "\/img\/img-perfil\/foto-luis.jpg",
+		"outputAbbreviatedPath": "\/img\/img-perfil\/foto-luis.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/img-perfil\/tri.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -669,6 +781,17 @@
 		"initialSize": 2163,
 		"inputAbbreviatedPath": "\/img\/img-perfil\/tri.jpg",
 		"outputAbbreviatedPath": "\/img\/img-perfil\/tri.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/img-perfil\/user.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1373,
+		"inputAbbreviatedPath": "\/img\/img-perfil\/user.jpg",
+		"outputAbbreviatedPath": "\/img\/img-perfil\/user.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -816,13 +939,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/seguridad\/seguridad_06.jpg": {
+	"\/img\/seguridad\/seguridad_06-.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 60316,
-		"inputAbbreviatedPath": "\/img\/seguridad\/seguridad_06.jpg",
-		"outputAbbreviatedPath": "\/img\/seguridad\/seguridad_06.jpg",
+		"inputAbbreviatedPath": "\/img\/seguridad\/seguridad_06-.jpg",
+		"outputAbbreviatedPath": "\/img\/seguridad\/seguridad_06-.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/seguridad\/seguridad_06b.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 49831,
+		"inputAbbreviatedPath": "\/img\/seguridad\/seguridad_06b.jpg",
+		"outputAbbreviatedPath": "\/img\/seguridad\/seguridad_06b.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1261,6 +1395,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/mi-cuenta.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mi-cuenta.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/noticias-anteriores.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1298,6 +1441,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/noticias.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/noticias.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/ok.html": {
 		"fileType": 8192,
@@ -1347,6 +1499,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/optimismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/optimismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/procesar-contacto.php": {
 		"fileType": 8192,
@@ -1404,6 +1565,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/productividad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/productividad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/profesionalismo-anteriores.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1432,6 +1602,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/profesionalismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/profesionalismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/publicaciones-anteriores.html": {
 		"fileType": 8192,
@@ -1472,6 +1651,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/que-es-subete.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/que-es-subete.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/README.md": {
 		"enableFootnoteSupport": 0,
@@ -1552,6 +1740,24 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/responsabilidad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/responsabilidad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/resultados-busqueda.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/resultados-busqueda.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/seguridad-anteriores.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1581,6 +1787,15 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
 		},
+	"\/seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/superacion-anteriores.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1609,6 +1824,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/superacion.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/superacion.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/tema\/css\/estilos.css": {
 		"fileType": 16,
@@ -1993,22 +2217,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/tema\/scss\/tema\/_main.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/tema\/scss\/tema\/_main.scss",
-		"outputAbbreviatedPath": "\/tema\/scss\/css\/_main.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
-		},
 	"\/tema\/scss\/tema\/_menus.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -2044,6 +2252,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/videos.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/videos.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
