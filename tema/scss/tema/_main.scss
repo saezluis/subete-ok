@@ -442,3 +442,53 @@ section#search{
 
 }//main
 
+//aviso
+#aviso{
+	width: 100%;
+	position:fixed;
+	z-index:99;
+	bottom:0;
+	background-color:$azul_corporativo_claro;
+	border-top:2px solid $azul_corporativo;
+	@include desde (base){
+		display: block;
+		padding:1em;
+	}
+	@include desde (tablet){
+		padding:1.8em 2.5em;
+	}
+	@include desde (web){
+		display: none;
+	}
+	p{
+		color:$blanco;
+		@include desde(base){
+			font-size: 0.8em;
+		}
+	}
+	a.closer{
+		text-decoration: none;
+		position: absolute;
+		right: 20px;
+		top:10px;
+		background: $azul_corporativo none repeat scroll 0% 0%;
+		text-align: center;
+		-webkit-border-radius: 50%;
+		-moz-border-border-radius: 50%;
+		border-radius: 50%;
+		color:$blanco;
+		@include desde (base){
+			width: 20px;
+			height: 20px;
+			right: 10px;
+			line-height: 1.4;
+		}
+		@include desde (tablet){
+			width: 30px;
+			height: 30px;
+			right: 20px;
+			top:10px;
+			line-height: 30px;			
+		}
+	}
+}

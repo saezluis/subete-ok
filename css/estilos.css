@@ -3165,3 +3165,50 @@ section#search {
     color: #040452;
     font-size: 1.5em;
     text-align: left; }
+
+#aviso {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  background-color: #02599c;
+  border-top: 2px solid #040452; }
+  @media screen and (min-width: 320px) {
+    #aviso {
+      display: block;
+      padding: 1em; } }
+  @media screen and (min-width: 768px) {
+    #aviso {
+      padding: 1.8em 2.5em; } }
+  @media screen and (min-width: 1025px) {
+    #aviso {
+      display: none; } }
+  #aviso p {
+    color: #fff; }
+    @media screen and (min-width: 320px) {
+      #aviso p {
+        font-size: 0.8em; } }
+  #aviso a.closer {
+    text-decoration: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: #040452 none repeat scroll 0% 0%;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-border-radius: 50%;
+    border-radius: 50%;
+    color: #fff; }
+    @media screen and (min-width: 320px) {
+      #aviso a.closer {
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        line-height: 1.4; } }
+    @media screen and (min-width: 768px) {
+      #aviso a.closer {
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        top: 10px;
+        line-height: 30px; } }

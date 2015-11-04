@@ -278,5 +278,9 @@ contacto.html">Contacto</a></li>
         </div>
       </div>
     </footer>
+    <div id="aviso">
+      <a href="javascript:void(0);" onclick="document.getElementById('aviso').style.display='none';" class="closer">X</a>
+      <p>Para optimizar tu experiencia en ipad/iphone debes permitir el uso de cookies en tu dispositivo. Debes entrar en Ajustes --> Safari--> Bloquear cookies --> Permitir siempre.</p>
+    </div>
   </body>
 </html>
