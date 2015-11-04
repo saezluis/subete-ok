@@ -9,9 +9,13 @@ session_start();
 <html lang="en">
 
 <head>
- <title>Check Login</title>
- <meta charset = "utf8" />
-</head>
+    <title>Login / Súbete</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/scripts-min.js"></script>
+  </head>
 
 <body>
 
@@ -52,10 +56,25 @@ session_start();
 			
 		}
 	 else {
-	 echo "Rut o Contraseña están incorrectos.";
-	 echo "<br>";
-	 echo "<br>";
-	 echo "<a href='login.php'>Volver a Intentarlo</a>";
+		 
+		echo "<div id=\"strip\"></div>";
+		echo "<header class=\"grupo\">";
+		  echo "<div class=\"caja tablet-50 web-50\">";
+			echo "<div id=\"logo\" class=\"arriba\"><img src=\"img/logo.png\"></div>";
+			echo "<div id=\"box--check\">";
+			  echo "<div id=\"royalito-check\"><img src=\"img/royalito.png\"></div>";
+			  echo "<div id=\"base--globo\"><img src=\"img/globo-cyan.png\"></div>";
+			  echo "<p class=\"garabatos\">#!$:@%=#!$:@%=</p>";
+			echo "</div>";
+		  echo "</div>";
+		  echo "<div class=\"caja tablet-50 web-50\">";
+			echo "<div id=\"alerta\">";
+			  echo "<h1>Algo ocurrió mal :(</h1>";
+			  echo "<p class=\"alarm\">Tu correo o contraseña está incorrecta, haz click <a href=\"login.php\">aquí  </a>para volver a intentarlo</p>";
+			echo "</div>";
+		  echo "</div>";
+		echo "</header>";
+		
 	}
 ?>
 
