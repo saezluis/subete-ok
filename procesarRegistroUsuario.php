@@ -32,7 +32,7 @@
 	
 	$ch = curl_init();                   
 	
-	$url = "http://royal.peoplecare.cl/autoregister/$rut/$hash"; 
+	$url = "http://convenios.programasubete.cl/autoregister/$rut/$hash"; 
 	curl_setopt($ch, CURLOPT_URL,$url);
 	curl_setopt($ch, CURLOPT_POST, true);  
 	curl_setopt($ch, CURLOPT_POSTFIELDS, "nombre=$nombre&apellidop=$apellido_paterno&apellidom=$apellido_materno&sexo=$sexo&fecha_nacimiento=$fecha_nacimiento&rut=$rut&password=$password&telefono=$telefono&comuna_residencia=$comuna_residencia&email=$email&temas_interes=$temas_interes"); 

@@ -204,7 +204,7 @@ exit;
 	  
       <div id="content" class="caja tablet-80 web-80">
 		<?php
-        echo "<iframe frameborder=\"0\" width=\"100%\" height=\"600\" src=\"http://royal.peoplecare.cl/autologin/$rut/$hash\">";
+        echo "<iframe frameborder=\"0\" width=\"100%\" height=\"600\" src=\"http://convenios.programasubete.cl/autologin/$rut/$hash\">";
 			echo "<p>Your browser does not support iframes.</p>";
 		echo "</iframe>";
 		?>

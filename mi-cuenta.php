@@ -64,7 +64,8 @@ exit;
 			$pass = $reg['password'];
 			$temas_interes = $reg['temas_interes'];
 			$foto_perfil = $reg['foto_perfil'];
-				
+			$comunaUser = $reg['comuna_residencia'];
+		
 		}
 			
 		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
@@ -188,14 +189,17 @@ exit;
       </div>	  	  
 	  
       <div id="content" class="caja web-65">
-        <div class="caja web-100">
+        
+		<div class="caja web-100">
           <h4>Mi Cuenta</h4>
 		  <?php
 			echo "<img src=\"img/img-perfil/$foto_perfil\" class=\"circulo foo limit\">";
-		  ?>
+		  ?>		
         </div>
+		
         <div class="limpiar"> </div>
-        <form id="perfil" method="post" action="actualizarDatosUsuario.php">
+        
+		<form id="perfil" method="post" action="actualizarDatosUsuario.php" enctype="multipart/form-data">
           <fieldset>
             <h1>Datos de cuenta</h1>
             <div class="caja web-30">
@@ -247,11 +251,20 @@ exit;
 						<?php
 						while($reg=mysqli_fetch_array($registrosComuna)){					
 							$nombreComuna = $reg['COMUNA_NOMBRE'];	
-							echo "<option value=\"$nombreComuna\">$nombreComuna</option>";
+							
+							if ($nombreComuna === $comunaUser) {
+								echo "<option value=\"$nombreComuna\" selected=selected>$nombreComuna</option>";
+							} else {
+								echo "<option value=\"$nombreComuna\" >$nombreComuna</option>";
+							}														
 						}					
 						?>
 					</select>
             </div>
+			<div class="caja web-70">
+				<label>Seleccione foto para cargar: </label>
+				<input type="file" name="fileToUpload" id="fileToUpload">
+			</div>
           </fieldset>
           <fieldset class="Cacceso">
             <h1>Cuenta de acceso</h1>
