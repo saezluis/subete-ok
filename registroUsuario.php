@@ -2,8 +2,19 @@
 <html lang="es">
   <head>
     <title>Inicio / Subete</title>
+	<meta charset="utf-8">
   </head>
  <body>
+	<?php
+		
+	include_once 'config.php';
+		
+		$conexion=mysqli_connect($host,$username,$password,'bdcutcl') or die("Problemas con la conexión");
+		$acentos = $conexion->query("SET NAMES 'utf8'");
+
+		$registrosComuna=mysqli_query($conexion,"select * from comuna") or die("Problemas en el select:".mysqli_error($conexion));
+		
+	?>
 	<form method="post" action="procesarRegistroUsuario.php">
 		<li>Nombre: <input type="text" name="nombre"></li>
 		<br>
@@ -24,7 +35,19 @@
 		<br>
 		<li>Telefono/Movil: <input type="text" name="telefono"></li>
 		<br>
-		<li>Comuna residencia: <input type="text" name="comuna_residencia"></li>
+		<li>Comuna residencia: <select name="comuna">
+					<?php
+					while($reg=mysqli_fetch_array($registrosComuna)){					
+						$nombreComuna = $reg['COMUNA_NOMBRE'];	
+						echo "<option value=\"$nombreComuna\">$nombreComuna</option>";
+					}					
+					?>
+				  </select>
+		
+		<!--
+		<input type="text" name="comuna_residencia">
+		-->
+		</li>
 		<br>
 		<li>Correo electronico: <input type="text" name="email"></li>
 		<br>		

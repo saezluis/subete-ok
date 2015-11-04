@@ -204,7 +204,7 @@ exit;
         <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Seguridad</h1>
         </div>
-        <p class="texto-conceptos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit error quod fugiat qui magni quia odio consectetur amet praesentium temporibus nemo mollitia reiciendis laboriosam, quasi ut ab! Commodi, amet, quaerat!</p>
+        <p class="texto-conceptos">Todo lo que hagas en tu espacio laboral, debe ser a paso seguro. En esta sección, podrás encontrar tips e información sobre cómo desenvolverte de manera correcta y, finalmente, convertirte en un estandarte de la seguridad dentro de tu empresa.</p>
 		<?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/seguridad/$imagen_seguridad\">";
 			  echo "<h2>$titulo_seguridad</h2>";

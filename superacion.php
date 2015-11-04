@@ -200,7 +200,7 @@ exit;
         <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Superación</h1>
         </div>
-        <p class="texto-conceptos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit error quod fugiat qui magni quia odio consectetur amet praesentium temporibus nemo mollitia reiciendis laboriosam, quasi ut ab! Commodi, amet, quaerat!</p>
+        <p class="texto-conceptos">Paso a paso, peldaño a peldaño. Poseer un espíritu de superación te llevará tan alto como tú lo desees, sin importar cuan duro pueda ser el camino para llegar a la cima.</p>
 		
         <?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/superacion/$imagen_superacion\">";

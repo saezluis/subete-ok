@@ -200,7 +200,7 @@ exit;
         <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Profesionalismo</h1>
         </div>
-        <p class="texto-conceptos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit error quod fugiat qui magni quia odio consectetur amet praesentium temporibus nemo mollitia reiciendis laboriosam, quasi ut ab! Commodi, amet, quaerat!</p>
+        <p class="texto-conceptos">Ser profesional te permite adquirir seriedad y ser considerado en proyectos cada vez mayores. En esta sección, encontrarás cursos de perfeccionamiento que harán de ti un operador completo.</p>
 		
         <?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/profe/$imagen_profe\">";

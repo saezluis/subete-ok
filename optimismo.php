@@ -201,7 +201,7 @@ exit;
         <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Optimismo</h1>
         </div>
-        <p class="texto-conceptos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit error quod fugiat qui magni quia odio consectetur amet praesentium temporibus nemo mollitia reiciendis laboriosam, quasi ut ab! Commodi, amet, quaerat!</p>
+        <p class="texto-conceptos">Ver el día a día de buena manera, te permitirá no solo lograr tus metas dentro del trabajo, sino también en tus proyectos personales. Queremos que contagies de alegría a cada persona que te rodea, caminando por la vida con una sonrisa e invitando a los otros a realizar lo mismo.</p>
 		
         <?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/optimismo/$imagen_opti\">";

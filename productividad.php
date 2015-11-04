@@ -201,7 +201,9 @@ exit;
         <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Productividad</h1>
         </div>
-        <p class="texto-conceptos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit error quod fugiat qui magni quia odio consectetur amet praesentium temporibus nemo mollitia reiciendis laboriosam, quasi ut ab! Commodi, amet, quaerat!</p>
+        <p class="texto-conceptos">Es el objetivo principal y fundamental de nuestro plan. 
+		Aprovechar al máximo las capacidades de los operarios es posible cuando hay incentivos de por medio, es decir, es posible en el momento en que se le reconoce como una persona que realmente realiza una importante labor dentro de la empresa. Es hacerlo comprender por qué es él y no otro el que está en su lugar.
+		</p>
         
 		<?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/produ/$imagen_produ\">";
