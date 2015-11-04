@@ -45,6 +45,11 @@ exit;
 			
 		$registros=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'")
 		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$conexion2=mysqli_connect($host,$username,$password,'bdcutcl') or die("Problemas con la conexión");
+		$acentos2 = $conexion2->query("SET NAMES 'utf8'");
+		$registrosComuna=mysqli_query($conexion2,"select * from comuna") or die("Problemas en el select:".mysqli_error($conexion2));
+		
 			
 		if($reg=mysqli_fetch_array($registros)){
 		
@@ -56,7 +61,7 @@ exit;
 			$rut = $reg['rut'];
 			$telefono = $reg['telefono'];
 			$email = $reg['email'];
-			$password = $reg['password'];
+			$pass = $reg['password'];
 			$temas_interes = $reg['temas_interes'];
 			$foto_perfil = $reg['foto_perfil'];
 				
@@ -77,7 +82,7 @@ exit;
 			
 		}
 		
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registrosSistema=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 			if($reg=mysqli_fetch_array($registrosSistema)){
 			
@@ -190,7 +195,7 @@ exit;
 		  ?>
         </div>
         <div class="limpiar"> </div>
-        <form id="perfil">
+        <form id="perfil" method="post" action="actualizarDatosUsuario.php">
           <fieldset>
             <h1>Datos de cuenta</h1>
             <div class="caja web-30">
@@ -211,7 +216,7 @@ exit;
 			  <?php
 			    $mas = '';
 				$fem = '';
-				if($sexo=='Masculino'){
+				if($sexo=='masculino'){
 					$mas = 'selected=selected';
 				}else{
 					$fem = 'selected=selected';
@@ -238,11 +243,14 @@ exit;
             </div>
             <div class="caja web-70">
               <label>Comuna residencia</label>
-              <select name="comuna" class="sel">
-                <option>Arica</option>
-                <option>Iquique</option>
-                <option>...</option>
-              </select>
+					<select name="comuna" class="sel">
+						<?php
+						while($reg=mysqli_fetch_array($registrosComuna)){					
+							$nombreComuna = $reg['COMUNA_NOMBRE'];	
+							echo "<option value=\"$nombreComuna\">$nombreComuna</option>";
+						}					
+						?>
+					</select>
             </div>
           </fieldset>
           <fieldset class="Cacceso">
@@ -253,18 +261,18 @@ exit;
             </div>
             <div class="caja web-50">
               <label>Contraseña</label>
-              <?php echo "<input name=\"password\" value=\"$password\" type=\"text\">"; ?>
+              <?php echo "<input name=\"pass\" value=\"$pass\" type=\"text\">"; ?>
             </div>
             <div class="caja web-50">
               <label>Confirmar contraseña</label>              
-			  <?php echo "<input name=\"reTypePass\" value=\"$password\" type=\"text\">"; ?>
+			  <?php echo "<input name=\"reTypePass\" value=\"$pass\" type=\"text\">"; ?>
             </div>
           </fieldset>
           <fieldset class="Cacceso">
             <h1>Temas de interés</h1>
             <div class="caja web-100">
               <label>Indica las palabras que describen tus intereses. Sepáralas con coma para identificarlas mejor:</label>
-              <?php echo "<textarea name=\"temas_intereses\">$temas_interes</textarea>"; ?>
+              <?php echo "<textarea name=\"temas_interes\">$temas_interes</textarea>"; ?>
             </div>
           </fieldset>
           <button type="submit">Guardar</button>

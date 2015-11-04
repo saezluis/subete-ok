@@ -24,7 +24,7 @@ session_start();
 	 $user_db = "root";
 	 $pass_db = "123";
 	 $db_name = "subete";
-	 $tbl_name = "usuarios";
+	 $tbl_name = "cuenta";
 
 		// Connect to server and select databse.
 		$con=mysqli_connect("$host_db", "$user_db", "$pass_db")or die("Cannot Connect to Data Base.");

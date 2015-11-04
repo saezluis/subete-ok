@@ -104,7 +104,7 @@ exit;
 		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		*/
-		$registrosSistema=mysqli_query($conexion,"select * from usuarios where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registrosSistema=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 			if($reg=mysqli_fetch_array($registrosSistema)){
 			
@@ -229,12 +229,14 @@ exit;
           echo "<h2>$nombre_noticia</h2>";
           echo "<p>$contenido</p>";          
 		  ?>
-<!-- 		  <form method="post">
-          <button type="submit" formaction="noticias-anteriores.php" >Noticias anteriores </button>
+			<!--
+	      <form method="post">  
+		   -->
+          <a href="index.php">Volver al inicio</a>
 			<?php
 				//echo "<input type=\"text\" name=\"noticia_send\" value=\"$id_noticia\" hidden=hidden>";					
 			?>		  
-		  </form> -->
+		  <!-- </form> -->
         </div>
       </div>
     </div>
@@ -243,19 +245,25 @@ exit;
         <div class="caja web-25">
           <div id="logo--footer"><a href="http://www.royalrental.cl" target="_blank"><img src="img/logo--footer.png"></a></div>
         </div>
-        <div class="caja web-25"></div>
-        <div class="caja web-25">			</div>
+        <div class="caja web-50">
+          <div id="menuComple" class="centrar">
+            <ul>
+              <li><a href="que-es-subete.php">¿Que es Súbete?</a></li>
+              <li><a href="videos.php">Videos</a></li>
+              <li><a href="contacto.php">Contacto</a></li>
+              <li><a href="encuesta.php">Encuesta</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="caja web-25">
-		
           <form method="post" id="footer" class="right">
             <p>Escríbenos si tienes  dudas o sugerencias</p>
             <textarea name="comentario" placeholder="Escríbenos si tienes  dudas o sugerencias"></textarea>
             <button type="submit">Enviar</button>
 			<?php
-				echo "<input type=\"text\" name=\"rut_send\" value=\"$rut\" hidden=hidden>";					
+				echo "<input type=\"text\" name=\"rut_send\" value=\"$rut\" hidden=hidden>";	
 			?>
           </form>
-		  
         </div>
       </div>
     </footer>
