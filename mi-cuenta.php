@@ -289,7 +289,7 @@ exit;
               <?php echo "<textarea name=\"temas_interes\">$temas_interes</textarea>"; ?>
             </div>
           </fieldset>
-          <button type="submit">Guardar</button>
+          <button type="submit" onClick="alert('Sus datos fueron actualizados')">Guardar</button>
         </form>
       </div>
     </div>

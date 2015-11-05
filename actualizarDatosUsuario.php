@@ -111,7 +111,7 @@
 
 	echo "Datos Actualizados";			
 
-	
+	header('Location: mi-cuenta.php');
 
 	
 ?>
