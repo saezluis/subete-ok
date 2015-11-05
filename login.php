@@ -31,7 +31,7 @@
         <div id="box--blue">
           <div id="royalito"><img src="img/royalito.png" class="topR"></div>
           <div id="linea_texto"><img src="img/globo.png">
-            <h2>Si aún no tienes una cuenta con nosotros te invitamos a registrarte</h2>
+            <h2>Si aún no tienes una cuenta con nosotros, te invitamos a registrarte</h2>
           </div>
         </div>
         <div id="box--naranja">
