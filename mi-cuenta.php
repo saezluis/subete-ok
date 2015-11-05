@@ -264,6 +264,7 @@ exit;
 			<div class="caja web-70">
 				<label>Seleccione foto para cargar: </label>
 				<input type="file" name="fileToUpload" id="fileToUpload">
+				<?php echo "<input name=\"fotoPerfil_send\" value=\"$foto_perfil\" type=\"text\" hidden=hidden>"; ?>
 			</div>
           </fieldset>
           <fieldset class="Cacceso">
