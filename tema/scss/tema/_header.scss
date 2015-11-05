@@ -31,6 +31,19 @@ header{
 			display: block;
 		}
 	}
+	#logo-for-unilever{
+		width: 332px;
+		height: 136px;
+		position:absolute;
+		top:10%;
+		left: 15px;
+		@include desde (base){
+			display: none;
+		}
+		@include desde (tablet){
+			display: block;
+		}
+	}
 	#admin-header{
 		position:absolute;
 

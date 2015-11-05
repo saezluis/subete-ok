@@ -118,7 +118,7 @@ exit;
 		if($sistema_web=='interno' or $sistema_web=='externo'){
 			$index_logo_left = "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
 		}else{
-			$index_logo_left = "<div id=\"logo_royal\"><img src=\"img/logo.png\"  ></div>";
+			$index_logo_left = "<div id=\"logo-for-unilever\"><img src=\"img/logo-for-lever.png\"  ></div>";
 		}
 	
 	?>  

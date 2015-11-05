@@ -2616,6 +2616,18 @@ header {
     @media screen and (min-width: 768px) {
       header #logo_royal {
         display: block; } }
+  header #logo-for-unilever {
+    width: 332px;
+    height: 136px;
+    position: absolute;
+    top: 10%;
+    left: 15px; }
+    @media screen and (min-width: 320px) {
+      header #logo-for-unilever {
+        display: none; } }
+    @media screen and (min-width: 768px) {
+      header #logo-for-unilever {
+        display: block; } }
   header #admin-header {
     position: absolute; }
     @media screen and (min-width: 320px) {
