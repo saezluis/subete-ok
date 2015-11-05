@@ -66,17 +66,37 @@ exit;
 		
 			}
 			
-			if(@$sistema_web=='interno'){
-				$status_cata = 'display:zerocool;';			
-			}else{
-				$status_cata = 'display:none;';
-			}
+		if($sistema_web=='interno'){
+			$status_cata = 'display:zerocool;';		
+			$index_subete = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+		}else{
+			$status_cata = 'display:none;';
 			
-			if(@$sistema_web=='interno'){
-				$status_bene = 'display:zerocool;';			
-			}else{
-				$status_bene = 'display:zerocool;';
-			}
+		}
+		
+		if($sistema_web=='interno'){
+			$status_bene = 'display:zerocool;';
+			
+		}else{
+			$status_bene = 'display:zerocool;';
+		}
+				
+		if($sistema_web=='unilever'){
+			$status_cata = 'display:none;';
+			$status_bene = 'display:none;';					
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+		}else{
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo-unilever.png\"></a></div>";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$index_logo_left = "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+		}else{
+			$index_logo_left = "<div id=\"logo-for-unilever\"><img src=\"img/logo-for-lever.png\"  ></div>";
+		}
 	
 	?>  
 	
@@ -85,8 +105,8 @@ exit;
       <?php 	
 	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
         echo "<div class=\"caja base-100\">";
-        echo "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
-        echo "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+        echo $index_logo;
+        echo $index_logo_left;
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";

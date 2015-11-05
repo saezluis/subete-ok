@@ -101,16 +101,48 @@ exit;
 	
 		}
 		
-		if(@$sistema_web=='interno'){
-			$status_cata = 'display:zerocool;';			
+		if($sistema_web=='interno'){
+			$status_cata = 'display:zerocool;';		
+			$index_subete = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
 		}else{
 			$status_cata = 'display:none;';
+			
 		}
 		
-		if(@$sistema_web=='interno'){
-			$status_bene = 'display:zerocool;';			
+		if($sistema_web=='interno'){
+			$status_bene = 'display:zerocool;';
+			
 		}else{
 			$status_bene = 'display:zerocool;';
+		}
+				
+		if($sistema_web=='unilever'){
+			$status_cata = 'display:none;';
+			$status_bene = 'display:none;';					
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+		}else{
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo-unilever.png\"></a></div>";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$index_logo_left = "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+		}else{
+			$index_logo_left = "<div id=\"logo-for-unilever\"><img src=\"img/logo-for-lever.png\"  ></div>";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$titulo_convenios = "Nuevos Convenios";
+		}else{
+			$titulo_convenios = "";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$loader_convenios = $registros_banner_left_02;
+		}else{
+			$loader_convenios = "";
 		}
 		
 	?>
@@ -119,8 +151,8 @@ exit;
       <?php 	
 	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
         echo "<div class=\"caja base-100\">";
-        echo "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
-        echo "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+        echo $index_logo;
+        echo $index_logo_left;
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
@@ -184,13 +216,13 @@ exit;
           </div>
         </div>
         <div class="widgets">
-          <h3>Nuevos convenios</h3>
+          <?php  echo "<h3>$titulo_convenios</h3>";?>
           <div class="caja--actividades">
             <ul id="convenios">
              <?php
-				while($reg=mysqli_fetch_array($registros_banner_left_02)){					
+				while($reg=mysqli_fetch_array($loader_convenios)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+					echo "<li><a href=\"beneficios.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
 			  ?>			 
             </ul>
@@ -208,7 +240,15 @@ exit;
 		<?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/produ/$imagen_produ\">";
 			  echo "<h2>$titulo_produ</h2>";
-			  echo "<p>$contenido_produ</p>";			  			  
+			  ?>
+			  <p>¿Sabías que con unos simples pasos, puedes extender la vida útil de la batería y reducir la cantidad de recargas?</p>
+			  <p>Para esto, ten siempre en cuenta:</p>
+			  <ol class="lista-ordenada">
+				<li>Respetar los ciclos, cumpliendo las horas necesarias de carga.</li>
+				<li>Nunca descargar más allá del 20% de carga.</li>
+				<li>Siempre utilizar los equipos designados para la carga (cargador designado, cambiador de batería, elementos de seguridad).</li>
+			  <ol>
+			  <?php
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"productividad-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"produ_send\" value=\"$id_produ\" hidden=hidden>";									  

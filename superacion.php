@@ -100,16 +100,48 @@ exit;
 	
 		}
 		
-		if(@$sistema_web=='interno'){
-			$status_cata = 'display:zerocool;';			
+		if($sistema_web=='interno'){
+			$status_cata = 'display:zerocool;';		
+			$index_subete = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
 		}else{
 			$status_cata = 'display:none;';
+			
 		}
 		
-		if(@$sistema_web=='interno'){
-			$status_bene = 'display:zerocool;';			
+		if($sistema_web=='interno'){
+			$status_bene = 'display:zerocool;';
+			
 		}else{
 			$status_bene = 'display:zerocool;';
+		}
+				
+		if($sistema_web=='unilever'){
+			$status_cata = 'display:none;';
+			$status_bene = 'display:none;';					
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+		}else{
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo-unilever.png\"></a></div>";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$index_logo_left = "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+		}else{
+			$index_logo_left = "<div id=\"logo-for-unilever\"><img src=\"img/logo-for-lever.png\"  ></div>";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$titulo_convenios = "Nuevos Convenios";
+		}else{
+			$titulo_convenios = "";
+		}
+		
+		if($sistema_web=='interno' or $sistema_web=='externo'){
+			$loader_convenios = $registros_banner_left_02;
+		}else{
+			$loader_convenios = "";
 		}
 	
 	?>
@@ -118,8 +150,8 @@ exit;
       <?php 	
 	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
         echo "<div class=\"caja base-100\">";
-        echo "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
-        echo "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+        echo $index_logo;
+        echo $index_logo_left;
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
@@ -183,13 +215,13 @@ exit;
           </div>
         </div>
         <div class="widgets">
-          <h3>Nuevos convenios</h3>
+          <?php  echo "<h3>$titulo_convenios</h3>";?>
           <div class="caja--actividades">
             <ul id="convenios">
               <?php
-				while($reg=mysqli_fetch_array($registros_banner_left_02)){					
+				while($reg=mysqli_fetch_array($loader_convenios)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+					echo "<li><a href=\"beneficios.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
 			  ?>
             </ul>
@@ -205,7 +237,11 @@ exit;
         <?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/superacion/$imagen_superacion\">";
 			  echo "<h2>$titulo_superacion</h2>";
-			  echo "<p>$contenido_superacion</p>";			  			  
+			  ?>		  			  
+			  <p>Si tienes un mal día, trata de contenerte y dejar todos esos problemas en pausa. Si es necesario los resolverás después. Parte de tu proceso de superación personal pasa por aprender a no actuar irreflexivamente impulsado por sentimientos negativos.</p>
+			  <p>Tomate el tiempo necesario para escuchar a los demás, ya que son muy pocas las personas que con un mal temperamento y una actitud autoritaria llegan lejos. Lo mejor es que te esfuerces para ser flexible y comprensivo con las demás personas, escucha propuestas, no te centres nada más que en una sola postura.</p>
+			  <p>La apertura, la flexibilidad y la capacidad de escuchar a los demás y de trabajar en equipo son la clave para lograr la armonía en cualquier ámbito de trabajo.</p>
+			  <?php
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"superacion-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"superacion_send\" value=\"$id_superacion\" hidden=hidden>";									  
