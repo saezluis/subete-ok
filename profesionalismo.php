@@ -237,7 +237,28 @@ exit;
         <?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/profe/$imagen_profe\">";
 			  echo "<h2>$titulo_profe</h2>";
-			  echo "<p>$contenido_profe</p>";			  			  
+			  ?>
+			  <p>Queremos que saques todo tu potencial. Inscríbete en nuestro curso:</p>
+			  <p>Compuesto por diferentes módulos, el programa tiene como objetivo capacitar a cada operador otorgándoles las herramientas necesarias para lograr el máximo desempeño en sus diferentes labores.</p>
+			  <p>El curso consta de distintos tópicos, entre los que podremos encontrar:</p>
+			  <ol class="lista-ordenada">
+				<li>Manejo del equipo.</li>
+				<li>Mantenimiento de Baterías.</li>
+				<li>Taller de prácticas en terreno de manejo de equipos.</li>
+				<li>onocimiento y manejo de diferentes tipos de máquinas.</li>
+			  </ol>
+			  <p>Además:</p>
+			  <ol class="lista-ordenada">
+				<li>Los cursos son dictados por Ingenieros (que son Profesores Universitarios) en su parte teórica;
+				y, por Ingenieros de nuestra empresa, capacitados en el extranjero por las más importantes 
+				fábricas de equipos.</li>
+				<li>Existen cursos de distintas duraciones, dependiendo del nivel de conocimientos específicos de
+				los alumnos y de los objetivos específicos de su empresa</li>
+				<li>El programa considera la opción de apoyar a los alumnos en la tramitación del examen de
+				licencia de conducir Clase “D” para quienes aprueben el Programa.</li>
+			  </ol>
+			  <p>Si quieres obtener tu licencia ¡contáctanos!</p>			  
+			  <?php
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"profesionalismo-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"profe_send\" value=\"$id_profe\" hidden=hidden>";									  

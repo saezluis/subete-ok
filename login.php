@@ -22,7 +22,9 @@
             <input name="password" type="password">
             <button type="submit">Ingresar</button>
             <div class="caja no-padding">
+			<!--
               <button class="recuperar">Recuperar contraseña</button>
+			  -->
             </div>
           </form>
         </div>
@@ -35,8 +37,10 @@
           </div>
         </div>
         <div id="box--naranja">
-          <form id="registrate">
-            <button type="submit">Regístrate aquí</button>
+          <form id="registrate" style="height: 70px;">		
+			<!--
+            <button type="submit" > </button>			
+			-->
           </form>
         </div>
       </div>

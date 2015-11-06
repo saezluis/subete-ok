@@ -31,7 +31,15 @@ exit;
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/scripts-min.js"></script>
     <link rel="stylesheet" href="js/dist/slippry.css">
-    <script src="js/dist/slippry.min.js"></script>			
+    <script src="js/dist/slippry.min.js"></script>	
+
+	<script>
+		var avisoTablet = function(){
+		 avisoTablet = function(){}; // kill it as soon as it was called
+			document.getElementById('aviso').style.display='none';
+		 };
+	</script>
+	
   </head>
   <body>
 	<?php
@@ -133,6 +141,7 @@ exit;
 			$loader_convenios = "";
 		}
 		
+		
 
 	
 	?>  
@@ -197,7 +206,8 @@ contacto.html">Contacto</a></li>
 			<?php
 				while($reg=mysqli_fetch_array($registros_banner_sup)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";										
+					$link = $reg['link'];
+					echo "<li><a href=\"$link\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";										
 				}
 			?>			
           </ul>
@@ -312,8 +322,8 @@ contacto.html">Contacto</a></li>
       </div>
     </footer>
     <div id="aviso">
-      <a href="javascript:void(0);" onclick="document.getElementById('aviso').style.display='none';" class="closer">X</a>
-      <p>Para optimizar tu experiencia en ipad/iphone debes permitir el uso de cookies en tu dispositivo. Debes entrar en Ajustes --> Safari--> Bloquear cookies --> Permitir siempre.</p>
+      <a href="javascript:void(0);" onclick="avisoTablet();" class="closer">X</a>
+      <p>Para optimizar tu experiencia en iPad/iPhone debes permitir el uso de cookies en tu dispositivo. Debes entrar en Ajustes --> Safari--> Bloquear cookies --> Permitir siempre.</p>
     </div>
   </body>
 </html>

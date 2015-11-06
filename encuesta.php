@@ -170,7 +170,7 @@ exit;
         <form id="encuesta" method="post" action="procesar-encuesta.php">
 		
           <article class="color1"> 
-            <p> <span>1</span>¿Le gusta la el Rock?</p>			
+            <p> <span>1</span>¿Te parece relevante la propuesta del programa súbete?</p>			
             <div class="caja">
 			<input type="radio" id="radioPreg1" name="radioRockSi" value="si" hidden=hidden>
 				<a href="javascript:;" class="btn--enc" onclick="$('#radioPreg1').prop('checked', !($('#radioPreg1').is(':checked'))); preguntaRockSi();"> SI 
@@ -190,7 +190,7 @@ exit;
           </article>
 		  
           <article class="color2">
-            <p> <span>1</span>¿Le gusta el Pop?</p>
+            <p> <span>1</span>¿Consideras que los pilares de nuestro programa ayudan a superarte en tu espacio laboral?</p>
             <div class="caja">
 			<input type="radio" id="radioPreg3" name="radioPopSi" value="si" hidden=hidden>
 				<a href="javascript:;" class="btn--enc" onclick="$('#radioPreg3').prop('checked', !($('#radioPreg3').is(':checked'))); preguntaPopSi();"> SI 
@@ -210,7 +210,7 @@ exit;
           </article>
 		  
           <article class="color3">
-            <p> <span>3</span>¿Le gusta la cumbia?</p>
+            <p> <span>3</span>¿Te parece interesante tener una jornada de reconocimiento para los operadores?</p>
             <div class="caja">
 			<input type="radio" id="radioPreg5" name="radioCumbiaSi" value="si" hidden=hidden>
 				<a href="javascript:;" class="btn--enc" onclick="$('#radioPreg5').prop('checked', !($('#radioPreg5').is(':checked'))); preguntaCumbiaSi();"> SI 
@@ -230,7 +230,7 @@ exit;
           </article>
 		  
           <article class="color4">
-            <p> <span>4</span>¿Le gusta la balada?</p>
+            <p> <span>4</span>¿Ha sido de tu agradado participar en esta jornada?</p>
             <div class="caja">
 			<input type="radio" id="radioPreg7" name="radioBaladaSi" value="si" hidden=hidden>
 				<a href="javascript:;" class="btn--enc" onclick="$('#radioPreg7').prop('checked', !($('#radioPreg7').is(':checked'))); preguntaBaladaSi();"> SI 
@@ -250,7 +250,7 @@ exit;
           </article>
 		  
           <article class="color5">
-            <p> <span>5</span>¿Le gusta el jazz?</p>
+            <p> <span>5</span>¿Participarías en las próximas versiones de esta jornada?</p>
             <div class="caja">
 			<input type="radio" id="radioPreg9" name="radioJazzSi" value="si" hidden=hidden>
 				<a href="javascript:;" class="btn--enc" onclick="$('#radioPreg9').prop('checked', !($('#radioPreg9').is(':checked'))); preguntaJazzSi();"> SI

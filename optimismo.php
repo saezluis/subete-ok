@@ -238,7 +238,18 @@ exit;
         <?php
 			echo "<div id=\"imagen-destacada\"><img src=\"img/optimismo/$imagen_opti\">";
 			  echo "<h2>$titulo_opti</h2>";
-			  echo "<p>$contenido_opti</p>";			  			  
+			  ?>
+			  <p>Puntos claves para lograr el bien estar en el trabajo:</p>
+			  <ol class="lista-ordenada">
+				<li>Compañerismo</li>
+				<li>Equilibrio del tiempo entre el trabajo y la familia</li>
+				<li>Resolver los problemas cuando se presentan</li>
+				<li>Ser efectivo y eficiente</li>
+				<li>Satisfacción personal por tus logros</li>
+				<li>Actividades de distensión.</li>
+			  </ol>
+				<p>Cumplir con lo anterior, nos lleva a realizar jornadas laborales con más energía y concentración, logrando una mayor productividad.</p>
+			  <?php
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"optimismo-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"opti_send\" value=\"$id_opti\" hidden=hidden>";									  

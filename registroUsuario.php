@@ -31,7 +31,7 @@
 		<br>
 		<li>Rut: <input type="text" name="rut"></li>
 		<br>
-		<li>Password: <input type="text" name="password"></li>
+		<li>Password: <input type="text" name="pass"></li>
 		<br>
 		<li>Telefono/Movil: <input type="text" name="telefono"></li>
 		<br>

@@ -16,7 +16,7 @@
 	$sexo = $_REQUEST['sexo'];
 	$fecha_nacimiento = $_REQUEST['fecha_nacimiento'];
 	$rut = $_REQUEST['rut'];
-	$password = $_REQUEST['password'];
+	$pass = $_REQUEST['pass'];
 	$telefono = $_REQUEST['telefono'];
 	$comuna_residencia = $_REQUEST['comuna_residencia'];
 	$email = $_REQUEST['email'];
@@ -35,7 +35,7 @@
 	$url = "http://convenios.programasubete.cl/autoregister/$rut/$hash"; 
 	curl_setopt($ch, CURLOPT_URL,$url);
 	curl_setopt($ch, CURLOPT_POST, true);  
-	curl_setopt($ch, CURLOPT_POSTFIELDS, "nombre=$nombre&apellidop=$apellido_paterno&apellidom=$apellido_materno&sexo=$sexo&fecha_nacimiento=$fecha_nacimiento&rut=$rut&password=$password&telefono=$telefono&comuna_residencia=$comuna_residencia&email=$email&temas_interes=$temas_interes"); 
+	curl_setopt($ch, CURLOPT_POSTFIELDS, "nombre=$nombre&apellidop=$apellido_paterno&apellidom=$apellido_materno&sexo=$sexo&fecha_nacimiento=$fecha_nacimiento&rut=$rut&password=$pass&telefono=$telefono&comuna_residencia=$comuna_residencia&email=$email&temas_interes=$temas_interes"); 
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
 	$output = curl_exec ($ch); 	 
 	curl_close ($ch); 	
@@ -60,7 +60,7 @@
 									 '$telefono',
 									 '$comuna_residencia',
 									 '$email',
-									 '$password',
+									 '$pass',
 									 '$temas_interes'
 									 )")
 	or die("Problemas con el insert de los servicios");
