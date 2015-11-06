@@ -3,23 +3,7 @@
 /* start the session */
 session_start();
 
-?>
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Login / Súbete</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/scripts-min.js"></script>
-  </head>
-
-<body>
-
-<?php
 	 $host_db = "localhost";
 	 $user_db = "root";
 	 $pass_db = "123";
@@ -77,6 +61,3 @@ session_start();
 		
 	}
 ?>
-
-</body>
-</html>

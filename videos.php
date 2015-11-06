@@ -147,7 +147,7 @@ exit;
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
             <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
-			<?php echo "<li style=\"$status_bene\"><a href=\"#\" class=\"beneficios\">Beneficios</a></li>"; ?>
+			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Beneficios</a></li>"; ?>
           </ul>
         </nav>
       </div>
