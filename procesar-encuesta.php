@@ -77,12 +77,15 @@
 		echo "respuesta 5: ".$pregunta5;
 		*/
 		
-		mysqli_query($conexion,"insert into encuesta_lanzamiento(respuesta1,respuesta2,respuesta3,respuesta4,respuesta5) values 
+		$escala = $_REQUEST['escala'];
+		
+		mysqli_query($conexion,"insert into encuesta_lanzamiento(respuesta1,respuesta2,respuesta3,respuesta4,respuesta5,respuesta6) values 
 																		('$pregunta1',
 																		'$pregunta2',
 																		'$pregunta3',
 																		'$pregunta4',
-																		'$pregunta5')")
+																		'$pregunta5',
+																		'$escala')")
 			or die("Problemas con el insert de los servicios");
 			
 			

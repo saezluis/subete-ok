@@ -1,26 +1,3 @@
-<?php
-session_start();
-
-if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-{
-
-}
-else
-{
-echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
-echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
-
-exit;
-}
-$now = time(); // checking the time now when home page starts
-
-if($now > $_SESSION['expire'])
-{
-session_destroy();
-echo "<br/><br />" . "Su sesion a terminado, <a href='login.php'> Necesita Hacer Login</a>";
-exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -267,6 +244,26 @@ exit;
 					</div>
 				</a>
             </div>
+          </article>
+		  
+		  
+		  <article class="color2">
+            <p> <span>6</span>En una escala de 1 a 7 con qué nota calificaria el evento.</p>
+            <div class="caja">											
+				
+				<p>	1  <input type="radio" name="escala" value="1"> 2  <input  type="radio" name="escala" value="2"> 3  <input  type="radio" name="escala" value="3"> 4  <input  type="radio" name="escala" value="4"> 5  <input  type="radio" name="escala" value="5"> 6  <input  type="radio" name="escala" value="6"> 7  <input  type="radio" name="escala" value="7"></p>
+				
+            </div>
+			<!--
+            <div class="caja">
+			<input type="radio" id="radioPreg12" name="radioJazzNo" value="no" hidden=hidden>
+				<a href="javascript:;" class="btn--enc" onclick="$('#radioPreg12').prop('checked', !($('#radioPreg12').is(':checked'))); preguntaClubNo();"> NO
+					<div id="palomita">
+						<img id="JazzNo" style="display:none;" src="img/check.png">
+					</div>
+				</a>
+            </div>
+			-->
           </article>
 		  
           <button type="submit">Enviar</button>
