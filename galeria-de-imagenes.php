@@ -23,25 +23,33 @@ exit;
 ?>
 <!DOCTYPE html>
 <html lang="es">
-  <head>	
-    <title>Inicio / Súbete</title>
+  <head>
+    <title>Galería de imágenes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="js/scripts-min.js"></script>
-    <link rel="stylesheet" href="js/dist/slippry.css">
-    <script src="js/dist/slippry.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <!--<script src="js/scripts-min.js"></script>-->
+    <link rel="stylesheet" href="js/lightgallery/css/lightgallery.css">
+    <script src="js/lightgallery/js/lightgallery.js"></script>
+    <script src="js/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="js/lightgallery/js/lg-fullscreen.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('#anchor-tag').lightGallery();
+        //alert("funciona");
+      });
+    </script>
   </head>
   <body>
 	<?php
-	
 	include_once 'config.php';
 		
 		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
-
-		//Inserta comentarios del footer en la Base de Datos
+		
+		$registrosFotos=mysqli_query($conexion,"select * from galeria_fotos where evento = 'lanzamiento'") or die("Problemas en el select:".mysqli_error($conexion));
+		
 		if(isset($_POST['comentario'])){
 			$sugerencias = $_POST['comentario'];
 			
@@ -58,19 +66,29 @@ exit;
 		
 			$nombre = $reg['nombre'];
 			$rut = $reg['rut'];
+			$hash = $reg['hash'];
 			$apellido_paterno = $reg['apellido_paterno'];
 			$apellido_materno = $reg['apellido_materno'];			
 			$foto_perfil = $reg['foto_perfil'];
 				
 		}
 		
-		$registrosSistema=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registros_banner_sup=mysqli_query($conexion,"select * from banner where frame = 'sup'")
+		or die("Problemas en el select:".mysqli_error($conexion));
 		
 		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
 		$registros_banner_left_02=mysqli_query($conexion,"select * from banner where frame = 'left_02'")
 		or die("Problemas en el select:".mysqli_error($conexion));
+			
+		$registros_banner_right_01=mysqli_query($conexion,"select * from banner where frame = 'right_01'")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
+		or die("Problemas en el select:".mysqli_error($conexion));
+		
+		$registrosSistema=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 		if($reg=mysqli_fetch_array($registrosSistema)){
 		
@@ -99,7 +117,7 @@ exit;
 		}
 		
 		if($sistema_web=='interno' or $sistema_web=='externo'){
-			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";
+			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";			
 		}else{
 			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo-unilever.png\"></a></div>";
 		}
@@ -121,15 +139,17 @@ exit;
 		}else{
 			$loader_convenios = "";
 		}
-	
+		
+		
 	?>
+	
     <header class="grupo">
 	
       <?php 	
 	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
-        echo "<div class=\"caja base-100\">";
+        echo "<div class=\"caja base-100\">";		
         echo $index_logo;
-        echo $index_logo_left;
+        echo $index_logo_left;		
         echo "<div id=\"admin-header\">";
           echo "<div id=\"admin--data\"><img src=\"img/img-perfil/$foto_perfil\" class=\"circulo\"><span class=\"nombre_usuario\">$nombre_user</span></div>";
           echo "<div id=\"cuenta\">";
@@ -142,17 +162,6 @@ exit;
       echo "</div>";
 	  ?>
 	  
-      <div class="caja base-100">
-		<!--
-        <div id="menu">
-          <ul>
-            <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-		-->
-      </div>
     </header>
     <section class="grupo">
       <div class="caja base-100">
@@ -165,64 +174,40 @@ exit;
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
             <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
-			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Beneficios</a></li>"; ?>
+			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Beneficios</a></li>"; ?> 
           </ul>
         </nav>
       </div>
     </section>
     <section id="search" class="grupo">
       <div class="caja web-100">
+        <div class="caja web-100">
         <form id="busqueda" method="post" action="resultados-busqueda.php">
           <input name="palabraClave" type="text" placeholder="buscar dentro del sitio">
           <button type="submit">Buscar</button>
         </form>
       </div>
+      </div>
     </section>
     <div id="main" class="grupo">
-      <div id="sidebar" class="TB caja web-35">
-        <h2>Estas son las noticias y beneficios para ti</h2>
-        <div class="widgets">
-          <h3>Galería: día del Operador 2015</h3>
-          <div class="caja--actividades">
-            <ul id="demo2">
-              <?php
-				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
-					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"galeria-de-imagenes.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
-				}
-			  ?>
-            </ul>
-          </div>
+      <article>
+        <div class="caja web-100">
+          <h1 class="tit-gal">SÚBETE A LOS MEJORES MOMENTOS DE EL DÍA DEL OPERARIO 2015 DE ROYAL RENTAL.</h1>
         </div>
-        <div class="widgets">
-           <?php  echo "<h3>$titulo_convenios</h3>";?>
-          <div class="caja--actividades">
-            <ul id="convenios">
-              <?php
-				while($reg=mysqli_fetch_array($loader_convenios)){					
-					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"beneficios.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
-				}
-			  ?>
-            </ul>
-          </div>
+        <div class="caja web-100">
+        <div id="anchor-tag">
+		<?php	
+			while($reg=mysqli_fetch_array($registrosFotos)){	
+				$foto = $reg['nombre_foto'];
+				$thumb = $reg['mini_foto'];				
+				echo "<a href=\"img/galeria/$foto\" class=\"item--galeria\"><img src=\"img/galeria/$thumb\"></a>";
+			}
+		?>  		  
         </div>
-      </div>
-      <div id="content" class="caja web-65">
-        <form id="contact" method="post" action="procesar-contacto.php">
-          <fieldset>
-            <h2>Contacto</h2>
-            <label>Asunto</label>
-            <input name="asunto" type="text">
-            <label>Comentario</label>
-            <textarea name="comentario"></textarea>
-            <button type="submit">Enviar</button>
-          </fieldset>
-        </form>
-      </div>
+        </div>
+      </article>
     </div>
-	
-    <footer class="total">
+  <footer class="total">
     <div class="grupo">
       <div class="caja web-25">
         <div id="logo--footer"><a href="http://www.royalrental.cl" target="_blank"><img src="img/logo--footer.png"></a></div>
@@ -249,6 +234,5 @@ exit;
       </div>
     </div>
   </footer>
-	
   </body>
 </html>

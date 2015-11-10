@@ -14,18 +14,19 @@
       <div class="caja web-50">
         <div id="logo" class="arriba"><img src="img/logo.png"></div>
         <div id="box--login">
-          <h1>Te invitamos a ser parte del programa de beneficios de Royal Rental.</h1>
-          <form method="post" action="checklogin.php" id="login">
-            <label>Rut</label>
-            <input name="username" type="text">
-            <label>Contraseña</label>
-            <input name="password" type="password">
-            <button type="submit">Ingresar</button>
-            <div class="caja no-padding">
-			<!--
-              <button class="recuperar">Recuperar contraseña</button>
-			  -->
-            </div>
+          <h1>Completa este formulario y muy pronto te contactaremos</h1>
+          <form id="login" method="post" action="procesar-inscripcion.php">
+            <label>Nombre</label>
+            <input type="text" name="nombre">
+            <label>Apellido</label>
+            <input type="text" name="apellido">
+            <label>Correo electrónico</label>
+            <input type="text" name="email">
+            <label>Teléfono</label>
+            <input type="text" name="telefono">
+            <label>Empresa</label>
+            <input type="text" name="empresa">
+            <button type="submit">Enviar</button>
           </form>
         </div>
       </div>
@@ -33,15 +34,10 @@
         <div id="box--blue">
           <div id="royalito"><img src="img/royalito.png" class="topR"></div>
           <div id="linea_texto"><img src="img/globo.png">
-            <h2>Si aún no tienes una cuenta con nosotros, te invitamos a registrarte</h2>
+            <h2>Si aún no tienes una cuenta con nosotros te invitamos a registrarte</h2>
           </div>
         </div>
         <div id="box--naranja">
-          <form id="registrate" style="height: 70px;">		
-			
-            <button type="submit" formaction="inscripcion.php">Registrate Aquí</button>			
-			
-          </form>
         </div>
       </div>
     </header>

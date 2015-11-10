@@ -1,9 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+</html>
 <?php
 
 /* start the session */
 session_start();
 
-
+	
+	
 	 $host_db = "localhost";
 	 $user_db = "root";
 	 $pass_db = "123";
@@ -54,7 +63,7 @@ session_start();
 		  echo "<div class=\"caja tablet-50 web-50\">";
 			echo "<div id=\"alerta\">";
 			  echo "<h1>Algo ocurrió mal :(</h1>";
-			  echo "<p class=\"alarm\">Tu correo o contraseña está incorrecta, haz click <a href=\"login.php\">aquí  </a>para volver a intentarlo</p>";
+			  echo "<p class=\"alarm\">Tu correo o contraseña está incorrecta, haz click <a href=\"login.php\">aquí  </a>para volver a intentarlo.</p>";
 			echo "</div>";
 		  echo "</div>";
 		echo "</header>";

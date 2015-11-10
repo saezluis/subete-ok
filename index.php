@@ -242,13 +242,13 @@ contacto.html">Contacto</a></li>
       <div id="sidebar" class="caja tablet-35 web-35">
         <h2>Estas son las noticias y beneficios para ti</h2>
         <div class="widgets">
-          <h3>Actividades Súbete</h3>
+          <h3>Galería: día del Operador 2015</h3>
           <div class="caja--actividades">
             <ul id="demo2">
 			  <?php
 				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+					echo "<li><a href=\"galeria-de-imagenes.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
 			  ?>			  
             </ul>
