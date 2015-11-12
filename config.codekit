@@ -799,6 +799,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/img-perfil\/Chrysanthemum.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 879394,
+		"inputAbbreviatedPath": "\/img\/img-perfil\/Chrysanthemum.jpg",
+		"outputAbbreviatedPath": "\/img\/img-perfil\/Chrysanthemum.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/img-perfil\/Desert.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 845941,
+		"inputAbbreviatedPath": "\/img\/img-perfil\/Desert.jpg",
+		"outputAbbreviatedPath": "\/img\/img-perfil\/Desert.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/img-perfil\/foto-luis.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -806,6 +828,17 @@
 		"initialSize": 5968,
 		"inputAbbreviatedPath": "\/img\/img-perfil\/foto-luis.jpg",
 		"outputAbbreviatedPath": "\/img\/img-perfil\/foto-luis.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/img-perfil\/Hydrangeas.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 595284,
+		"inputAbbreviatedPath": "\/img\/img-perfil\/Hydrangeas.jpg",
+		"outputAbbreviatedPath": "\/img\/img-perfil\/Hydrangeas.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -828,6 +861,17 @@
 		"initialSize": 780831,
 		"inputAbbreviatedPath": "\/img\/img-perfil\/Koala.jpg",
 		"outputAbbreviatedPath": "\/img\/img-perfil\/Koala.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/img-perfil\/Lighthouse.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 561276,
+		"inputAbbreviatedPath": "\/img\/img-perfil\/Lighthouse.jpg",
+		"outputAbbreviatedPath": "\/img\/img-perfil\/Lighthouse.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -861,6 +905,28 @@
 		"initialSize": 3570,
 		"inputAbbreviatedPath": "\/img\/logo--footer.png",
 		"outputAbbreviatedPath": "\/img\/logo--footer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo-for-lever.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27868,
+		"inputAbbreviatedPath": "\/img\/logo-for-lever.png",
+		"outputAbbreviatedPath": "\/img\/logo-for-lever.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo-unilever.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56269,
+		"inputAbbreviatedPath": "\/img\/logo-unilever.png",
+		"outputAbbreviatedPath": "\/img\/logo-unilever.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -905,6 +971,17 @@
 		"initialSize": 35373,
 		"inputAbbreviatedPath": "\/img\/noticias\/foto-lorem3.jpg",
 		"outputAbbreviatedPath": "\/img\/noticias\/foto-lorem3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/noticias\/noticia.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47179,
+		"inputAbbreviatedPath": "\/img\/noticias\/noticia.jpg",
+		"outputAbbreviatedPath": "\/img\/noticias\/noticia.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1234,6 +1311,26 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/inscripcion.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inscripcion.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/inscripcion.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inscripcion.jade",
+		"outputAbbreviatedPath": "\/inscripcion.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/js\/dist\/slippry.css": {
 		"fileType": 16,
@@ -1648,6 +1745,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/procesar-inscripcion.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/procesar-inscripcion.jade",
+		"outputAbbreviatedPath": "\/procesar-inscripcion.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		},
 	"\/procesarRegistroUsuario.php": {
 		"fileType": 8192,
