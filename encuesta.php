@@ -143,9 +143,11 @@
     </header>
     <section class="grupo">
       <div id="preguntas">
-        <h1>Encuesta satisfacción al cliente</h1>
+        <h1>Tu opinión es muy importante para nosotros.</h1>
         <form id="encuesta" method="post" action="procesar-encuesta.php">
 		
+		  <!--	
+			
           <article class="color1"> 
             <p> <span>1</span>¿Te parece relevante la propuesta del programa súbete?</p>			
             <div class="caja">
@@ -263,10 +265,26 @@
 					</div>
 				</a>
             </div>
-			-->
+			
           </article>
 		  
-          <button type="submit">Enviar</button>
+		  -->
+		  
+		  <h3>Muy pronto tendremos una nueva encuesta para saber en qué podemos mejorar.</h3>
+		  
+		  <div id="royalito-check"><img src="img/royalito.png"></div>
+				
+
+          
+		  
+		  <button type="submit" onclick="goBack()">Volver</button>
+
+		  <script>
+			function goBack() {
+				window.history.back();
+			}
+		  </script>
+		  
         </form>
       </div>
     </section>
