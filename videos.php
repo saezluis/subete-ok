@@ -167,7 +167,7 @@ exit;
 	if(@$_REQUEST['video'] != ''){
 		$recurso = @$_REQUEST['video'];	
 	}else{
-		$recurso = "https://www.youtube.com/embed/dq5TWOYS2G8";
+		$recurso = "https://www.youtube.com/embed/VqAHpqvCmr0";
 	}
 	
 	echo "<form method=\"post\">";
@@ -180,12 +180,10 @@ exit;
 			echo "</div>";
 		  echo "</article>";
 		  echo "<article class=\"mini\">";
+			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/VqAHpqvCmr0\" type=\"submit\"><img src=\"img/video4.jpg\"></button></div>";
 			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
 			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";
 			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/z7lPSkCWOcM\" type=\"submit\"><img src=\"img/video2.jpg\"></button></div>";
-			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/lbzUKOfy0OE\" type=\"submit\"><img src=\"img/video3.jpg\"></button></div>";
-			
-			
 		  echo "</article>";
 		echo "</div>";
 	echo "</form>";
@@ -199,7 +197,7 @@ exit;
         <div class="caja web-50">
           <div id="menuComple" class="centrar">
             <ul>
-              <li><a href="que-es-subete.php">¿Que es Súbete?</a></li>
+              <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
               <li><a href="videos.php">Videos</a></li>
               <li><a href="contacto.php">Contacto</a></li>
               <li><a href="encuesta.php">Encuesta</a></li>

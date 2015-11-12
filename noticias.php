@@ -255,11 +255,17 @@ exit;
       </div>
       <div id="content" class="caja web-65">
         <div id="imagen-destacada">
-          <h1>Noticias</h1>		  
+          <h1>Noticias</h1>	
 		  <?php
+		  //si la noticia es del id que le paso concatena al final la wea
+		  if($id_noticia==''){
+			$add = "<a href=\"videos.php\">video.</a>";
+		  }else{
+			$add = '';
+		  }
 		  echo "<img src=\"img/noticias/$foto_noticia\">";
           echo "<h2>$nombre_noticia</h2>";
-          echo "<p>$contenido</p>";          
+          echo "<p>$contenido</p>"." ".$add;          
 		  ?>
 			<!--
 	      <form method="post">  
@@ -280,7 +286,7 @@ exit;
         <div class="caja web-50">
           <div id="menuComple" class="centrar">
             <ul>
-              <li><a href="que-es-subete.php">¿Que es Súbete?</a></li>
+              <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
               <li><a href="videos.php">Videos</a></li>
               <li><a href="contacto.php">Contacto</a></li>
               <li><a href="encuesta.php">Encuesta</a></li>
