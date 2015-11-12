@@ -180,7 +180,7 @@ exit;
               <?php
 				while($reg=mysqli_fetch_array($registros_banner_left_01)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"#slide1\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+					echo "<li><a href=\"galeria-de-imagenes.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
 			  ?>
             </ul>

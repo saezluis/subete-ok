@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Procesar inscripción / Súbete</title>
+    <title>Procesar inscripción final / Súbete</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
@@ -16,14 +16,13 @@
 		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
-		
-		$nombre = $_REQUEST['nombre'];
-		$apellido = $_REQUEST['apellido'];
+		$rut = $_REQUEST['rut'];
 		$email = $_REQUEST['email'];
-		$telefono = $_REQUEST['telefono'];
-		$empresa = $_REQUEST['empresa'];
+		$passwo = $_REQUEST['passwordconf'];
+		//$telefono = $_REQUEST['telefono'];
+		//$empresa = $_REQUEST['empresa'];
 		
-		mysqli_query($conexion,"insert into inscripcion(nombre,apellido,email,telefono,empresa) values ('$nombre','$apellido','$email','$telefono','$empresa')")
+		mysqli_query($conexion,"insert into post_inscripcion(rut,email,pass) values ('$rut','$email','$passwo')")
 			or die("Problemas con el insert de los servicios");
 	
 	?>

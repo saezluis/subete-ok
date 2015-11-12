@@ -7,8 +7,22 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
 }
 else
 {
-echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
-echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
+	
+header('Content-Type: text/html; charset=UTF-8'); 
+	
+//echo "<br/>" . "Para tener una mejor experiencia de navegación te recomendamos que actualices tu navegador." . "<br/>";
+
+//echo "<br/>" . "Si el error persiste, puede deberse a las siguientes causas:" . "<br/>";
+
+echo "<br/>" . " <h2> Estás a un click de Subirte, actualiza tu navegador <a href='http://windows.microsoft.com/es-cl/internet-explorer/download-ie'>aquí</a></h2>" . "<br/>";
+
+//echo "<br/>" . " * Estás usando una versión antigua de Internet Explorer, actualízalo." . "<br/>";
+
+//echo "<br/>" . "Entiendo las recomendaciones, volver al <a href='login.php'>Login</a>." . "<br/>";
+	
+//echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+
+//echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
 
 exit;
 }
@@ -22,9 +36,9 @@ exit;
 }
 ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es">	
   <head>
-    <title>Inicio / Súbete</title>
+    <title>Inicio / Súbete</title>	
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
@@ -42,6 +56,7 @@ exit;
 	
   </head>
   <body>
+	
 	<?php
 		
 		include_once 'config.php';
