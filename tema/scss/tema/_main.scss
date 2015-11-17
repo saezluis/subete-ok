@@ -168,6 +168,57 @@ section#search{
 				margin-bottom: 0.8em;
 			}
 		}
+
+//comming soon
+		p.proximamente{
+			font-size: 2.4em;
+			color: #040452;
+			text-align: left;
+			font-weight: bold;
+			line-height: 1;
+		}
+
+		a.patras{
+			background: $azul_corporativo_claro;
+			padding: 0.7em 1em;
+			color: $blanco;
+			text-align:center;
+			font-size: 0.9em;
+			text-decoration: none;
+			transition: all .3s;
+			&:hover{
+				background: $azul_corporativo;
+			}
+		}
+
+		.caja-senaletica{
+			width: 100%;
+			text-align: center;
+			.item-senaletica{
+				width: 100px;
+				border:1px solid #c6c5c6;
+				padding: 1em;
+			}
+
+			p.sen{
+				color: $azul_corporativo;
+				font-size: 0.9em;
+				line-height: 1;
+			}
+			@include desde (base){
+				@include cuadricula(item-senaletica,3,5%);
+			}
+			// @include desde (movil){
+			// 	@include cuadricula(item-senaletica,4);
+			// }
+			// @include desde (tablet){
+			// 	@include cuadricula(item-senaletica,3);
+			// }
+			// @include desde (web){
+			// 	@include cuadricula(item-senaletica,3,5%);
+			// }
+		}
+
 		#contenido{
 			width: 100%;
 			float: left;

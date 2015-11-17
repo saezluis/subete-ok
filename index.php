@@ -297,12 +297,12 @@ contacto.html">Contacto</a></li>
         <div id="contenido">
           <div class="caja web-50 item--cajas">
             <div class="guia"></div><img src="img/caluga_1.jpg">
-            <h1>Conóce los signos de seguridad de tu empresa,con este mini juego</h1>
+            <h1>Conóce las señaléticas de seguridad de tu empresa</h1>
             <button type="button">ver más</button>
           </div>
           <div class="caja web-50 item--cajas">
             <div class="guia"></div><img src="img/caluga_2.jpg">
-            <h1>Inscribete en nuestro workshop de productividad</h1>
+            <h1>Inscribete en nuestros cursos de capacitaciones</h1>
             <button type="button">ver más</button>
           </div>
         </div>
