@@ -7,22 +7,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
 }
 else
 {
-	
-header('Content-Type: text/html; charset=UTF-8'); 
-	
-//echo "<br/>" . "Para tener una mejor experiencia de navegación te recomendamos que actualices tu navegador." . "<br/>";
-
-//echo "<br/>" . "Si el error persiste, puede deberse a las siguientes causas:" . "<br/>";
-
-echo "<br/>" . " <h2> Estás a un click de Subirte, actualiza tu navegador <a href='http://windows.microsoft.com/es-cl/internet-explorer/download-ie'>aquí</a></h2>" . "<br/>";
-
-//echo "<br/>" . " * Estás usando una versión antigua de Internet Explorer, actualízalo." . "<br/>";
-
-//echo "<br/>" . "Entiendo las recomendaciones, volver al <a href='login.php'>Login</a>." . "<br/>";
-	
-//echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
-
-//echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
+echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
 
 exit;
 }
@@ -36,44 +22,47 @@ exit;
 }
 ?>
 <!DOCTYPE html>
-<html lang="es">	
+<html lang="es">
   <head>
-    <title>Inicio / Súbete</title>	
+    <title>Signos Seguridad / Súbete</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="js/scripts-min.js"></script>
     <link rel="stylesheet" href="js/dist/slippry.css">
-    <script src="js/dist/slippry.min.js"></script>	
-
+    <script src="js/dist/slippry.min.js"></script>
+	
 	<script>
-		var avisoTablet = function(){
-		 avisoTablet = function(){}; // kill it as soon as it was called
-			document.getElementById('aviso').style.display='none';
-		 };
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-70018861-1', 'auto');
+	  ga('send', 'pageview');
+
 	</script>
 	
   </head>
   <body>
 	
 	<?php
-		
-		include_once 'config.php';
+	
+	include_once 'config.php';
 		
 		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
-
-		//Inserta comentarios del footer en la Base de Datos
-		if(isset($_POST['comentario'])){
+	
+	if(isset($_POST['comentario'])){
 			$sugerencias = $_POST['comentario'];
 			
 			mysqli_query($conexion,"insert into sugerencia(rut,comentario) values ('$_REQUEST[rut_send]','$_REQUEST[comentario]')")
 			or die("Problemas con el insert de los servicios");
 			
 		}
-				
-		$login_email = $_SESSION['username'];
+	
+	$login_email = $_SESSION['username'];
 				
 		$registros=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
 			
@@ -87,9 +76,8 @@ exit;
 			$foto_perfil = $reg['foto_perfil'];
 				
 		}
-		
-
-		$registros_banner_sup=mysqli_query($conexion,"select * from banner where frame = 'sup'")
+	
+	$registros_banner_sup=mysqli_query($conexion,"select * from banner where frame = 'sup'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
 		$registros_banner_left_01=mysqli_query($conexion,"select * from banner where frame = 'left_01'")
@@ -101,7 +89,7 @@ exit;
 		$registros_banner_right_01=mysqli_query($conexion,"select * from banner where frame = 'right_01'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
-		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
+		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 4")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
 		$registrosSistema=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
@@ -155,13 +143,10 @@ exit;
 		}else{
 			$loader_convenios = "";
 		}
-		
-		
-
 	
-	?>  
+	?>	
 		
-	  <header class="grupo">
+    <header class="grupo">
 	
       <?php 	
 	    $nombre_user = $nombre." ".$apellido_paterno." ".$apellido_materno;
@@ -179,23 +164,10 @@ exit;
         echo "</div>";
       echo "</div>";
 	  ?>
-	   <a href="contacto.php" class="btnLateral">Contacto</a>
-      <div class="caja base-100">
-<!--         <div id="menu">
-          <ul>
-            <li><a href="que-es-subete.php
-videos.html
-contacto.html">¿Qué es Súbete?</a></li>
-            <li><a href="que-es-subete.php
-videos.html
-contacto.html">Videos</a></li>
-            <li><a href="que-es-subete.php
-videos.html
-contacto.html">Contacto</a></li>
-          </ul>
-        </div> -->
-      </div>
+	  <a href="contacto.php" class="btnLateral">Contacto</a>
+	  
     </header>
+	
     <section class="grupo">
       <div class="caja base-100">
         <nav class="navegacion">
@@ -206,45 +178,13 @@ contacto.html">Contacto</a></li>
             <li><a href="superacion.php" class="superacion">Superación</a></li>
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
-            <?php echo "<li style=\"$status_cata\"><a href=\"catalogo.php\" class=\"catalogo\">Catálogo</a></li>"; ?>
+            <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
 			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Beneficios</a></li>"; ?>            
           </ul>
         </nav>
       </div>
     </section>
 	
-    <section class="grupo">
-      <div class="caja web-100">
-        <div id="slider">
-          <ul id="demo1">
-			<!-- Construir un while que construya el banner, en teoria se deberian mostrar 3 max al mismo tiempo -->
-			<?php
-				while($reg=mysqli_fetch_array($registros_banner_sup)){					
-					$nombre_banner = $reg['nombre_banner'];
-					$link = $reg['link'];
-					echo "<li><a href=\"$link\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";										
-				}
-			?>			
-          </ul>
-          <div id="noticias">
-            <h1>Noticias</h1>
-            <div id="noticias-scroll" class="centrar">
-              <ul>                
-				<?php
-					while($reg=mysqli_fetch_array($registrosNoticias)){					
-						$nombre_noticia = $reg['nombre_noticia'];	
-						$id_noticia = $reg['id_noticias'];
-						
-						echo "<li><a href=\"noticias.php?id_noticia=",urlencode($id_noticia)," \">$nombre_noticia</a></li>";										
-						//Que en el link se envie la url de noticias con el codigo de la noticia para buscarla y mostrarla
-					}
-				?>			    
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="search" class="grupo">
       <div class="caja web-100">
         <form id="busqueda" method="post" action="resultados-busqueda.php">
@@ -253,6 +193,7 @@ contacto.html">Contacto</a></li>
         </form>
       </div>
     </section>
+	
     <div id="main" class="grupo">
       <div id="sidebar" class="caja tablet-35 web-35">
         <h2>Estas son las noticias y beneficios para ti</h2>
@@ -283,29 +224,53 @@ contacto.html">Contacto</a></li>
           </div>
         </div>
       </div>
-      <div id="content" class="caja tablet-65 web-65">
-        <div id="slide-content">
-          <ul id="slideprogramas">
-			<?php
-				while($reg=mysqli_fetch_array($registros_banner_right_01)){					
-					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"seguridad.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
-				}
-			  ?>					   
-          </ul>
+      <div id="content" class="caja web-65">
+        <div class="caja base-100">
+          <h1>Conóce las señaléticas de seguridad de tu empresa</h1>
         </div>
-        <div id="contenido">
-          <div class="caja web-50 item--cajas">
-            <div class="guia"></div><img src="img/caluga_1.jpg">
-            <h1>Conóce las señaléticas de seguridad de tu empresa</h1>
-            <button type="button"><a href="signos-seguridad.php">ver más</a></button>
+        <article class="caja base-100">
+          <div class="caja-senaletica">
+            <div class="item-senaletica"><img src="img/1.png">
+              <p class="sen">No mover la carga en altura</p>
+            </div>
+            <div class="item-senaletica"><img src="img/2.png">
+              <p class="sen">No debe trasportar personas</p>
+            </div>
+            <div class="item-senaletica"><img src="img/3.png">
+              <p class="sen">Bajar las velocidades en los cruces </p>
+            </div>
+            <div class="item-senaletica"><img src="img/4.png">
+              <p class="sen">Uso de casco obligatorio </p>
+            </div>
+            <div class="item-senaletica"><img src="img/5.png">
+              <p class="sen">Uso de cinturón obligatorio </p>
+            </div>
+            <div class="item-senaletica"><img src="img/6.png">
+              <p class="sen">Zona de descarga </p>
+            </div>
+            <div class="item-senaletica"><img src="img/7.png">
+              <p class="sen">No debe reparar los equipos </p>
+            </div>
+            <div class="item-senaletica"><img src="img/8.png">
+              <p class="sen">Pare </p>
+            </div>
+            <div class="item-senaletica"><img src="img/9.png">
+              <p class="sen">Zona de seguridad </p>
+            </div>
+            <div class="item-senaletica"><img src="img/10.png">
+              <p class="sen">Trasportar la carga a no más de 30 cms. de altura</p>
+            </div>
+            <div class="item-senaletica"><img src="img/11.png">
+              <p class="sen">No fumar</p>
+            </div>
+            <div class="item-senaletica"><img src="img/12.png">
+              <p class="sen">No correr</p>
+            </div>
+            <div class="item-senaletica"><img src="img/13.png">
+              <p class="senNo">Desplazarse por zona de peatones</p>
+            </div>
           </div>
-          <div class="caja web-50 item--cajas">
-            <div class="guia"></div><img src="img/caluga_2.jpg">
-            <h1>Inscribete en nuestros cursos de capacitaciones</h1>
-            <button type="button"><a href="productividad.php">ver más</a></button>
-          </div>
-        </div>
+        </article>
       </div>
     </div>
     <footer class="total">
@@ -316,7 +281,7 @@ contacto.html">Contacto</a></li>
         <div class="caja web-50">
           <div id="menuComple" class="centrar">
             <ul>
-              <li><a href="que-es-subete.php">¿Que es Súbete?</a></li>
+              <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
               <li><a href="videos.php">Videos</a></li>
               <li><a href="contacto.php">Contacto</a></li>
               <li><a href="encuesta.php">Encuesta</a></li>
@@ -336,9 +301,5 @@ contacto.html">Contacto</a></li>
         </div>
       </div>
     </footer>
-    <div id="aviso">
-      <a href="javascript:void(0);" onclick="avisoTablet();" class="closer">X</a>
-      <p>Para optimizar tu experiencia en iPad/iPhone debes permitir el uso de cookies en tu dispositivo. Debes entrar en Ajustes --> Safari--> Bloquear cookies --> Permitir siempre.</p>
-    </div>
   </body>
 </html>
