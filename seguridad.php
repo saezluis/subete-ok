@@ -233,7 +233,7 @@ exit;
         </div>
       </div>
       <div id="content" class="caja tablet-65 web-65">
-        <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
+		<div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Seguridad</h1>
         </div>
         <p class="texto-conceptos">Todo lo que hagas en tu espacio laboral, debe ser a paso seguro. En esta sección, podrás encontrar tips e información sobre cómo desenvolverte de manera correcta y, finalmente, convertirte en un estandarte de la seguridad dentro de tu empresa.</p>

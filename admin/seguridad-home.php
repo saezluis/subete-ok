@@ -35,41 +35,35 @@
 			<div class="row">
 				<div class="col-md-10">
 					<h3 class="text-left">
-						<a href="index.html">Inicio</a> - Consultar usuario
+						<a href="index.html">Inicio</a> - Pilar: Seguridad
 					</h3>
 					<div class="btn-group">
-						<br>
-						<button class="btn btn-default">
-							Seleccione
-						</button> 
-						<button data-toggle="dropdown" class="btn btn-default dropdown-toggle">
-							<span class="caret"></span>
-						</button>
-						
-						<ul class="dropdown-menu">
+						<br>												
+						<ul>
 							<li>
 								<?php
-								$tipo_usuario = 'todos';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Todos</a>";
+								echo "<a href=\"seguridad-consultar.php\">Consultar contenidos</a>";
 								?>
 								
 							</li>
 							<li>
 								<?php
-								$tipo_usuario = 'interno';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Interno</a>";
+								echo "<a href=\"seguridad-agregar.php\">Agregar contenido</a>";
 								?>
 							</li>
 							<li>
 								<?php
-								$tipo_usuario = 'externo';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Externo</a>";
+								echo "<a href=\"seguridad-activo.php\">Establecer contenido activo</a>";
 								?>
 							</li>
 							<li>
 								<?php
-								$tipo_usuario = 'unilever';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Unilever</a>";
+								echo "<a href=\"seguridad-modificar.php\">Modificar contenidos</a>";
+								?>
+							</li>
+							<li>
+								<?php
+								echo "<a href=\"el-seguridad.php\">Eliminar contenidos</a>";
 								?>
 							</li>
 							<!--

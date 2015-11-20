@@ -49,7 +49,6 @@
 	include_once 'config.php';
 	
 	$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
-	$acentos = $conexion->query("SET NAMES 'utf8'");
 	
 	if($tipo_usuario=='todos'){
 		$registrosTodos=mysqli_query($conexion,"select * from cuenta") or die("Problemas en el select:".mysqli_error($conexion));
@@ -57,8 +56,7 @@
 		$registrosTodos=mysqli_query($conexion,"select * from cuenta WHERE sistema_web = '$tipo_usuario'") or die("Problemas en el select:".mysqli_error($conexion));
 	}
 	
-	
-	$TAMANO_PAGINA = 10; 
+	$TAMANO_PAGINA = 30; 
 		
 		//examino la página a mostrar y el inicio del registro a mostrar 
 		@$pagina = $_GET["pagina"]; 
@@ -79,7 +77,6 @@
 		}else{
 			$ssql = "select * from cuenta WHERE sistema_web = '$tipo_usuario' LIMIT " . $inicio . "," . $TAMANO_PAGINA; 
 		}
-		
 		$rs = mysqli_query($conexion,$ssql); 
 	
 
@@ -99,7 +96,7 @@
 			<div class="col-md-9">
 			<h3 class="text-left">
 				<?php
-				echo "<a href=\"index.html\">Inicio</a> - <a href=\"consultar-usuario.php\">Consultar usuario</a> - ".$_SESSION["type_user"]." ";
+				echo "<a href=\"index.html\">Inicio</a> - <a href=\"eliminar-usuario.php\">Eliminar usuario</a> - ".$_SESSION["type_user"]." ";
 				?>
 			</h3>
 			<br>
@@ -108,56 +105,15 @@
 			
 				while($reg=mysqli_fetch_array($rs)){					
 					$nombre = $reg['nombre'];	
-					$apellido_paterno = $reg['apellido_paterno'];
-					$apellido_materno = $reg['apellido_materno'];
-					$sexo = $reg['sexo'];
-					$fecha_nac = $reg['fecha_nacimiento'];
+					$apellido_paterno = $reg['apellido_paterno'];					
 					$rut = $reg['rut'];
-					$hash = $reg['hash'];
-					$telefono = $reg['telefono'];
-					$comuna = $reg['comuna_residencia'];
-					$email = $reg['email'];
-					$temas_interes = $reg['temas_interes'];
-					$sistema_web = $reg['sistema_web'];
-					$cargo = $reg['cargo'];
-					$empresa = $reg['empresa'];
-					
+
 					echo "<span class=\"texto\">";
 					
-					echo "<span class=\"texto\">Nombre: </span>".$nombre;
+					echo "<span class=\"texto\">Nombre: $nombre Apeliido paterno: $apellido_paterno Rut: <a href=\"elim-usuario.php?rut_send=",urlencode($rut)," \">$rut</a></span>";
 					echo "<br>";
-					echo "<span class=\"texto\">Apeliido paterno: </span>".$apellido_paterno;
-					echo "<br>";
-					echo "<span class=\"texto\">Apeliido materno: </span>".$apellido_materno;
-					echo "<br>";
-					echo "<span class=\"texto\">Sexo: </span>".$sexo;
-					echo "<br>";
-					echo "<span class=\"texto\">Fecha de nacimiento: </span>".$fecha_nac;
-					echo "<br>";
-					echo "<span class=\"texto\">Rut: </span>".$rut;
-					echo "<br>";
-					echo "<span class=\"texto\">Hash: </span>".$hash;
-					echo "<br>";
-					echo "<span class=\"texto\">Telefono: </span>".$telefono;
-					echo "<br>";
-					echo "<span class=\"texto\">Comuna: </span>".$comuna;
-					echo "<br>";
-					echo "<span class=\"texto\">Email: </span>".$email;
-					echo "<br>";
-					echo "<span class=\"texto\">Temas Interes: </span>".$temas_interes;
-					echo "<br>";
-					echo "<span class=\"texto\">Sistema web: </span>".$sistema_web;
-					echo "<br>";
-					echo "<span class=\"texto\">Cargo: </span>".$cargo;
-					echo "<br>";
-					echo "<span class=\"texto\">Empresa: </span>".$empresa;
-					echo "<br>";
-					
 					echo "</span>";
-					
-					
-					echo "<br>";
-					echo "<br>";
+
 				}
 				
 				mysqli_free_result($rs); 
@@ -169,7 +125,7 @@
 							echo "<span class=\"pag--cube textSize\">" . $pagina . "</span>" . " "; 
 						else 
 							//si el índice no corresponde con la página mostrada actualmente, coloco el enlace para ir a esa página 				
-							echo "<a href='pc-usuario.php?pagina=" . $i . "' class=\"textSize\">"  . $i .  "</a> " ; 
+							echo "<a href='ed-usuario.php?pagina=" . $i . "' class=\"textSize\">"  . $i .  "</a> " ; 
 					}   
 				}
 				

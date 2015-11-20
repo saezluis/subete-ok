@@ -26,6 +26,7 @@
 			</h3>
 		</div>
 	</div>
+	<br>
 	<div class="row">
 		<div class="col-md-2">
 			<div class="panel-group" id="panel-142934">
@@ -35,16 +36,16 @@
 					</div>
 					<div id="panel-element-230870" class="panel-collapse collapse">
 						<div class="panel-body">
-							<a href="#" onclick="reCheck();">Consultar usuarios</a>
+							<a href="consultar-usuario.php" >Consultar usuarios</a>
 						</div>						
 						<div class="panel-body">
-							<a href="#" onclick="check();">Agregar usuario</a>
+							<a href="agregar-usuario.php" >Agregar usuario</a>
 						</div>
 						<div class="panel-body">
-							Editar usuario
+							<a href="editar-usuario.php" >Editar usuario</a>
 						</div>
 						<div class="panel-body">
-							Eliminar usuario
+							<a href="eliminar-usuario.php" >Eliminar usuario</a>
 						</div>
 					</div>
 				</div>
@@ -54,7 +55,7 @@
 					</div>
 					<div id="panel-element-543909" class="panel-collapse collapse">
 						<div class="panel-body">
-							Seguridad
+							<a href="seguridad-home.php" >Seguridad</a>
 						</div>
 						<div class="panel-body">
 							Productividad
@@ -94,38 +95,10 @@
 				</div>
 			</div>
 		</div>
-		
-		<div class="col-md-10">
-			<b></b>			
-			<div id="success"></div>
-			<b></b>
-			<div id="error"></div>
-			<div id="b"></div>
-			
-			<!--
-			<b></b>			
-			<div id="success"></div>
-			<b></b>
-			<div id="error"></div>
-			<div id="b1"></div>
-			-->
-		</div>
-		
 	</div>
 </div>
 
-	<script>
- 
-		function check(){
-		$('#b').load('test.html #target');
-		//$('#b1').empty();
-		}
-		
-		function reCheck(){
-		$('#b').load('consultar-usuario.php #megaTarget');
-		}
-		
-	</script>
+	
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

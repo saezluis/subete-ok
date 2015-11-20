@@ -35,7 +35,7 @@
 			<div class="row">
 				<div class="col-md-10">
 					<h3 class="text-left">
-						<a href="index.html">Inicio</a> - Consultar usuario
+						<a href="index.html">Inicio</a> - Editar usuario
 					</h3>
 					<div class="btn-group">
 						<br>
@@ -50,26 +50,26 @@
 							<li>
 								<?php
 								$tipo_usuario = 'todos';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Todos</a>";
+								echo "<a href=\"ed-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Todos</a>";
 								?>
 								
 							</li>
 							<li>
 								<?php
 								$tipo_usuario = 'interno';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Interno</a>";
+								echo "<a href=\"ed-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Interno</a>";
 								?>
 							</li>
 							<li>
 								<?php
 								$tipo_usuario = 'externo';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Externo</a>";
+								echo "<a href=\"ed-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Externo</a>";
 								?>
 							</li>
 							<li>
 								<?php
 								$tipo_usuario = 'unilever';
-								echo "<a href=\"pc-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Unilever</a>";
+								echo "<a href=\"ed-usuario.php?tipo_usuario=",urlencode($tipo_usuario)," \">Unilever</a>";
 								?>
 							</li>
 							<!--
