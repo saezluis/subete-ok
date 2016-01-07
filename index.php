@@ -204,7 +204,7 @@ exit;
 		}
 		*/
 		if($sistema_web=='interno' or $sistema_web=='externo'){
-			$titulo_convenios = "Nuevos Convenios";
+			$titulo_convenios = "Subete a los beneficios";
 		}else{
 			$titulo_convenios = "";
 		}
@@ -354,8 +354,9 @@ contacto.html">Contacto</a></li>
 			   <?php
 				while($reg=mysqli_fetch_array($loader_convenios)){					
 					$nombre_banner = $reg['nombre_banner'];
-					echo "<li><a href=\"beneficios.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
+					echo "<li><a href=\"seguridad.php\"><img src=\"img/banner/$nombre_banner\" alt=\"\"></a></li>";
 				}
+				echo "<li><a href=\"profesionalismo.php\"><img src=\"img/banner/convenio_compe.jpg\" alt=\"\"></a></li>";
 			  ?>			  			  
             </ul>
           </div>
