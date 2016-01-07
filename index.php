@@ -14,13 +14,13 @@ header('Content-Type: text/html; charset=UTF-8');
 
 //echo "<br/>" . "Si el error persiste, puede deberse a las siguientes causas:" . "<br/>";
 
-echo "<br/>" . " <h2> Estás a un click de Subirte, actualiza tu navegador <a href='http://windows.microsoft.com/es-cl/internet-explorer/download-ie'>aquí</a></h2>" . "<br/>";
+//echo "<br/>" . " <h2> Estás a un click de Subirte, actualiza tu navegador <a href='http://windows.microsoft.com/es-cl/internet-explorer/download-ie'>aquí</a></h2>" . "<br/>";
 
 //echo "<br/>" . " * Estás usando una versión antigua de Internet Explorer, actualízalo." . "<br/>";
 
 //echo "<br/>" . "Entiendo las recomendaciones, volver al <a href='login.php'>Login</a>." . "<br/>";
 	
-//echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
 
 //echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
 
@@ -42,7 +42,30 @@ exit;
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
     <link rel="stylesheet" href="css/estilos.css">
+	
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	
+	
+	<script src="http://code.jquery.com/jquery-1.7.2.js" type="text/javascript"></script>		
+	<script src="iealert.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="iealert/style.css" />    
+		
+	<link rel="stylesheet" href="main.css">
+	
+	<script type="text/javascript">
+		
+	function cerrarVideo(){
+	  
+		var video = $("#playerid").attr("src");
+		$("#playerid").attr("src","");
+		$("#playerid").attr("src",video);
+		
+	}
+
+	</script>	
+	
+	
+	
     <script src="js/scripts-min.js"></script>
     <link rel="stylesheet" href="js/dist/slippry.css">
     <script src="js/dist/slippry.min.js"></script>	
@@ -54,10 +77,38 @@ exit;
 		 };
 	</script>
 	
+
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-70018861-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	
   </head>
   <body>
 	
 	<?php
+	
+	echo "<div id=\"boxes\" onmousedown=\"cerrarVideo()\">";
+		echo "<div style=\"display: none; background:url(strip.jpg) repeat-x #fff;\" id=\"dialog\" class=\"window centrado-porcentual\">";
+			echo "<h1></h1>";
+			
+			echo "<div id=\"lorem\">";			
+				echo "<iframe id=\"playerid\" width=\"720\" height=\"400\" src=\"https://www.youtube.com/embed/mWukd0ffkaQ\" frameborder=\"0\" allowfullscreen=\"\"></iframe>";
+			echo "</div>";
+			echo "<div id=\"popupfoot\"> <a href=\"#\" class=\"close agree acept-ok\" onclick=\"cerrarVideo()\">Cerrar</a></div>";
+		echo "</div>";
+		echo "<div style=\"width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;\" id=\"mask\"></div>";
+	echo "</div>";
+	
+	
+	
 		
 		include_once 'config.php';
 		
@@ -101,7 +152,7 @@ exit;
 		$registros_banner_right_01=mysqli_query($conexion,"select * from banner where frame = 'right_01'")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
-		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 3")
+		$registrosNoticias = mysqli_query($conexion,"SELECT * FROM noticias ORDER BY id_noticias DESC LIMIT 4")
 		or die("Problemas en el select:".mysqli_error($conexion));
 		
 		$registrosSistema=mysqli_query($conexion,"select * from cuenta where rut = '$login_email'") or die("Problemas en el select:".mysqli_error($conexion));
@@ -130,7 +181,7 @@ exit;
 		if($sistema_web=='unilever'){
 			$status_cata = 'display:none;';
 			$status_bene = 'display:none;';					
-		}
+		}	
 		
 		if($sistema_web=='interno' or $sistema_web=='externo'){
 			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo.png\"></a></div>";			
@@ -138,12 +189,20 @@ exit;
 			$index_logo = "<div id=\"logo\"><a href=\"index.php\"><img src=\"img/logo-unilever.png\"></a></div>";
 		}
 		
-		if($sistema_web=='interno' or $sistema_web=='externo'){
+		if($sistema_web=='interno'){
+			$index_logo_left = "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div> <div id=\"logo_multitecnica\"><a href=\"http://www.multitecnica.cl\" target=\"_blank\" alt=\"Multitécnica\"><img src=\"img/logo_multitecnica.jpg\"></a></div>";
+		}elseif($sistema_web=='externo'){
 			$index_logo_left = "<div id=\"logo_royal\"><a href=\"http://www.royalrental.cl\" target=\"_blank\" alt=\"Royal Rental\"><img src=\"img/logo_royal.jpg\"></a></div>";
+		}else{	
+			$index_logo_left = "<div id=\"logo-for-unilever\"><img src=\"img/logo-for-lever.png\"  ></div>";
+		}
+		/*
+		if($sistema_web=='externo'){
+			
 		}else{
 			$index_logo_left = "<div id=\"logo-for-unilever\"><img src=\"img/logo-for-lever.png\"  ></div>";
 		}
-		
+		*/
 		if($sistema_web=='interno' or $sistema_web=='externo'){
 			$titulo_convenios = "Nuevos Convenios";
 		}else{
@@ -231,6 +290,8 @@ contacto.html">Contacto</a></li>
             <div id="noticias-scroll" class="centrar">
               <ul>                
 				<?php
+				
+				if($sistema_web=='externo'){
 					while($reg=mysqli_fetch_array($registrosNoticias)){					
 						$nombre_noticia = $reg['nombre_noticia'];	
 						$id_noticia = $reg['id_noticias'];
@@ -238,6 +299,23 @@ contacto.html">Contacto</a></li>
 						echo "<li><a href=\"noticias.php?id_noticia=",urlencode($id_noticia)," \">$nombre_noticia</a></li>";										
 						//Que en el link se envie la url de noticias con el codigo de la noticia para buscarla y mostrarla
 					}
+				}
+				
+				if($sistema_web=='interno'){
+					
+					echo "<li><a href=\"seguridad.php\">Conoce sobre tu seguro complementario y los beneficios que la ACHS que tiene para ti.</a></li>";
+					
+					echo "<li><a href=\"profesionalismo.php\">Caja de compensación La Araucana tiene un beneficio para ti. Infórmate.</a></li>";
+					
+					while($reg=mysqli_fetch_array($registrosNoticias)){					
+						$nombre_noticia = $reg['nombre_noticia'];	
+						$id_noticia = $reg['id_noticias'];
+						
+						echo "<li><a href=\"noticias.php?id_noticia=",urlencode($id_noticia)," \">$nombre_noticia</a></li>";
+						//Que en el link se envie la url de noticias con el codigo de la noticia para buscarla y mostrarla
+					}					
+				}
+				
 				?>			    
               </ul>
             </div>
@@ -298,12 +376,12 @@ contacto.html">Contacto</a></li>
           <div class="caja web-50 item--cajas">
             <div class="guia"></div><img src="img/caluga_1.jpg">
             <h1>Conóce las señaléticas de seguridad de tu empresa</h1>
-            <button type="button"><a href="signos-seguridad.php">ver más</a></button>
+           <a href="signos-seguridad.php">ver más</a>
           </div>
           <div class="caja web-50 item--cajas">
             <div class="guia"></div><img src="img/caluga_2.jpg">
             <h1>Inscribete en nuestros cursos de capacitaciones</h1>
-            <button type="button"><a href="productividad.php">ver más</a></button>
+            <a href="profesionalismo.php">ver más</a>
           </div>
         </div>
       </div>
@@ -311,12 +389,12 @@ contacto.html">Contacto</a></li>
     <footer class="total">
       <div class="grupo">
         <div class="caja web-25">
-          <div id="logo--footer"><a href="http://www.royalrental.cl" target="_blank"><img src="img/logo--footer.png"></a></div>
+          <div id="logo--footer"><a href="http://www.royalrental.cl" target="_blank"><img src="img/logo--footer.png" style="display:none;"></a></div>
         </div>
         <div class="caja web-50">
           <div id="menuComple" class="centrar">
             <ul>
-              <li><a href="que-es-subete.php">¿Que es Súbete?</a></li>
+              <li><a href="que-es-subete.php">¿Qué es Súbete?</a></li>
               <li><a href="videos.php">Videos</a></li>
               <li><a href="contacto.php">Contacto</a></li>
               <li><a href="encuesta.php">Encuesta</a></li>
@@ -340,5 +418,8 @@ contacto.html">Contacto</a></li>
       <a href="javascript:void(0);" onclick="avisoTablet();" class="closer">X</a>
       <p>Para optimizar tu experiencia en iPad/iPhone debes permitir el uso de cookies en tu dispositivo. Debes entrar en Ajustes --> Safari--> Bloquear cookies --> Permitir siempre.</p>
     </div>
+	
+	<script src="main.js"></script>
+	
   </body>
 </html>

@@ -8,10 +8,10 @@
 	$estatusPart = substr($estatus,0,6);
 	$id_seguridad = substr($estatus,6,7);
 	
-	echo "Estatus: ".$estatusPart;
-	echo "<br>";
-	echo "Id seguridad: ".$id_seguridad;
-	echo "<br>";
+	//echo "Estatus: ".$estatusPart;
+	//echo "<br>";
+	//echo "Id seguridad: ".$id_seguridad;
+	//echo "<br>";
 	//echo substr("Hello world",10)."<br>"; //agarra la d
 	
 	include_once 'config.php';

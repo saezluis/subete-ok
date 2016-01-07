@@ -30,7 +30,8 @@
 }
 
 #boxes #dialog {
-  width:450px; 
+  width:auto;
+  min-width:450px;
   height:auto;
   padding:10px;
   background-color:#ffffff;

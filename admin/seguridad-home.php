@@ -65,17 +65,7 @@
 								<?php
 								echo "<a href=\"el-seguridad.php\">Eliminar contenidos</a>";
 								?>
-							</li>
-							<!--
-							<li class="disabled">
-								<a href="#">Another action</a>
-							</li>
-							<li class="divider">
-							</li>
-							<li>
-								<a href="#">Something else here</a>
-							</li>
-							-->
+							</li>							
 						</ul>
 					</div>
 				</div>

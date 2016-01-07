@@ -238,23 +238,55 @@ exit;
         </div>
         <p class="texto-conceptos">Todo lo que hagas en tu espacio laboral, debe ser a paso seguro. En esta sección, podrás encontrar tips e información sobre cómo desenvolverte de manera correcta y, finalmente, convertirte en un estandarte de la seguridad dentro de tu empresa.</p>
 		<?php
-			echo "<div id=\"imagen-destacada\"><img src=\"img/seguridad/$imagen_seguridad\">";
-			  echo "<h2>$titulo_seguridad</h2>";
-			  ?>
-			  <p>Te invitamos a conocer esta interesante guía que te servirá para desenvolverte de manera segura en tu lugar de trabajo.</p>
-			  <ol class="lista-ordenada">
-				<li>Debe tener licencia clase "D" vigente.</li>
-				<li>Debe realizar check list del equipos cada vez inicie su periodo de trabajo.</li>
-				<li>Debe respetar velocidad de traslado establecidos en las instalaciones.</li>
-				<li>Debe respetar cruces, estacionamientos y lugares de transito habilitados.</li>
-				<li>No debe intervenir ni deshabilitar dispositivos de seguridad de los equipos.</li>
-				<li>No debe reparar los equipos, llame al servicio técnico contratado.</li>
-				<li>Debe cumplir las normas de seguridad establecidas, tocar bocina, bajar velocidad en los cruces y no transportar personas.</li>
-				<li>Debe cumplir los ciclos de carga de las baterías, entender este proceso asegura continuidad operacional de sus procesos.</li>
-				<li>Debe cumplir el cambio de baterías en % de descarga (20% a 30%).</li>
-				<li>Jamás moverse con la carga en altura. Recomendable no más de 30 cm de altura.</li>
-			  </ol>			  
-			  <?php
+			if($sistema_web=='externo'){
+				echo "<div id=\"imagen-destacada\"><img src=\"img/seguridad/seguridad_06b.jpg\">";
+					echo "<h2>10 mandamientos del operador</h2>";
+				  
+				echo "<p>Te invitamos a conocer esta interesante guía que te servirá para desenvolverte de manera segura en tu lugar de trabajo.</p>";
+					echo "<ol class=\"lista-ordenada\">";
+						echo "<li>Debe tener licencia clase \"D\" vigente.</li>";
+						echo "<li>Debe realizar check list del equipos cada vez inicie su periodo de trabajo.</li>";
+						echo "<li>Debe respetar velocidad de traslado establecidos en las instalaciones.</li>";
+						echo "<li>Debe respetar cruces, estacionamientos y lugares de transito habilitados.</li>";
+						echo "<li>No debe intervenir ni deshabilitar dispositivos de seguridad de los equipos.</li>";
+						echo "<li>No debe reparar los equipos, llame al servicio técnico contratado.</li>";
+						echo "<li>Debe cumplir las normas de seguridad establecidas, tocar bocina, bajar velocidad en los cruces y no transportar personas.</li>";
+						echo "<li>Debe cumplir los ciclos de carga de las baterías, entender este proceso asegura continuidad operacional de sus procesos.</li>";
+						echo "<li>Debe cumplir el cambio de baterías en % de descarga (20% a 30%).</li>";
+						echo "<li>Jamás moverse con la carga en altura. Recomendable no más de 30 cm de altura.</li>";
+					echo "</ol>";
+				echo "</div>";
+			}
+			
+			if($sistema_web=='interno'){
+				echo "<div id=\"imagen-destacada\"><img src=\"img/seguridad/seguros.jpg\">";
+					echo "<h2>A continuación, te mostramos la lista de Seguros que dispones como colaborador.</h2>";
+				
+				echo "<p><b>Seguro Complementario de salud (Aseguradora Magallanes)</b></p>";
+				echo "<p>El requisito para poder acceder a este Seguro es poseer contrato indefinido y no tiene ningún costo para los colaboradores.</p>";
+					echo "<ol class=\"lista-ordenada\">";
+						echo "<li>Gastos ambulatorios.</li>";
+						echo "<li>Gastos hospitalarios.</li>";
+						echo "<li>Gastos maternidad.</li>";
+						echo "<li>Ópticas, prótesis entre otros.</li>";
+					echo "</ol>";
+				echo "<p><b>Seguro ACHS</b></p>";
+				echo "<p>Deberás acudir al centro de atención ACHS más cercano en caso de:</p>";
+				echo "<ol class=\"lista-ordenada\">";
+					echo "<li>Sufrir accidentes de trayecto.</li>";
+					echo "<li>Sospechas de padecimiento de una enfermedad profesional.</li>";
+				echo "</ol>";
+				echo "<p>Además, podrás acceder a los beneficios del Mundo ACHS presentando tu tarjeta digital. Estos consisten en:</p>";
+				echo "<ol class=\"lista-ordenada\">";
+					echo "<li>Educación.</li>";
+					echo "<li>Salud.</li>";
+					echo "<li>Entretención.</li>";
+				echo "</ol>";
+				echo "<p>Descarga tu tarjeta en el siguiente link</p>";
+				echo "<p><a href=\"http://www.mundoachs.cl/mundo/Paginas/Inicio.aspx\" target=\"_blank\">http://www.mundoachs.cl/mundo/Paginas/Inicio.aspx</a></p>";
+			
+			}
+			
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"seguridad-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"seguridad_send\" value=\"$id_seguridad\" hidden=hidden>";									  

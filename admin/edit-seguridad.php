@@ -55,7 +55,7 @@
 				<div class="col-md-10">
 					<h3 class="text-left">
 					<?php
-						echo "<a href=\"index.html\">Inicio</a> - <a href=\"seguridad-home.php\">Pilar: Seguridad</a> - Agregar contenido";
+						echo "<a href=\"index.html\">Inicio</a> - <a href=\"seguridad-home.php\">Pilar: Seguridad</a> - Modificar contenido";
 					?>						
 					</h3>
 					<br>

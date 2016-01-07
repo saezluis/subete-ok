@@ -232,33 +232,50 @@ exit;
         <div id="titulo-menu-colores"><img src="img/royalito_mini.png" class="izquierda">
           <h1>Profesionalismo</h1>
         </div>
-        <p class="texto-conceptos">Ser profesional te permite adquirir seriedad y ser considerado en proyectos cada vez mayores. En esta sección, encontrarás cursos de perfeccionamiento que harán de ti un operador completo.</p>
+        <p class="texto-conceptos">Ser profesional te permite adquirir seriedad y ser considerado en proyectos cada vez mayores. En esta sección, encontrarás cursos de perfeccionamiento que harán de ti un trabajador completo.</p>
 		
         <?php
-			echo "<div id=\"imagen-destacada\"><img src=\"img/profe/$imagen_profe\">";
-			  echo "<h2>$titulo_profe</h2>";
-			  ?>
-			  <p>Queremos que saques todo tu potencial. Inscríbete en nuestro curso:</p>
-			  <p>Compuesto por diferentes módulos, el programa tiene como objetivo capacitar a cada operador otorgándoles las herramientas necesarias para lograr el máximo desempeño en sus diferentes labores.</p>
-			  <p>El curso consta de distintos tópicos, entre los que podremos encontrar:</p>
-			  <ol class="lista-ordenada">
-				<li>Manejo del equipo.</li>
-				<li>Mantenimiento de Baterías.</li>
-				<li>Taller de prácticas en terreno de manejo de equipos.</li>
-				<li>onocimiento y manejo de diferentes tipos de máquinas.</li>
-			  </ol>
-			  <p>Además:</p>
-			  <ol class="lista-ordenada">
-				<li>Los cursos son dictados por Ingenieros (que son Profesores Universitarios) en su parte teórica;
-				y, por Ingenieros de nuestra empresa, capacitados en el extranjero por las más importantes 
-				fábricas de equipos.</li>
-				<li>Existen cursos de distintas duraciones, dependiendo del nivel de conocimientos específicos de
-				los alumnos y de los objetivos específicos de su empresa</li>
-				<li>El programa considera la opción de apoyar a los alumnos en la tramitación del examen de
-				licencia de conducir Clase “D” para quienes aprueben el Programa.</li>
-			  </ol>
-			  <p>Si quieres obtener tu licencia ¡contáctanos!</p>			  
-			  <?php
+			if($sistema_web=='externo'){
+				echo "<div id=\"imagen-destacada\"><img src=\"img/profe/banner10mandamienros_profesionales.jpg\">";
+				  echo "<h2>Queremos que saques todo tu potencial. Inscríbete en nuestro curso:</h2>";
+				  
+				  echo "<p>Queremos que saques todo tu potencial. Inscríbete en nuestro curso:</p>";
+				  echo "<p>Compuesto por diferentes módulos, el programa tiene como objetivo capacitar a cada operador otorgándoles las herramientas necesarias para lograr el máximo desempeño en sus diferentes labores.</p>";
+				  echo "<p>El curso consta de distintos tópicos, entre los que podremos encontrar:</p>";
+				  echo "<ol class=\"lista-ordenada\">";
+					echo "<li>Manejo del equipo.</li>";
+					echo "<li>Mantenimiento de Baterías.</li>";
+					echo "<li>Taller de prácticas en terreno de manejo de equipos.</li>";
+					echo "<li>onocimiento y manejo de diferentes tipos de máquinas.</li>";
+				  echo "</ol>";
+				  echo "<p>Además:</p>";
+				  echo "<ol class=\"lista-ordenada\">";
+					echo "<li>Los cursos son dictados por Ingenieros (que son Profesores Universitarios) en su parte teórica;";
+					echo "y, por Ingenieros de nuestra empresa, capacitados en el extranjero por las más importantes";
+					echo "fábricas de equipos.</li>";
+					echo "<li>Existen cursos de distintas duraciones, dependiendo del nivel de conocimientos específicos de";
+					echo "los alumnos y de los objetivos específicos de su empresa</li>";
+					echo "<li>El programa considera la opción de apoyar a los alumnos en la tramitación del examen de";
+					echo "licencia de conducir Clase \"D\" para quienes aprueben el Programa.</li>";
+				  echo "</ol>";
+				  echo "<p>Si quieres obtener tu licencia ¡contáctanos!</p>";
+			    echo "</div>";
+			}  
+			
+			if($sistema_web=='interno'){
+				echo "<div id=\"imagen-destacada\"><img src=\"img/profe/profe.jpg\">";
+					echo "<h2>Seguro en Caja de compensación La Araucana</h2>";
+					echo "<p>Podrás acceder a las siguientes becas de educación para tus hijos:</p>";
+					 echo "<ol class=\"lista-ordenada\">";
+						echo "<li>Becas enseñanza básica.</li>";
+						echo "<li>Becas enseñanza media.</li>";
+						echo "<li>Becas títulos técnicos.</li>";
+						echo "<li>Becas universitarias.</li>";
+						echo "<li>Becas mejor puntaje PSU</li>";
+					 echo "</ol>";
+				echo "</div>";
+			}
+			  
 			  echo "<form method=\"post\">";
 			  //echo "<button type=\"submit\" formaction=\"profesionalismo-anteriores.php\" >Publicaciones anteriores </button>";				
 				echo "<input type=\"text\" name=\"profe_send\" value=\"$id_profe\" hidden=hidden>";									  

@@ -7,7 +7,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
 }
 else
 {
-echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+	echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
 echo "<br/>" . "<a href='login.php'>Hacer Login</a>";
 
 exit;
@@ -167,7 +167,12 @@ exit;
 	if(@$_REQUEST['video'] != ''){
 		$recurso = @$_REQUEST['video'];	
 	}else{
-		$recurso = "https://www.youtube.com/embed/VqAHpqvCmr0";
+		if($sistema_web=='interno'){
+			$recurso = "https://www.youtube.com/embed/VqAHpqvCmr0";
+		}
+		if($sistema_web=='externo'){
+			$recurso = "https://www.youtube.com/embed/kSJJLlQIgz0";
+		}		
 	}
 	
 	echo "<form method=\"post\">";
@@ -180,10 +185,21 @@ exit;
 			echo "</div>";
 		  echo "</article>";
 		  echo "<article class=\"mini\">";
-			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/VqAHpqvCmr0\" type=\"submit\"><img src=\"img/video4.jpg\"></button></div>";
-			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
-			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";
-			echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/z7lPSkCWOcM\" type=\"submit\"><img src=\"img/video2.jpg\"></button></div>";
+		  
+			if($sistema_web=='interno'){			
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/VqAHpqvCmr0\" type=\"submit\"><img src=\"img/video4.jpg\"></button></div>";
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";			
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/z7lPSkCWOcM\" type=\"submit\"><img src=\"img/video2.jpg\"></button></div>";
+			}
+			
+			if($sistema_web=='externo'){
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/kSJJLlQIgz0\" type=\"submit\"><img src=\"img/video5.jpg\"></button></div>";
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/dq5TWOYS2G8\" type=\"submit\"><img src=\"img/video0.jpg\"></button></div>";
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/QIowq_0xjvw\" type=\"submit\"><img src=\"img/video1.jpg\"></button></div>";			
+				echo "<div class=\"caja base-25 movil-25 tablet-25 web-25\"><button name=\"video\" value=\"https://www.youtube.com/embed/z7lPSkCWOcM\" type=\"submit\"><img src=\"img/video2.jpg\"></button></div>";
+			}
+			
 		  echo "</article>";
 		echo "</div>";
 	echo "</form>";
