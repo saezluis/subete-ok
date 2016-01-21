@@ -40,15 +40,28 @@ exit;
         //alert("funciona");
       });
     </script>
+	
+	 <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-70018861-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
   </head>
   <body>
 	<?php
 	include_once 'config.php';
 		
+		$evento = $_GET['evento'];
+		
 		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
 		
-		$registrosFotos=mysqli_query($conexion,"select * from galeria_fotos where evento = 'lanzamiento'") or die("Problemas en el select:".mysqli_error($conexion));
+		$registrosFotos=mysqli_query($conexion,"select * from galeria_fotos where evento = '$evento'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 		if(isset($_POST['comentario'])){
 			$sugerencias = $_POST['comentario'];
@@ -173,8 +186,8 @@ exit;
             <li><a href="superacion.php" class="superacion">Superación</a></li>
             <li><a href="optimismo.php" class="optimismo">Optimismo</a></li>
             <li><a href="profesionalismo.php" class="profesionalismo">Profesionalismo</a></li>
-            <?php echo "<li style=\"$status_cata\"><a href=\"#\" class=\"catalogo\">Catálogo</a></li>"; ?>
-			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Beneficios</a></li>"; ?> 
+            <?php echo "<li style=\"$status_cata\"><a href=\"catalogo.php\" class=\"catalogo\">Catálogo</a></li>"; ?>
+			<?php echo "<li style=\"$status_bene\"><a href=\"beneficios.php\" class=\"beneficios\">Cupones</a></li>"; ?> 
           </ul>
         </nav>
       </div>
@@ -192,7 +205,21 @@ exit;
     <div id="main" class="grupo">
       <article>
         <div class="caja web-100">
-          <h1 class="tit-gal">SÚBETE A LOS MEJORES MOMENTOS DE EL DÍA DEL OPERARIO 2015 DE ROYAL RENTAL.</h1>
+		  
+		  <?php
+		  
+			if($evento=='lanzamiento'){
+				echo "<h1 class=\"tit-gal\">SÚBETE A LOS MEJORES MOMENTOS DE EL DÍA DEL OPERARIO 2015 DE ROYAL RENTAL.</h1>";
+			}
+			
+		    if($evento=='navidad'){
+				echo "<h1 class=\"tit-gal\"><div align=\"center\"> DURANTE LA CELEBRACIÓN PREMIAMOS A LOS DESTACADOS DEL AÑO Y ELEGIMOS A LOS MEJORES COMPAÑEROS DEL 2015.</div></h1>";
+			}
+		  
+		  
+		  
+		  ?>
+		  
         </div>
         <div class="caja web-100">
         <div id="anchor-tag">
