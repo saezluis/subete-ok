@@ -117,10 +117,29 @@ exit;
 
 		//Inserta comentarios del footer en la Base de Datos
 		if(isset($_POST['comentario'])){
+		
 			$sugerencias = $_POST['comentario'];
+			$rut_send = $_REQUEST['rut_send'];
+			//$comentario = $_REQUEST['comentario'];
 			
-			mysqli_query($conexion,"insert into sugerencia(rut,comentario) values ('$_REQUEST[rut_send]','$_REQUEST[comentario]')")
-			or die("Problemas con el insert de los servicios");
+			mysqli_query($conexion,"INSERT INTO sugerencia(rut,comentario) VALUES ('$rut_send','$sugerencias')") or die("Problemas con el insert de los servicios");
+			
+			$registrosCuenta=mysqli_query($conexion,"SELECT * FROM cuenta WHERE rut='$rut_send' ") or die("Problemas con el insert de los servicios");
+			//Buscar el nombre del usuario con el Rut
+			
+			if($reg=mysqli_fetch_array($registrosCuenta)){
+				$nombre = $reg['nombre'];
+				$apellido_paterno = $reg['apellido_paterno'];
+				$apellido_materno = $reg['apellido_materno'];
+			}
+			$nombreFinal = $nombre." ".$apellido_paterno." ".$apellido_materno;
+			
+			$to = "contacto@pm.cl,frodriguez@pm.cl,lsaez@pm.cl";
+			$subject = "Comentario de usuario en pagina web ProgramaSubete";
+			$headers = "De: $nombreFinal";
+			$message = $sugerencias;
+			
+			mail($to,$subject,$message,$headers);
 			
 		}
 				
