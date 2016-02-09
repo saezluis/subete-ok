@@ -11,11 +11,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/agregar-noticias.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/agregar-noticias.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/agregar-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/agregar-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/admin\/config.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/config.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/consultar-noticias.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/consultar-noticias.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -52,6 +79,330 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-noticia.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-noticia.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-optimismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-optimismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-productivdad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-productivdad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-profesionalismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-profesionalismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-responsabilidad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-responsabilidad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-superacion.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-superacion.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/delete-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/delete-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/ed-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/ed-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-noticia.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-noticia.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-optimismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-optimismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-productividad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-productividad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-profesionalismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-profesionalismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-responsabilidad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-responsabilidad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-superacion.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-superacion.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/edit-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/edit-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/editar-noticia.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/editar-noticia.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/editar-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/editar-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-noticias.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-noticias.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-optimismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-optimismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-productividad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-productividad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-profesionalismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-profesionalismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-responsabilidad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-responsabilidad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-superacion.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-superacion.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/el-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/el-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-noticias.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-noticias.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-optimismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-optimismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-productividad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-productividad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-profesionalismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-profesionalismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-responsabilidad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-responsabilidad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-superacion.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-superacion.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/elim-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/elim-usuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/eliminar-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/eliminar-usuario.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -98,6 +449,96 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/admin\/noticia-activa.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/noticia-activa.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/noticia-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/noticia-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/noticias-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/noticias-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-consultar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-consultar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-modificar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-modificar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/optimismo-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/optimismo-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/admin\/pc-usuario.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -107,11 +548,407 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/admin\/procesarRegistroUsuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/procesarRegistroUsuario.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-consultar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-consultar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-modificar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-modificar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/productividad-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/productividad-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-consultar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-consultar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-modificar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-modificar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/profesionalismo-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/profesionalismo-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-consultar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-consultar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-modificar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-modificar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/responsabilidad-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/responsabilidad-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-consultar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-consultar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-modificar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-modificar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/seguridad-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/seguridad-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-consultar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-consultar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-establecer-activo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-establecer-activo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-home.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-home.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-modificar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-modificar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/superacion-procesar-agregar.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/superacion-procesar-agregar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/admin\/test.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/admin\/test.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-noticia.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-noticia.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-optimismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-optimismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-productividad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-productividad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-profesionalismo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-profesionalismo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-responsabilidad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-responsabilidad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-superacion.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-superacion.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/admin\/update-usuario.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/admin\/update-usuario.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -216,6 +1053,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/catalogo.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/catalogo.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/checklog.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -279,6 +1125,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/contacto.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/css\/estilos-.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/estilos-.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -907,6 +1762,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/banner\/convenio_achs.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68350,
+		"inputAbbreviatedPath": "\/img\/banner\/convenio_achs.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenio_achs.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenio_compe.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 55543,
+		"inputAbbreviatedPath": "\/img\/banner\/convenio_compe.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenio_compe.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/convenio_sc.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65921,
+		"inputAbbreviatedPath": "\/img\/banner\/convenio_sc.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/convenio_sc.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/banner\/convenios_01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -936,6 +1824,39 @@
 		"initialSize": 6584,
 		"inputAbbreviatedPath": "\/img\/banner\/convenios_03.jpg",
 		"outputAbbreviatedPath": "\/img\/banner\/convenios_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/foto15-portada - copia.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27166,
+		"inputAbbreviatedPath": "\/img\/banner\/foto15-portada - copia.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/foto15-portada - copia.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/foto15-portada.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27166,
+		"inputAbbreviatedPath": "\/img\/banner\/foto15-portada.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/foto15-portada.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/banner\/galeria-end-year.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 110652,
+		"inputAbbreviatedPath": "\/img\/banner\/galeria-end-year.jpg",
+		"outputAbbreviatedPath": "\/img\/banner\/galeria-end-year.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1116,156 +2037,244 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/1-1600.jpg": {
+	"\/img\/galeria\/fin-ano-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 241923,
-		"inputAbbreviatedPath": "\/img\/galeria\/1-1600.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/1-1600.jpg",
+		"initialSize": 303607,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-1.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/1-375.jpg": {
+	"\/img\/galeria\/fin-ano-10.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 23648,
-		"inputAbbreviatedPath": "\/img\/galeria\/1-375.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/1-375.jpg",
+		"initialSize": 141239,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-10.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-10.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/1-480.jpg": {
+	"\/img\/galeria\/fin-ano-11.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 34414,
-		"inputAbbreviatedPath": "\/img\/galeria\/1-480.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/1-480.jpg",
+		"initialSize": 136602,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-11.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-11.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/13-1600.jpg": {
+	"\/img\/galeria\/fin-ano-12.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 129996,
-		"inputAbbreviatedPath": "\/img\/galeria\/13-1600.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/13-1600.jpg",
+		"initialSize": 125237,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-12.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-12.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/13-375.jpg": {
+	"\/img\/galeria\/fin-ano-13.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 22812,
-		"inputAbbreviatedPath": "\/img\/galeria\/13-375.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/13-375.jpg",
+		"initialSize": 117108,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-13.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-13.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/13-480.jpg": {
+	"\/img\/galeria\/fin-ano-14.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 35693,
-		"inputAbbreviatedPath": "\/img\/galeria\/13-480.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/13-480.jpg",
+		"initialSize": 124081,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-14.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-14.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/13.jpg": {
+	"\/img\/galeria\/fin-ano-15.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 124149,
-		"inputAbbreviatedPath": "\/img\/galeria\/13.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/13.jpg",
+		"initialSize": 124295,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-15.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-15.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/2-1600.jpg": {
+	"\/img\/galeria\/fin-ano-16.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 187925,
-		"inputAbbreviatedPath": "\/img\/galeria\/2-1600.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/2-1600.jpg",
+		"initialSize": 117200,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-16.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-16.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/2-375.jpg": {
+	"\/img\/galeria\/fin-ano-17.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 30307,
-		"inputAbbreviatedPath": "\/img\/galeria\/2-375.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/2-375.jpg",
+		"initialSize": 126416,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-17.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-17.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/2-480.jpg": {
+	"\/img\/galeria\/fin-ano-18.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 48290,
-		"inputAbbreviatedPath": "\/img\/galeria\/2-480.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/2-480.jpg",
+		"initialSize": 128064,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-18.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-18.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/4-1600.jpg": {
+	"\/img\/galeria\/fin-ano-19.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 153989,
-		"inputAbbreviatedPath": "\/img\/galeria\/4-1600.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/4-1600.jpg",
+		"initialSize": 113650,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-19.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-19.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/4-375.jpg": {
+	"\/img\/galeria\/fin-ano-2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18396,
-		"inputAbbreviatedPath": "\/img\/galeria\/4-375.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/4-375.jpg",
+		"initialSize": 261433,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-2.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/4-480.jpg": {
+	"\/img\/galeria\/fin-ano-20.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 25839,
-		"inputAbbreviatedPath": "\/img\/galeria\/4-480.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/4-480.jpg",
+		"initialSize": 136334,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-20.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-20.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/4.jpg": {
+	"\/img\/galeria\/fin-ano-21.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 70944,
-		"inputAbbreviatedPath": "\/img\/galeria\/4.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/4.jpg",
+		"initialSize": 138793,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-21.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-21.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-22.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136040,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-22.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-22.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 227095,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-3.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 269499,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-4.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 267120,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-5.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 224638,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-6.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 243654,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-7.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 242339,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-8.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/fin-ano-9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122360,
+		"inputAbbreviatedPath": "\/img\/galeria\/fin-ano-9.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/fin-ano-9.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1281,6 +2290,116 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/galeria\/foto10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 268027,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto10.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto11.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 255444,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto11.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto11.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 221355,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto12.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto12.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto13.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 281680,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto13.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto13.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 205909,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto14.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto14.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 296560,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto15.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto15.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 254578,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto16.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto16.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto17.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 274549,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto17.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto17.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto18.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 311004,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto18.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto18.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto19.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 325400,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto19.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto19.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/galeria\/foto2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1292,57 +2411,1080 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/mini-foto1.jpg": {
+	"\/img\/galeria\/foto20.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 68187,
-		"inputAbbreviatedPath": "\/img\/galeria\/mini-foto1.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/mini-foto1.jpg",
+		"initialSize": 259594,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto20.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto20.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/mini-foto2.jpg": {
+	"\/img\/galeria\/foto21.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 92856,
-		"inputAbbreviatedPath": "\/img\/galeria\/mini-foto2.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/mini-foto2.jpg",
+		"initialSize": 320697,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto21.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto21.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/thumb-13.jpg": {
+	"\/img\/galeria\/foto22.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 76594,
-		"inputAbbreviatedPath": "\/img\/galeria\/thumb-13.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/thumb-13.jpg",
+		"initialSize": 248969,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto22.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto22.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/thumb-4.jpg": {
+	"\/img\/galeria\/foto23.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 53719,
-		"inputAbbreviatedPath": "\/img\/galeria\/thumb-4.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/thumb-4.jpg",
+		"initialSize": 182077,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto23.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto23.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/galeria\/thumb-6.jpg": {
+	"\/img\/galeria\/foto24.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 83071,
-		"inputAbbreviatedPath": "\/img\/galeria\/thumb-6.jpg",
-		"outputAbbreviatedPath": "\/img\/galeria\/thumb-6.jpg",
+		"initialSize": 290141,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto24.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto24.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto25.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 262259,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto25.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto25.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto26.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 272229,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto26.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto26.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto27.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 345965,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto27.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto27.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto28.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 272921,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto28.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto28.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto29.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256979,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto29.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto29.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 313921,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto3.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto30.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 250437,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto30.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto30.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto31.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 371170,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto31.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto31.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto32.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 274720,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto32.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto32.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto33.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 295818,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto33.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto33.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto34.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 292751,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto34.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto34.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto35.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 335500,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto35.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto35.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto36.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 270823,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto36.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto36.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto37.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 305682,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto37.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto37.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto38.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299852,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto38.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto38.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto39.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256689,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto39.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto39.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 232248,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto4.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto40.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 260105,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto40.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto40.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto41.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 330862,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto41.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto41.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto42.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 307055,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto42.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto42.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto43.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 268212,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto43.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto43.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto44.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 351735,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto44.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto44.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 237177,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto5.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 250113,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto6.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 225632,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto7.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 192530,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto8.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/foto9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 199613,
+		"inputAbbreviatedPath": "\/img\/galeria\/foto9.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/foto9.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 63749,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-1.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33561,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-10.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-11.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31920,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-11.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-11.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31201,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-12.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-12.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-13.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30070,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-13.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-13.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31423,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-14.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-14.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31989,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-15.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-15.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29732,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-16.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-16.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-17.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31631,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-17.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-17.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-18.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33122,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-18.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-18.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-19.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29839,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-19.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-19.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57896,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-2.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-20.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32127,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-20.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-20.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-21.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32189,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-21.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-21.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-22.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33460,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-22.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-22.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53523,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-3.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61858,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-4.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 60293,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-5.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57096,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-6.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57362,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-7.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57517,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-8.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-fin-ano-9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 30283,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-9.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-fin-ano-9.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71633,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto1.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 132029,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto10.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto11.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 128271,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto11.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto11.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136147,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto12.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto12.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto13.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151415,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto13.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto13.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto14.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103159,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto14.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto14.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 137402,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto15.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto15.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 133793,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto16.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto16.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto17.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144347,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto17.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto17.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto18.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 153077,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto18.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto18.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto19.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 152292,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto19.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto19.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 112813,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto2.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto20.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134172,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto20.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto20.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto21.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159227,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto21.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto21.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto22.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 133895,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto22.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto22.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto23.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108352,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto23.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto23.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto24.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146642,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto24.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto24.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto25.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 147311,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto25.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto25.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto26.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 130199,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto26.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto26.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto27.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 150915,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto27.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto27.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto28.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 130932,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto28.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto28.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto29.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123770,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto29.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto29.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 155286,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto3.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto30.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 135721,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto30.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto30.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto31.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159497,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto31.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto31.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto32.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 139381,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto32.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto32.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto33.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 141527,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto33.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto33.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto34.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 148237,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto34.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto34.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto35.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 138699,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto35.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto35.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto36.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 140276,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto36.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto36.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto37.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159610,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto37.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto37.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto38.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 151106,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto38.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto38.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto39.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136439,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto39.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto39.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 120639,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto4.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto40.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83870,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto40.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto40.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto41.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85123,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto41.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto41.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto42.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75989,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto42.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto42.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto43.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78405,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto43.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto43.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto44.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 243019,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto44.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto44.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 121201,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto5.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 134851,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto6.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 129227,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto7.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117672,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto8.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/galeria\/thumb-foto9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117697,
+		"inputAbbreviatedPath": "\/img\/galeria\/thumb-foto9.jpg",
+		"outputAbbreviatedPath": "\/img\/galeria\/thumb-foto9.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1534,6 +3676,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/logo_multitecnica.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6934,
+		"inputAbbreviatedPath": "\/img\/logo_multitecnica.jpg",
+		"outputAbbreviatedPath": "\/img\/logo_multitecnica.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/logo_royal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1611,6 +3764,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/plus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 443,
+		"inputAbbreviatedPath": "\/img\/plus.png",
+		"outputAbbreviatedPath": "\/img\/plus.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/poster.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1644,13 +3808,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/profe\/banner 10 mandamienros_profesionales.jpg": {
+	"\/img\/profe\/banner10mandamienros_profesionales.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 39689,
-		"inputAbbreviatedPath": "\/img\/profe\/banner 10 mandamienros_profesionales.jpg",
-		"outputAbbreviatedPath": "\/img\/profe\/banner 10 mandamienros_profesionales.jpg",
+		"inputAbbreviatedPath": "\/img\/profe\/banner10mandamienros_profesionales.jpg",
+		"outputAbbreviatedPath": "\/img\/profe\/banner10mandamienros_profesionales.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/profe\/profe.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 33530,
+		"inputAbbreviatedPath": "\/img\/profe\/profe.jpg",
+		"outputAbbreviatedPath": "\/img\/profe\/profe.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1739,6 +3914,17 @@
 		"initialSize": 49831,
 		"inputAbbreviatedPath": "\/img\/seguridad\/seguridad_06b.jpg",
 		"outputAbbreviatedPath": "\/img\/seguridad\/seguridad_06b.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/seguridad\/seguros.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 86192,
+		"inputAbbreviatedPath": "\/img\/seguridad\/seguros.jpg",
+		"outputAbbreviatedPath": "\/img\/seguridad\/seguros.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1852,6 +4038,26 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/img\/video5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85330,
+		"inputAbbreviatedPath": "\/img\/video5.jpg",
+		"outputAbbreviatedPath": "\/img\/video5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/index-.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index-.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.html": {
 		"fileType": 8192,
@@ -2099,6 +4305,26 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/login-form.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/login-form.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/login-form.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/login-form.jade",
+		"outputAbbreviatedPath": "\/login-form.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/login.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -2239,6 +4465,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/new-login.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/new-login.jade",
+		"outputAbbreviatedPath": "\/new-login.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
 		},
 	"\/noticias-anteriores.html": {
 		"fileType": 8192,
@@ -2670,6 +4907,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/signos-seguridad.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/signos-seguridad.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/signos-seguridad.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -2680,6 +4926,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0
+		},
+	"\/signos-seguridad.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/signos-seguridad.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/standby.html": {
 		"fileType": 8192,
