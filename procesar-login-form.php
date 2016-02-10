@@ -1,5 +1,10 @@
 <?php
 
+include_once 'config.php';
+		
+	$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
+	$acentos = $conexion->query("SET NAMES 'utf8'");
+
 //Datos usuario interno:
 
 $rut_usuario = $_REQUEST['rut_usuario'];
@@ -22,12 +27,6 @@ $rut_conyuge = $_REQUEST['rut_conyuge'];
 $isapre_conyuge = $_REQUEST['isapre_conyuge'];
 
 //Datos hijo 01:
-
-if($rut_usuario!='nombre_hijo_01'){
-	//aqui hago el insert del hijo
-}else{
-	//aqui descargo los warning de php
-}
 
 $nombre_hijo_01 = $_REQUEST['nombre_hijo_01'];
 $apellido_paterno_hijo_01 = $_REQUEST['apellido_paterno_hijo_01'];
@@ -81,6 +80,22 @@ $rut_hijo_05 = $_REQUEST['rut_hijo_05'];
 $sexo_hijo_05 = $_REQUEST['sexo_hijo_05'];
 $grado_escolar_hijo_05 = $_REQUEST['grado_escolar_hijo_05'];
 $isapre_hijo_05 = $_REQUEST['isapre_hijo_05'];
+
+//Aqui comienza el codigo para insertar en BBDD
+
+if($nombre_hijo_01!='nombre_hijo_01'){
+	mysqli_query($conexion,"INSERT INTO hijo() values 
+														('$pregunta1',
+														'$pregunta2',
+														'$pregunta3',
+														'$pregunta4',
+														'$pregunta5',
+														'$escala')")
+			or die("Problemas con el insert de los servicios");
+	//aqui hago el insert del hijo
+}else{
+	//aqui descargo los warning de php
+}
 
 ?>			
 	
