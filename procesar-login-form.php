@@ -83,14 +83,25 @@ $isapre_hijo_05 = $_REQUEST['isapre_hijo_05'];
 
 //Aqui comienza el codigo para insertar en BBDD
 
+$nombre_hijo_01 = $_REQUEST['nombre_hijo_01'];
+$apellido_paterno_hijo_01 = $_REQUEST['apellido_paterno_hijo_01'];
+$apellido_materno_hijo_01 = $_REQUEST['apellido_materno_hijo_01'];
+$fecha_nacimiento_hijo_01 = $_REQUEST['fecha_nacimiento_hijo_01'];
+$rut_hijo_01 = $_REQUEST['rut_hijo_01'];
+$sexo_hijo_01 = $_REQUEST['sexo_hijo_01'];
+$grado_escolar_hijo_01 = $_REQUEST['grado_escolar_hijo_01'];
+$isapre_hijo_01 = $_REQUEST['isapre_hijo_01'];
+
 if($nombre_hijo_01!='nombre_hijo_01'){
-	mysqli_query($conexion,"INSERT INTO hijo() values 
-														('$pregunta1',
-														'$pregunta2',
-														'$pregunta3',
-														'$pregunta4',
-														'$pregunta5',
-														'$escala')")
+	mysqli_query($conexion,"INSERT INTO hijo(aqui van los campos de la BBDD) values 
+														('$nombre_hijo_01',
+														'$apellido_paterno_hijo_01',
+														'$apellido_materno_hijo_01',
+														'$fecha_nacimiento_hijo_01',
+														'$rut_hijo_01',
+														'$sexo_hijo_01',
+														'$grado_escolar_hijo_01',
+														'$isapre_hijo_01')")
 			or die("Problemas con el insert de los servicios");
 	//aqui hago el insert del hijo
 }else{

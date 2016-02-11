@@ -242,7 +242,7 @@
 				</select>
 			  </div>			  
 			  <div class="caja base-100 tablet-50">
-				<button type="button" value="removeSon01" id="removeSon01" style="border: none; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
+				<button type="button" value="removeSon01" id="removeSon01" style="border: solid; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
 			  </div>
 			  <div class="caja base-100 tablet-50">
 				<label>Carga Isapre / Fonasa</label>
