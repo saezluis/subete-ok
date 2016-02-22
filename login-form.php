@@ -1,3 +1,22 @@
+<?php
+session_start();
+
+	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
+
+	}else{
+		header('Content-Type: text/html; charset=UTF-8'); 
+		echo "<br/>" . "Esta pagina es solo para usuarios registrados." . "<br/>";
+		exit;
+	}
+
+	$now = time(); // checking the time now when home page starts
+
+	if($now > $_SESSION['expire']){
+		session_destroy();
+		echo "<br/><br />" . "Su sesion a terminado, <a href='login.php'> Necesita Hacer Login</a>";
+		exit;
+	}
+?>
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -87,7 +106,46 @@
 	
 	</script>
 	
+	<script type = "text/javascript" >
+	
+		function validarClaves() {			
+		
+			var clave_uno = document.getElementById("clave01").value;
+			var clave_dos = document.getElementById("clave02").value;
+			
+			if(clave_uno==clave_dos){				
+				return true;
+			}else{				
+				alert("Las claves no coinciden");
+				return false;
+			}			
+		}
+	
+	</script>
+	
   </head>
+  <?php
+	
+	$rut_sesion = $_SESSION['username'];
+	
+	include_once 'config.php';
+		
+	$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
+	$acentos = $conexion->query("SET NAMES 'utf8'");
+	
+	$registrosInternos=mysqli_query($conexion,"SELECT * FROM internos WHERE rut = '$rut_sesion'") or die("Problemas en el select:".mysqli_error($conexion));
+	
+	if($reg=mysqli_fetch_array($registrosInternos)){
+		
+		$nombre = $reg['nombre'];
+		$apellido_materno = $reg['apellido_materno'];
+		$apellido_paterno = $reg['apellido_paterno'];
+		$fecha_nacimiento = $reg['fecha_nacimiento'];
+		$seccion = $reg['seccion'];
+		
+	}
+	
+  ?>
   <body class="noBack">
     <div id="strip"></div>
     <header class="nono grupo">
@@ -108,19 +166,19 @@
         <p>Para comenzar, completa tus datos<span class="numerales circulo">1</span></p>
         <div class="caja base-100 tablet-50">
           <label for="">RUT</label>
-          <input type="text" name="rut_usuario">
+          <?php echo "<input type=\"text\" value=\"$rut_sesion\" name=\"rut_usuario\" readonly>"; ?>
         </div>
         <div class="caja base-100 tablet-50">
           <label>Nombre</label>
-          <input type="text" name="nombre_usuario">
+          <?php echo "<input type=\"text\" value=\"$nombre\" name=\"nombre_usuario\" readonly>"; ?>
         </div>
         <div class="caja base-100 tablet-50">
           <label>Apellido Paterno</label>
-          <input type="text" name="apellido_paterno_usuario">
+          <?php echo "<input type=\"text\" value=\"$apellido_paterno\" name=\"apellido_paterno_usuario\" readonly>"; ?>
         </div>
         <div class="caja base-100 tablet-50">
-          <label>Fecha de nacimiento</label>
-          <input type="text" name="fecha_nacimiento_usuario">
+          <label>Fecha de nacimiento (AAAA-MM-DD)</label>
+          <?php echo "<input type=\"text\" value=\"$fecha_nacimiento\" name=\"fecha_nacimiento_usuario\" readonly>"; ?>
         </div>
         <div class="caja base-100 tablet-50">
           <label>Teléfono / móvil</label>
@@ -132,15 +190,15 @@
         </div>
         <div class="caja base-100 tablet-50">
           <label>Área de trabajo</label>
-          <input type="text" name="area_trabajo_usuario">
+          <?php echo "<input type=\"text\" value=\"$seccion\" name=\"area_trabajo_usuario\" readonly>"; ?>
         </div>
         <div class="caja base-100 tablet-50">
           <label>Ingresa tu nueva contraseña</label>
-          <input type="text" name="password">
+          <input id="clave01" type="password" name="password">
         </div>
         <div class="caja base-100 tablet-50">
           <label>Repite tu nueva contraseña</label>
-          <input type="text" name="password_repetir">
+          <input id="clave02" type="password" name="password_repetir" onfocusout = "return validarClaves(); ">
         </div>
         <div class="caja base-100 tablet-50"></div>
       </fieldset>
@@ -179,7 +237,7 @@
           </div>
           <div class="caja base-100 tablet-50">
             <label>Fecha de nacimiento</label>
-            <input type="text" name="fecha_nacimiento_conyuge">
+            <input type="text" name="fecha_nacimiento_conyuge" placeholder="Formato: AAAA-MM-DD">
           </div>
           <div class="caja base-100 tablet-50">
             <label for="">RUT</label>
@@ -189,6 +247,8 @@
             <label>Carga Isapre / Fonasa</label>
             <select name="isapre_conyuge">
               <option value="-1">Elegir</option>
+			  <option value="Isapre">Isapre</option>
+			  <option value="Fonasa">Fonasa</option>
             </select>
           </div>
         </div>
@@ -217,7 +277,7 @@
 			  </div>
 			  <div class="caja base-100 tablet-50">
 				<label>Fecha de nacimiento</label>
-				<input type="text" name="fecha_nacimiento_hijo_01">
+				<input type="text" name="fecha_nacimiento_hijo_01" placeholder="Ejemplo: 01-01-1990">
 			  </div>
 			  <div class="caja base-100 tablet-50">
 				<label for="">RUT</label>
@@ -242,12 +302,14 @@
 				</select>
 			  </div>			  
 			  <div class="caja base-100 tablet-50">
-				<button type="button" value="removeSon01" id="removeSon01" style="border: solid; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
+				<button type="button" value="removeSon01" id="removeSon01" style="background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
 			  </div>
 			  <div class="caja base-100 tablet-50">
 				<label>Carga Isapre / Fonasa</label>
 				<select name="isapre_hijo_01">
-				  <option>elegir</option>
+				  <option value="-1">Elegir</option>
+				  <option value="Isapre">Isapre</option>
+				  <option value="Fonasa">Fonasa</option>
 				</select>
 			  </div>
 			</div>
@@ -303,12 +365,14 @@
 				</select>
 			  </div>
 			  <div class="caja base-100 tablet-50">
-				<button type="button" value="removeSon02" id="removeSon02" style="border: none; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
+				<button type="button" value="removeSon02" id="removeSon02" style="background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
 			  </div>
 			  <div class="caja base-100 tablet-50">
 				<label>Carga Isapre / Fonasa</label>
 				<select name="isapre_hijo_02">
-				  <option>elegir</option>
+				  <option value="-1">Elegir</option>
+				  <option value="Isapre">Isapre</option>
+				  <option value="Fonasa">Fonasa</option>
 				</select>
 			  </div>
 			</div>
@@ -364,12 +428,14 @@
 					</select>
 				  </div>
 				  <div class="caja base-100 tablet-50">
-					<button type="button" value="removeSon03" id="removeSon03" style="border: none; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
+					<button type="button" value="removeSon03" id="removeSon03" style="background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
 				  </div>
 				  <div class="caja base-100 tablet-50">
 					<label>Carga Isapre / Fonasa</label>
 					<select name="isapre_hijo_03">
-					  <option>elegir</option>
+					  <option value="-1">Elegir</option>
+					  <option value="Isapre">Isapre</option>
+					  <option value="Fonasa">Fonasa</option>
 					</select>
 				  </div>
 				</div>	
@@ -426,12 +492,14 @@
 					</select>
 				  </div>
 				  <div class="caja base-100 tablet-50">
-					<button type="button" value="removeSon04" id="removeSon04" style="border: none; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
+					<button type="button" value="removeSon04" id="removeSon04" style="background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
 				  </div>
 				  <div class="caja base-100 tablet-50">
 					<label>Carga Isapre / Fonasa</label>
 					<select name="isapre_hijo_04">
-					  <option>elegir</option>
+					  <option value="-1">Elegir</option>
+					  <option value="Isapre">Isapre</option>
+					  <option value="Fonasa">Fonasa</option>
 					</select>
 				  </div>
 				</div>	
@@ -486,12 +554,14 @@
 					</select>
 				  </div>
 				  <div class="caja base-100 tablet-50">
-					<button type="button" value="removeSon05" id="removeSon05" style="border: none; background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
+					<button type="button" value="removeSon05" id="removeSon05" style="background-color: transparent;" ><img src="img/list_remove.png" height="30px" width="35px"></button>
 				  </div>
 				  <div class="caja base-100 tablet-50">
 					<label>Carga Isapre / Fonasa</label>
 					<select name="isapre_hijo_05">
-					  <option>elegir</option>
+					  <option value="-1">Elegir</option>
+					  <option value="Isapre">Isapre</option>
+					  <option value="Fonasa">Fonasa</option>
 					</select>
 				  </div>				  
 				</div>			
